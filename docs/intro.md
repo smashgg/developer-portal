@@ -18,11 +18,11 @@ Unlike our old REST API, our GraphQL API has a single endpoint:
 https://api.smash.gg/gql/alpha
 ```
 
-Our recommended way to make requests is using our [API explorer.](/explorer) However, it is still possible to use cURL or any other method of making HTTP requests. Calls should be made via a POST request with a JSON payload containing the body of your query in the **query** parameter.
+Our recommended way to make requests is using our [API explorer.](https://smash.gg/developer/explorer) However, it is still possible to use cURL or any other method of making HTTP requests. Calls should be made via a POST request with a JSON payload containing the body of your query in the **query** parameter.
 
 ## Authentication
 
-In order to access smash.gg’s API, you must use an authentication token. These tokens can be created from the [developer settings tab on your account settings page.](smash.gg/admin/profile/developer) The token must be sent in any API request to our servers by setting the Authorization header as follows: (replace \[token\] with your own)
+In order to access smash.gg’s API, you must use an authentication token. These tokens can be created from the [developer settings tab on your account settings page.](https://smash.gg/admin/profile/developer) The token must be sent in any API request to our servers by setting the Authorization header as follows: (replace \[token\] with your own)
 
 ```
 Authorization: Bearer [token]

@@ -40,7 +40,10 @@ class Footer extends React.Component {
             <a href={this.docUrl('event-standings.html', this.props.language)}>
               Example Usage
             </a>
-            <a href="/explorer">
+            <a
+				href="https://smash.gg/developer/explorer"
+				target="_blank"
+				rel="noreferrer noopener">
               API Explorer
             </a>
 			<a href={`${this.props.config.baseUrl}blog`}>Blog</a>
