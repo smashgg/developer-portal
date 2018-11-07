@@ -1,0 +1,8 @@
+{
+  "docs": {
+    "Getting Started": ["intro"],
+    "Example Usage": [
+		"examples/event-standings"
+	]
+  }
+}
