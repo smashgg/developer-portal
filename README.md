@@ -1,4 +1,4 @@
-# developer-portal
+# smash.gg Developer Portal
 A place for developers interested in smash.gg's API
 
 ## How do I contribute documentation?
