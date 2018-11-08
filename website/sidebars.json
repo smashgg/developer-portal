@@ -2,7 +2,9 @@
   "docs": {
     "Getting Started": ["intro"],
     "Example Usage": [
-		"examples/event-standings"
+		"examples/set-entrants",
+		"examples/event-standings",
+		"examples/pool-seeds"
 	]
   }
 }
