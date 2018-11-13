@@ -1,6 +1,6 @@
 website/node_modules
 website/build
-schema
+graphdoc/schema
 
 
 website/i18n/en.json
