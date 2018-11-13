@@ -44,7 +44,7 @@ Request variables! *Adjust to taste- want 4 or 5 standings instead of 3? Just ch
 
 ## The Response
 
-LOOK AT IT! IT'S WHAT YOU ASKED FOR! 1.8 KB of exactly what you wanted. **Nothing more, and nothing less.** See why this is awesome? Add and subtract fields as you see fit for your application's uses. It will reduce the number of requests, and the size of the responses, that your application will be handling, which will translate into time savings and data savings for your end users.
+LOOK AT IT! IT'S WHAT YOU ASKED FOR! 1.8 KB of exactly what you wanted. **Nothing more, and nothing less.** See why this is awesome? Add and subtract fields as you see fit for your application's uses. It will reduce the number of requests - and the size of the responses - that your application will be handling. That, in turn, will translate into **time savings** and **data savings** for your end users.
 
 ```
 {
