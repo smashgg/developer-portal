@@ -18,7 +18,7 @@ Unlike our old REST API, our GraphQL API has a single endpoint:
 https://api.smash.gg/gql/alpha
 ```
 
-Our recommended way to make requests is using our [API explorer.](https://smash.gg/developer/explorer) However, it is still possible to use cURL or any other method of making HTTP requests. Calls should be made via a POST request with a JSON payload containing the body of your query in the **query** parameter.
+Our recommended way to test out requests is using our [API explorer.](https://smash.gg/developer/explorer) However, it is still possible to use cURL or any other method of making HTTP requests. Calls should be made via a POST request with a JSON payload containing the body of your query in the **query** parameter.
 
 ## Authentication
 
