@@ -30,7 +30,7 @@ class Explorer extends React.Component {
 		this.state = {};
 	}
 
-	render() {
+	componentDidMount() {
 		const authToken = this.state.authToken;
 		const gqlUrl = siteConfig.apiUrl;
 
@@ -44,9 +44,8 @@ class Explorer extends React.Component {
 				body: JSON.stringify(graphQLParams),
 			}).then(response => response.json());
 
-		return (
-			<div className="mainContainer">
-				<GraphiQL
+		const graphiql = (
+			<GraphiQL
 					fetcher={graphQLFetcher}
 					defaultQuery={defaultQuery}
 				>
@@ -55,6 +54,17 @@ class Explorer extends React.Component {
 						<input name="authToken" type="text" onChange={this.changeAuthToken} />
 					</GraphiQL.Toolbar>
 				</GraphiQL>
+		);
+
+		this.setState({
+			graphiql
+		});
+	}
+
+	render() {
+		return (
+			<div className="mainContainer">
+				{this.state.graphiql}
 			</div>
 		);
 	}
