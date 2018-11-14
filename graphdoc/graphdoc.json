@@ -4,7 +4,7 @@
 	  "graphiql": "https://smash.gg/developer/explorer",
 	  "logo": "<a href=\"https://developer.smash.gg\" target=\"_blank\" style=\"background-color: #CB333B;display:block;padding:1rem 25%\"><img src=\"https://images.smash.gg/home-page/smashgg-white.svg\" /></a>",
 	  "endpoint": "https://gg-api-dev-keith.internal.smashgg.com/gql/alpha",
-	  "output": "./schema",
+	  "output": "./schema/reference",
 	  "baseUrl": "./"
 	}
   }
