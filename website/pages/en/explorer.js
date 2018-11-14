@@ -49,11 +49,11 @@ class Explorer extends React.Component {
 					fetcher={graphQLFetcher}
 					defaultQuery={defaultQuery}
 				>
-					<GraphiQL.Toolbar>
-						<label htmlFor="authToken">Auth token</label>
-						<input name="authToken" type="text" onChange={this.changeAuthToken} />
-					</GraphiQL.Toolbar>
-				</GraphiQL>
+				<GraphiQL.Toolbar>
+					<label htmlFor="authToken">Auth token</label>
+					<input name="authToken" type="text" onChange={this.changeAuthToken} />
+				</GraphiQL.Toolbar>
+			</GraphiQL>
 		);
 
 		this.setState({
