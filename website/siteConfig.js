@@ -17,7 +17,7 @@ const siteConfig = {
 	//	 url: 'https://smash.gg.github.io',
 	//	 baseUrl: '/test-site/',
 
-	// apiUrl: 'https://api.smash.gg/gql/alpha/schema',
+	apiUrl: 'https://api.smash.gg/gql/alpha/schema',
 
 	// Used for publishing and more
 	projectName: 'smashgg-developer',
