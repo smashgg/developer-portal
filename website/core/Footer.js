@@ -41,7 +41,7 @@ class Footer extends React.Component {
               Example Usage
             </a>
             <a
-				href="https://smash.gg/developer/explorer"
+				href="https://developer.smash.gg/explorer"
 				target="_blank"
 				rel="noreferrer noopener">
               API Explorer
