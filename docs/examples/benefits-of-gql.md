@@ -1,9 +1,9 @@
 ---
-id: gql-is-awesome
-title: GQL IS AWESOME
+id: benefits-of-gql
+title: Benefits of GQL
 ---
 
-No sarcasm! GraphQL is awesome for the smash.gg public API. Why? **Because you can get exactly what you need without a bunch of extraneous data.** 
+GraphQL is awesome for the smash.gg public API. Why? **Because you can get exactly what you need without a bunch of extraneous data.** 
 
 Let's say you have an application where you aggregate the results of important tournaments. Let's say EVO 2018 just wrapped up, and you want your application to display the name of each event in EVO 2018, along with the placement + gamertag of the top 3 finishers in each event. 
 

@@ -2,7 +2,7 @@
   "docs": {
     "Getting Started": ["intro"],
     "Example Usage": [
-		"examples/gql-is-awesome",
+		"examples/benefits-of-gql",
 		"examples/set-entrants",
 		"examples/event-standings",
 		"examples/pool-seeds"
