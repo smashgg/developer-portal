@@ -27,7 +27,7 @@ const siteConfig = {
 	headerLinks: [
 		{doc: 'intro', label: 'Docs'},
 		{href: 'https://developer.smash.gg/reference/query.doc.html', label: 'Schema'},
-		{href: 'explorer', label: 'API Explorer'},
+		{page: 'explorer', label: 'API Explorer'},
 		{page: 'help', label: 'Help'},
 		// {blog: true, label: 'Blog'},
 	],
