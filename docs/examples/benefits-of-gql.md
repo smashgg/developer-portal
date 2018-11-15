@@ -5,7 +5,7 @@ title: Benefits of GQL
 
 GraphQL is awesome for the smash.gg public API. Why? **Because you can get exactly what you need without a bunch of extraneous data.** 
 
-Let's say you have an application where you aggregate the results of important tournaments. Let's say EVO 2018 just wrapped up, and you want your application to display the name of each event in EVO 2018, along with the placement + gamertag of the top 3 finishers in each event. 
+Let's suppose you have an application where you aggregate the results of important tournaments. EVO 2018 just wrapped up, and you want your application to display the name of each event in EVO 2018, along with the placement + gamertag of the top 3 finishers in each event. 
 
 If you were retrieving this data using a REST API, then you can imagine how much data you're going to be handling in your application to filter to what you need. It would probably involve multiple requests, and the responses would probably contain several unnecessary fields for each event, far more than three standings, and some extra information about each entrant that you didn't need.
 
@@ -44,7 +44,7 @@ Request variables! *Adjust to taste- want 4 or 5 standings instead of 3? Just ch
 
 ## The Response
 
-LOOK AT IT! IT'S WHAT YOU ASKED FOR! 1.8 KB of exactly what you wanted. **Nothing more, and nothing less.** See why this is awesome? Add and subtract fields as you see fit for your application's uses. It will reduce the number of requests - and the size of the responses - that your application will be handling. That, in turn, will translate into **time savings** and **data savings** for your end users.
+LOOK AT IT! IT'S WHAT YOU ASKED FOR! 1.8 KB of exactly what you wanted. **Nothing more, and nothing less.** See why this is awesome? Add and subtract fields as you see fit for your application's uses. It will reduce the number of requests - and the size of the responses - that your application will be handling. That, in turn, will translate into **time savings** and **data savings** for your end users. For comparison, retrieving the top 3 standings in our *old* API for just Melee Singles alone at EVO 2018 <a href="https://api.smash.gg/tournament/evo-2018/event/evo-2018-1/standings?entityType=event&expand[]=entrants&mutations[]=playerData&mutations[]=standingLosses&page=1&per_page=3" target="_blank">involved a 21.1 KB response</a>!
 
 ```
 {
