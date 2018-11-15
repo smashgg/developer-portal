@@ -33,10 +33,10 @@ class Help extends React.Component {
         content: 'Ask questions about the documentation and project in our [discord.](https://discord.gg/pTSwKj)',
         title: 'Join the community',
       },
-      {
-        content: "Find out what's new with this project by checking out the [blog!](/blog)",
-        title: 'Stay up to date',
-      },
+    //   {
+    //     content: "Find out what's new with this project by checking out the [blog!](/blog)",
+    //     title: 'Stay up to date',
+    //   },
     ];
 
     return (
