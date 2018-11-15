@@ -1,0 +1,10 @@
+{
+	"name": "smashgg-graphdoc",
+	"graphdoc": {
+	  "graphiql": "https://developer.smash.gg/explorer",
+	  "logo": "<a href=\"https://developer.smash.gg\" style=\"background-color: #CB333B;display:block;padding:1rem 25%\"><img src=\"https://images.smash.gg/home-page/smashgg-white.svg\" /></a>",
+	  "endpoint": "https://api.smash.gg/gql/alpha",
+	  "output": "./schema/reference",
+	  "baseUrl": "./"
+	}
+  }

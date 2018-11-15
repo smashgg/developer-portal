@@ -41,12 +41,12 @@ class Footer extends React.Component {
               Example Usage
             </a>
             <a
-				href="https://smash.gg/developer/explorer"
+				href="https://developer.smash.gg/explorer"
 				target="_blank"
 				rel="noreferrer noopener">
               API Explorer
             </a>
-			<a href={`${this.props.config.baseUrl}blog`}>Blog</a>
+			{/* <a href={`${this.props.config.baseUrl}blog`}>Blog</a> */}
           </div>
 		  <div>
             <h5>smash.gg</h5>

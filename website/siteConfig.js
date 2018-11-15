@@ -17,7 +17,7 @@ const siteConfig = {
 	//	 url: 'https://smash.gg.github.io',
 	//	 baseUrl: '/test-site/',
 
-	// apiUrl: 'https://api.smash.gg/gql/alpha/schema',
+	apiUrl: 'https://api.smash.gg/gql/alpha/schema',
 
 	// Used for publishing and more
 	projectName: 'smashgg-developer',
@@ -26,9 +26,10 @@ const siteConfig = {
 	// For no header links in the top nav bar -> headerLinks: [],
 	headerLinks: [
 		{doc: 'intro', label: 'Docs'},
-		{href: 'https://smash.gg/developer/explorer', label: 'API Explorer'},
+		{href: 'https://developer.smash.gg/reference/query.doc.html', label: 'Schema'},
+		{page: 'explorer', label: 'API Explorer'},
 		{page: 'help', label: 'Help'},
-		{blog: true, label: 'Blog'},
+		// {blog: true, label: 'Blog'},
 	],
 
 	/* path to images for header/footer */
