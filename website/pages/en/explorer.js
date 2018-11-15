@@ -9,7 +9,7 @@ const React = require('react');
 class IFrameExplorer extends React.Component {
 	render() {
 		return (
-			<iframe style={{ height: '90vh' }} src="https://insiders.smashgg.com/developer/explorer/embed"></iframe>
+			<iframe style={{ height: '90vh' }} src="https://smash.gg/developer/explorer/embed"></iframe>
 		);
 	}
 }
