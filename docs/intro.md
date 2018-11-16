@@ -1,35 +1,8 @@
 ---
 id: intro
-title: smash.gg API Overview
-sidebar_label: Overview
+title: Welcome to our New API!
+sidebar_label: Welcome
 ---
 
-Welcome! In addition to our developer portal, we welcome you to check out our [Discord server](https://discord.gg/smashgg) where you can get help directly from smash.gg engineers and community members! Our new public API is a GraphQL API, and we're excited for you to use it for your applications.
+Welcome! In addition to our developer portal, we encourage you to check out our <a href="https://discord.gg/smashgg" target="_blank">Discord server</a> where you can get direct help, share ideas, and discuss the API with smash.gg engineers and other community members. Our new public API is a GraphQL API, and we're excited for you to use it with your applications.
 
-## What is GraphQL?
-
-GraphQL is a query language that comes with many benefits for an API. For those unfamiliar, we recommend reading up <a href="https://graphql.org/" target="_blank">here.</a> The GraphQL website also includes <a href="https://graphql.org/code/" target="_blank">useful references for various languages and frameworks.</a>
-
-## Making calls to a GraphQL API
-
-Unlike our old REST API, our GraphQL API has a single endpoint:
-
-```
-https://api.smash.gg/gql/alpha
-```
-
-Our recommended way to test out requests is using our [API explorer.](https://developer.smash.gg/explorer) You can also use cURL or any other method of making HTTP requests. Calls should be made via a POST request with a JSON payload containing the body of your query in the **query** parameter.
-
-## Authentication
-
-In order to access smash.gg’s API, you must use an authentication token. These tokens can be created from the [developer settings tab on your account settings page.](https://smash.gg/admin/profile/developer) The token must be sent in any API request to our servers by setting the Authorization header as follows: (replace \[token\] with your own)
-
-```
-Authorization: Bearer [token]
-```
-
-## Resource Limits
-
-In order to prevent against malicious attacks (or unintended for-loops), we have a rate limiting system. This prevents anyone from making more than **1 request per second**.
-
-In addition to this, each individual API call is limited to returning **500** objects. This includes nested objects as well.

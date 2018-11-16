@@ -1,6 +1,6 @@
 ---
 id: benefits-of-gql
-title: Benefits of GQL
+title: Benefits of GraphQL
 ---
 
 GraphQL is awesome for the smash.gg public API. Why? **Because you can get exactly what you need without a bunch of extraneous data.** 
