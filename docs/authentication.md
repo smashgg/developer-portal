@@ -15,9 +15,9 @@ Next, enter a description for your token. Please be *descriptive* with this!
 
 ![image2](https://imgur.com/b2russ6.png)
 
-Click 'Save' to create the token.
+Click 'Save' to finish creating the token.
 
-![image3](https://imgur.com/X9B3bv2.png)
+![image3](https://imgur.com/nEycaZA.png)
 
 ⚠ **Copy it down immediately- you will not be able to view it again!** ⚠
 
