@@ -78,7 +78,7 @@ You can choose your own names for these variables! In the query above...
 }
 ```
 
-## Example #2 Request (with standings metadata for race format)
+## Example #2 Request (Race Format)
 ```
 query EventStandings($eventId: Int) {
   event(id:$eventId) {
