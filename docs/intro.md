@@ -4,11 +4,11 @@ title: smash.gg API Overview
 sidebar_label: Overview
 ---
 
-Having trouble? Join our [discord](https://discord.gg/pTSwKj) to get help directly from smash.gg engineers and community members!
+Welcome! In addition to our developer portal, we welcome you to check out our [Discord server](https://discord.gg/smashgg) where you can get help directly from smash.gg engineers and community members!
 
 ## What is GraphQL?
 
-GraphQL is a query language that comes with many benefits for an API. For those unfamiliar, we recommend reading up [here.](https://graphql.org/)
+GraphQL is a query language that comes with many benefits for an API. For those unfamiliar, we recommend reading up <a href="https://graphql.org/" target="_blank">here.</a> The GraphQL website also includes <a href="https://graphql.org/code/" target="_blank">useful references for various languages and frameworks.</a>
 
 ## Making calls to a GraphQL API
 

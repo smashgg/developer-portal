@@ -5,7 +5,7 @@ title: Event Standings
 
 In this example, we will query for the standings of the Melee Singles event at Shine 2018. To be specific, we will query for just the **standing** and **name** of the **top 3 placements** (note the variables!)
 
-## Basic Request
+## Example #1 Request (basic)
 
 ```
 query EventStandings($eventId: Int, $page: Int, $perPage: Int) {
@@ -25,7 +25,7 @@ query EventStandings($eventId: Int, $page: Int, $perPage: Int) {
   }
 }
 ```
-(Request Variables!) 
+Request Variables 
 
 ```
 {
@@ -42,7 +42,7 @@ You can choose your own names for these variables! In the query above...
 
 **Don't forget to explore the schema in the graphiql explorer!**
 
-## Response
+## Example #1 Response
 
 ```
 {
@@ -72,6 +72,72 @@ You can choose your own names for these variables! In the query above...
           }
         ]
       }
+    }
+  },
+  "actionRecords": []
+}
+```
+
+## Example #2 Request (with standings metadata for race format)
+```
+query EventStandings($eventId: Int) {
+  event(id:$eventId) {
+    id
+    name
+    phaseGroups {
+      id
+      seeds {
+        id
+        standings(containerType: "groups") {
+          id
+          metadata
+        }
+      }
+    }
+  }
+}
+```
+
+```
+{
+  "eventId": 249917
+}
+```
+
+## Example #2 Response
+```
+{
+  "data": {
+    "event": {
+      "id": 249917,
+      "name": "Kill Race!",
+      "phaseGroups": [
+        {
+          "id": 793662,
+          "seeds": [
+            {
+              "id": 8076251,
+              "standings": [
+                {
+                  "id": "4467977",
+                  "metadata": {
+                    "verifiedProgress": {
+                      "kills": 34
+                    },
+                    "unverifiedProgress": {
+                      "kills": 0
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": 8076254,
+              "standings": null
+            }
+          ]
+        }
+      ]
     }
   },
   "actionRecords": []
