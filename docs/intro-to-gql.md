@@ -4,7 +4,7 @@ title: Intro to GraphQL
 ---
 ## What is GraphQL?
 
-GraphQL is a query language that comes with many benefits for an API. For those unfamiliar, we recommend reading up <a href="https://graphql.org/" target="_blank">here.</a> The GraphQL website also includes <a href="https://graphql.org/code/" target="_blank">useful references for various languages and frameworks.</a>
+GraphQL is a query language that comes with many benefits for an API. For those unfamiliar, we recommend visiting the GraphQL website <a href="https://graphql.org/" target="_blank">here.</a> The GraphQL website also includes <a href="https://graphql.org/code/" target="_blank">useful references for various languages and frameworks.</a>
 
 ## Making calls to a GraphQL API
 
