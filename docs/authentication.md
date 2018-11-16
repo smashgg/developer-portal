@@ -24,12 +24,12 @@ Click 'Save' to create the token.
 
 ## Using the Token
 
-The token must be sent in any API request to our servers by setting the Authorization header as follows: (replace \[token\] with your own)
+The token must be sent in any API request to our servers by setting the Authorization header as follows: (replace \[token\] with your token)
 
 ```
 Authorization: Bearer [token]
 ```
 
-You will also need this token for making requests in the [API Explorer](/explorer)
+You will also need a token for making requests in the [API Explorer](/explorer)
 
 ![image4](https://imgur.com/WZjuFCE.png)
