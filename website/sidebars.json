@@ -2,7 +2,10 @@
   "docs": {
     "Getting Started": [
 			"intro",
-			"benefits-of-gql"
+			"intro-to-gql",
+			"benefits-of-gql",
+			"authentication",
+			"resource-limits"			
 		],
     "Example Usage": [
 			"examples/set-entrants",
