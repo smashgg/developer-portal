@@ -12,7 +12,8 @@
 			"examples/event-standings",
 			"examples/pool-seeds",
 			"examples/tournaments-by-location",
-			"examples/attendees-by-sponsor"
+			"examples/attendees-by-sponsor",
+			"examples/count-entrants-by-event"
 		]
   }
 }
