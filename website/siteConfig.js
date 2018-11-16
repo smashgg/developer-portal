@@ -23,6 +23,9 @@ const siteConfig = {
 	projectName: 'smashgg-developer',
 	organizationName: 'smashgg',
 
+	// Google Analytics ID
+	gaTrackingId: 'UA-58622313-9',
+
 	// For no header links in the top nav bar -> headerLinks: [],
 	headerLinks: [
 		{doc: 'intro', label: 'Docs'},
