@@ -17,18 +17,18 @@ With GraphQL, however, the response is going to be **EXACTLY WHAT YOU ASKED FOR*
 query TournamentQuery($slug: String, $page: Int, $perPage: Int) {
         tournament(slug: $slug){
             events {
-                name
-                  standings(query: {
-                  page: $page
-                  perPage: $perPage
-                }){
-                  nodes{
-                    standing
-                    entrant{
-                      name
-                    }
+              name
+              standings(query: {
+                page: $page
+                perPage: $perPage
+              }){
+                nodes{
+                  standing
+                  entrant{
+                    name
                   }
                 }
+              }
             }
         }
     }
