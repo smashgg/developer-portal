@@ -5,6 +5,8 @@ title: Pool Seeds
 
 In this example, we will query for the seeding of a phase group (a pool) in the Rivals of Aether Singles event at Genesis 5. We'll include the name, and the seed id, of each entrant. 
 
+## Example Request
+
 ```
 query PoolSeeds($phaseGroupId: Int) {
   phaseGroup(id: $phaseGroupId) {
@@ -18,13 +20,13 @@ query PoolSeeds($phaseGroupId: Int) {
 }
 ```
 
-(query variables!)
+Request Variables
 ```
 {
   "phaseGroupId": "398727"
 }
 ```
-## Response
+## Example Response
 
 ```
 {

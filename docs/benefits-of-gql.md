@@ -11,7 +11,7 @@ If you were retrieving this data using a REST API, then you can imagine how much
 
 With GraphQL, however, the response is going to be **EXACTLY WHAT YOU ASKED FOR**. If you want the name of each event, and the placement + names of the top 3 finishers, from EVO 2018, then all you need to do is ask.
 
-## The request:
+## Example Request
 
 ```
 query TournamentQuery($slug: String, $page: Int, $perPage: Int) {
@@ -42,7 +42,7 @@ Request variables! *Adjust to taste- want 4 or 5 standings instead of 3? Just ch
 }
 ```
 
-## The Response
+## Example Response
 
 LOOK AT IT! IT'S WHAT YOU ASKED FOR! 1.8 KB of exactly what you wanted. **Nothing more, and nothing less.** See why this is awesome? Add and subtract fields as you see fit for your application's uses. It will reduce the number of requests - and the size of the responses - that your application will be handling. That, in turn, will translate into **time savings** and **data savings** for your end users. For comparison, retrieving the top 3 standings in our *old* API for just Melee Singles alone at EVO 2018 <a href="https://api.smash.gg/tournament/evo-2018/event/evo-2018-1/standings?entityType=event&expand[]=entrants&mutations[]=playerData&mutations[]=standingLosses&page=1&per_page=3" target="_blank">involved a 21.1 KB response</a>!
 
