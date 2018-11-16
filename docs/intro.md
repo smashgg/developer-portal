@@ -4,7 +4,7 @@ title: smash.gg API Overview
 sidebar_label: Overview
 ---
 
-Welcome! In addition to our developer portal, we welcome you to check out our [Discord server](https://discord.gg/smashgg) where you can get help directly from smash.gg engineers and community members!
+Welcome! In addition to our developer portal, we welcome you to check out our [Discord server](https://discord.gg/smashgg) where you can get help directly from smash.gg engineers and community members! Our new public API is a GraphQL API, and we're excited for you to use it for your applications.
 
 ## What is GraphQL?
 
@@ -18,7 +18,7 @@ Unlike our old REST API, our GraphQL API has a single endpoint:
 https://api.smash.gg/gql/alpha
 ```
 
-Our recommended way to test out requests is using our [API explorer.](https://developer.smash.gg/explorer) However, it is still possible to use cURL or any other method of making HTTP requests. Calls should be made via a POST request with a JSON payload containing the body of your query in the **query** parameter.
+Our recommended way to test out requests is using our [API explorer.](https://developer.smash.gg/explorer) You can also use cURL or any other method of making HTTP requests. Calls should be made via a POST request with a JSON payload containing the body of your query in the **query** parameter.
 
 ## Authentication
 
