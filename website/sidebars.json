@@ -5,7 +5,8 @@
 		"examples/benefits-of-gql",
 		"examples/set-entrants",
 		"examples/event-standings",
-		"examples/pool-seeds"
+		"examples/pool-seeds",
+		"examples/tournaments-by-location"
 	]
   }
 }
