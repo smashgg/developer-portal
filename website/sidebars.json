@@ -3,9 +3,9 @@
     "Getting Started": [
 			"intro",
 			"intro-to-gql",
-			"benefits-of-gql",
 			"authentication",
-			"resource-limits"			
+			"resource-limits",
+			"benefits-of-gql"			
 		],
     "Example Usage": [
 			"examples/set-entrants",
