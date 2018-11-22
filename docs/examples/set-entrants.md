@@ -3,7 +3,10 @@ id: set-entrants
 title: Set Entrants
 ---
 
-In this example, we will query for the entrants in the grand finals set of Take The Shot 3, a 3v3 Rocket League event. In a teams event, an entrant has multiple participants, so we will get the available fields for each of those, too!
+In this example, we will query for the entrants in the grand finals set of Take The Shot 3,
+a 3v3 Rocket League event.
+In a teams event, an entrant has multiple participants,
+so we will get the available fields for each of those, too!
 
 ## Example Request
 
@@ -26,9 +29,10 @@ query SetEntrants($setId: String!) {
   }
 }
 ```
+
 Request Variables
 
-```
+```json
 {
   "setId": "7851789"
 }
@@ -36,7 +40,8 @@ Request Variables
 
 ## Example Response
 
-```{
+```json
+{
   "data": {
     "set": {
       "id": "7851789",

@@ -14,7 +14,7 @@ If you exceed these, your request will be rejected.
 
 **Exceeding 1 request per second**
 
-```
+```json
 {
   "success": false,
   "fields": null,
