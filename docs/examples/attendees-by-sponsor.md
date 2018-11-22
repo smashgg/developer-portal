@@ -3,9 +3,11 @@ id: attendees-by-sponsor
 title: Attendees by Sponsor/Org
 ---
 
-In this example, we will query for the attendees of a tournament with a particular sponsor tag. In this case, we've chosen Genesis 5 as the tournament and Cloud 9 as the sponsor/org.
+In this example, we will query for the attendees of a tournament with a particular sponsor tag.
+In this case, we've chosen Genesis 5 as the tournament and Cloud 9 as the sponsor/org.
 
 ## Example Request
+
 ```
 query PrefixSearchAttendees($tourneySlug:String!, $sponsor: String!) {
   tournament(slug: $tourneySlug) {
@@ -29,7 +31,8 @@ query PrefixSearchAttendees($tourneySlug:String!, $sponsor: String!) {
 ```
 
 Request Variables
-```
+
+```json
 {
   "tourneySlug": "genesis-5",
   "sponsor": "c9"
@@ -37,7 +40,8 @@ Request Variables
 ```
 
 ## Example Response
-```
+
+```json
 {
   "data": {
     "tournament": {
@@ -63,3 +67,4 @@ Request Variables
   },
   "actionRecords": []
 }
+```

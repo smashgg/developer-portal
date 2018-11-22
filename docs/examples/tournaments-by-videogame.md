@@ -3,11 +3,15 @@ id: tournaments-by-videogame
 title: Tournaments by Videogame
 ---
 
-In this example, we will query for upcoming tournaments filtered to particular videogames and in ascending order for their start date/time. In others words, "Give me the next *x* upcoming tournaments for *Videogame(s)*." The first example will be for a single videogame, and the second example will be for an array of videogames.
+In this example, we will query for upcoming tournaments filtered to particular videogames and in ascending order for their start date/time.
+In others words, "Give me the next *x* upcoming tournaments for *Videogame(s)*."
+The first example will be for a single videogame,
+and the second example will be for an array of videogames.
 
 For now, you can view the mapping of videogame IDs to their names <a href="https://docs.google.com/spreadsheets/d/1Iq-gueeLYeoVbf1oxVzh5942rX9RG8E6Wxn-yhSbvbQ/edit?usp=sharing" target="_blank">in this sheet here.</a>
 
 ## Example #1 Request (single videogame)
+
 ```
 query TournamentsByVideogame($perPage: Int, $videogameId: Int) {
     tournaments(query: {
@@ -31,7 +35,8 @@ query TournamentsByVideogame($perPage: Int, $videogameId: Int) {
 ```
 
 Query Variables
-```
+
+```json
 {
   "perPage": 3,
   "videogameId": 287
@@ -40,7 +45,7 @@ Query Variables
 
 ## Example #1 Response
 
-```
+```json
 {
   "data": {
     "tournaments": {
@@ -68,6 +73,7 @@ Query Variables
 ```
 
 ## Example #2 Request (array of videogames)
+
 ```
 query TournamentsByVideogames($perPage: Int, $videogameIds: [Int]) {
     tournaments(query: {
@@ -90,7 +96,7 @@ query TournamentsByVideogames($perPage: Int, $videogameIds: [Int]) {
 
 Query Variables
 
-```
+```json
 {
   "perPage": 3,
   "videogameIds": [15, 24]
@@ -98,7 +104,8 @@ Query Variables
 ```
 
 ## Example #2 Response
-```
+
+```json
 {
   "data": {
     "tournaments": {

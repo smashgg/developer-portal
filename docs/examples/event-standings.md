@@ -3,7 +3,9 @@ id: event-standings
 title: Event Standings
 ---
 
-In this example, we will query for the standings of the Melee Singles event at Shine 2018. To be specific, we will query for just the **standing** and **name** of the **top 3 placements** (note the variables!)
+In this example, we will query for the standings of the Melee Singles event at Shine 2018.
+To be specific, we will query for just the **standing**
+and **name** of the **top 3 placements** (note the variables!)
 
 ## Example #1 Request (basic)
 
@@ -25,15 +27,17 @@ query EventStandings($eventId: Int, $page: Int, $perPage: Int) {
   }
 }
 ```
+
 Request Variables 
 
-```
+```json
 {
   "eventId": 78790,
   "page": 1,
   "perPage": 3
 }
 ```
+
 You can choose your own names for these variables! In the query above...
 
 - *eventId* is the ID of the event we're getting standings for
@@ -44,7 +48,7 @@ You can choose your own names for these variables! In the query above...
 
 ## Example #1 Response
 
-```
+```json
 {
   "data": {
     "event": {
@@ -79,6 +83,7 @@ You can choose your own names for these variables! In the query above...
 ```
 
 ## Example #2 Request (Race Format)
+
 ```
 query EventStandings($eventId: Int) {
   event(id:$eventId) {
@@ -98,14 +103,17 @@ query EventStandings($eventId: Int) {
 }
 ```
 
-```
+Request Variables
+
+```json
 {
   "eventId": 249917
 }
 ```
 
 ## Example #2 Response
-```
+
+```json
 {
   "data": {
     "event": {

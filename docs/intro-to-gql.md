@@ -2,6 +2,7 @@
 id: intro-to-gql
 title: Intro to GraphQL
 ---
+
 ## What is GraphQL?
 
 GraphQL is a query language that comes with many benefits for an API.

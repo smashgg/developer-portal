@@ -23,9 +23,10 @@ query TournamentsByCountry($cCode: String!, $perPage: Int) {
   }
 }
 ```
+
 Request Variables
 
-```
+```json
 {
   "cCode": "JP",
   "perPage": 4
@@ -34,7 +35,7 @@ Request Variables
 
 ## Example #1 Response
 
-```
+```json
 {
   "data": {
     "tournaments": {
@@ -67,6 +68,7 @@ Request Variables
 ```
 
 ## Example #2 Request (by State)
+
 ```
 query TournamentsByState($perPage: Int, $state: String!) {
     tournaments(query: {
@@ -85,7 +87,8 @@ query TournamentsByState($perPage: Int, $state: String!) {
 ```
 
 Request Variables
-```
+
+```json
 {
   "perPage": 4,
   "state": "CT"
@@ -93,7 +96,8 @@ Request Variables
 ```
 
 ## Example #2 Response
-```
+
+```json
 {
   "data": {
     "tournaments": {
@@ -126,6 +130,7 @@ Request Variables
 ```
 
 ## Example #3 Request (by coordinates + radius distance)
+
 ```
 query SocalTournaments($perPage: Int, $coordinates: String!, $radius: String!) {
     tournaments(query: {
@@ -145,8 +150,10 @@ query SocalTournaments($perPage: Int, $coordinates: String!, $radius: String!) {
   }
 }
 ```
+
 Request variables
-```
+
+```json
 {
   "perPage": 4,
   "coordinates": "33.7454725,-117.86765300000002",
@@ -155,7 +162,8 @@ Request variables
 ```
 
 ## Example #3 Response
-```
+
+```json
 {
   "data": {
     "tournaments": {
