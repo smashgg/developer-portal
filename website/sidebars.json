@@ -5,6 +5,7 @@
 			"intro-to-gql",
 			"authentication",
 			"testing-your-requests",
+			"sending-requests",
 			"resource-limits",
 			"benefits-of-gql"			
 		],
