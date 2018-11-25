@@ -8,7 +8,7 @@ For starters&mdash;and for inspiration&mdash;you can view examples written by th
 under the **Example Usage** section of our dev portal.
 
 To test and adapt an example:
-1) Copy one of the example requests and its request variables into the API explorer  
+1) Copy one of the example queries and its query variables into the API explorer  
 (like [Tournaments by Location](examples/tournaments-by-location)), then execute the query:  
 &nbsp;
 ![example to copy](https://imgur.com/doD3R1v.png)
