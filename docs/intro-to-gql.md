@@ -6,29 +6,33 @@ title: Intro to GraphQL
 ## What is GraphQL?
 
 GraphQL is a query language that comes with many benefits for an API.
-For those unfamiliar, we recommend visiting the GraphQL website <a href="https://graphql.org/" target="_blank">here.</a>
-The GraphQL website also includes <a href="https://graphql.org/code/" target="_blank">useful references for various languages and frameworks.</a>
+For those unfamiliar, we recommend visiting the GraphQL website,
+which includes <a href="https://graphql.org/learn/" target="_blank">a thorough introduction to GraphQL</a>
+as well as
+<a href="https://graphql.org/code/" target="_blank">useful references for popular languages and frameworks</a>.
 
-## Testing in GraphQL
+## Testing your GraphQL Requests
 
-Our recommended way to test out requests is using our [API explorer.](/explorer).
-For a guide on using GraphQL we recommend <a href="https://graphql.org/learn/" target="_blank">the official documentation.</a>
+We recommend testing your requests in our [API explorer](/explorer).
+For starters&mdash;and for inspiration&mdash;you can view examples written by the community
+under the **Example Usage** section of our dev portal.
 
-There are multiple example requests made by the community,
-these can be found under the `examples` section.
+To test and adapt an example:
+1) Copy one of the example requests and its request variables into the API explorer
+(like [Tournaments by Location](examples/tournaments-by-location))
+2) Adjust the query and its variables in the API Explorer and then execute it
 
-
-## Making calls to a GraphQL API
+## Sending Requests to a GraphQL API
 
 Unlike our old REST API, our GraphQL API has a single endpoint:
 
-```
+```html
 https://api.smash.gg/gql/alpha
 ```
 
-You can also use cURL or any other method of making HTTP requests.
-These calls can be made over both `GET` and `POST`.
-It is **highly** recommended you use `POST` as it is less error prone and easier to maintain.
+You can use cURL or any other method of making HTTP requests.
+These requests may be made using `GET` or `POST`,
+but it is **highly recommended** that you use `POST` (as it is less error-prone and is easier to maintain).
 
 The POST body can have the type `application/json` and should be in the following form:
 
@@ -40,9 +44,10 @@ The POST body can have the type `application/json` and should be in the followin
 }
 ```
 
-`operationName` and `variables` are optional
-and `operationName` is only used when multiple querys are present.
+`operationName` and `variables` are optional,
+and `operationName` is only used when multiple queries are present.
 
 The `query` parameter should be filled with a GraphQL query as shown in the examples.
-For more information please check out the 
-<a href="https://graphql.github.io/learn/serving-over-http/" target="_blank">official documentation</a> on requests over HTTP
+For more information on HTTP requests, please refer to the 
+<a href="https://graphql.github.io/learn/serving-over-http/" target="_blank">official GraphQL documentation 
+on requests over HTTP</a>.
