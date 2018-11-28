@@ -72,9 +72,9 @@ Request Variables
 ```
 query TournamentsByState($perPage: Int, $state: String!) {
     tournaments(query: {
-    	perPage: $perPage
+      perPage: $perPage
       filter: {
-      addrState: $state
+        addrState: $state
     }
   }) {
     nodes {
@@ -134,13 +134,13 @@ Request Variables
 ```
 query SocalTournaments($perPage: Int, $coordinates: String!, $radius: String!) {
     tournaments(query: {
-    	perPage: $perPage
+      perPage: $perPage
       filter: {
-      location: {
-        distanceFrom: $coordinates,
-        distance: $radius
+        location: {
+          distanceFrom: $coordinates,
+          distance: $radius
+        }
       }
-    }
   }) {
     nodes {
       id
