@@ -10,11 +10,11 @@ In these examples, we will query for tournaments in a given location!
 ```
 query TournamentsByCountry($cCode: String!, $perPage: Int) {
     tournaments(query: {
-    	perPage: $perPage
-    	filter: {
-      	countryCode: $cCode
-    	}
-  	}) {
+      perPage: $perPage
+      filter: {
+        countryCode: $cCode
+      }
+    }) {
     nodes {
       id
       name
