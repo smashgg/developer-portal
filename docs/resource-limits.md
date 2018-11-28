@@ -19,3 +19,13 @@ If you exceed these, your request will be rejected.
   "message": "Slow down there partner!"
 }
 ```
+
+**Exceeding 500 Objects**
+
+```json
+{
+  "success": false,
+  "fields": null,
+  "message": "Query complexity too high. A maximum of 500 objects may be returned by each request. (actual: 674)"
+}
+```
