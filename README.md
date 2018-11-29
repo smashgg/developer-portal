@@ -21,8 +21,8 @@ please link it as `[hyperlink text](/page)` instead of `[hyperlink text](https:/
 4. Try to keep your characters per line to around 80.
 This helps prevent merge conflicts and is generally better for version control.
 
-For those of you using Visual Studio Code, there are two recommended plugins:
+For those of you using Visual Studio Code, there are two recommended extensions:
 - <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" target="_blank">Markdown All In One:</a>
-This extention allows for easy preview and editing.
+This extension allows for easy preview and editing.
 - <a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint" target="_blank">Markdownlint:</a>
 For good quality Markdown files and warnings when breaking style rules.
