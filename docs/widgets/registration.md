@@ -5,11 +5,11 @@ sidebar_label: Embedded Registration
 ---
 
 You may embed registration for a tournament on your own site!
-This is available from the Registration Settings page in tournament admin:
+The embed code is available from the Registration Settings page in tournament admin:
 
 ![image](https://imgur.com/oibRO0w.png)
 
-It should look like this:
+The copy+paste from registration settings will look like this:
 ```html
 <div style="width:500px;">
       <iframe src="https://smash.gg/tournament/${tournamentSlug}/register/embed"
@@ -18,7 +18,7 @@ It should look like this:
 </div>
 ```
 
-When you add it to your webpage it should look something like this
+When you add it to your webpage, it will look like this
  (Below is using an iframe width of 750 and a height of 1000):
 
 <div style="width:750;">
