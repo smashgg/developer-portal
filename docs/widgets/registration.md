@@ -7,7 +7,7 @@ sidebar_label: Registration
 You may embed registration for a tournament on your own site!
 This is available from the Registration Settings page in tournament admin:
 
-![image](https://imgur.com/ogpZdYJ.png)
+![image](https://imgur.com/oibRO0w.png)
 
 It should look like this:
 ```html
@@ -29,5 +29,5 @@ When you add it to your webpage it should look something like this
 
 &nbsp;
 
-Play around with more examples in 
-<a href="https://codepen.io/matchellmarley/pen/JewajR" target="_blank">this CodePen here</a>.
+Feel free to test out embedded reg at different sizes using
+ <a href="https://codepen.io/matchellmarley/pen/LXMKYw" target="_blank">this CodePen</a>.
