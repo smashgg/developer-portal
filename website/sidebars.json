@@ -17,6 +17,9 @@
 			"examples/tournaments-by-videogame",
 			"examples/attendees-by-sponsor",
 			"examples/count-entrants-by-event"
+		],
+		"Widgets & Embeds": [
+			"widgets/registration"
 		]
   }
 }
