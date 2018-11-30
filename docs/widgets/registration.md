@@ -1,7 +1,7 @@
 ---
 id: registration
 title: Embedded Tournament Registration
-sidebar_label: Registration
+sidebar_label: Embedded Registration
 ---
 
 You may embed registration for a tournament on your own site!
