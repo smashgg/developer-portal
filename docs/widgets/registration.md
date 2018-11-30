@@ -11,17 +11,21 @@ This is available from the Registration Settings page in tournament admin:
 
 It should look like this:
 ```html
-<div style="width:500px; text-align:left;">
-<iframe src="https://smash.gg/tournament/mitchell-s-unlisted-tournament/register/embed"
-frameborder="0" height="600" width="100%" vspace="0" hspace="0" 
-marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+<div style="width:500px;">
+      <iframe src="https://smash.gg/tournament/${tournamentSlug}/register/embed"
+      frameborder="1" height="600" width="100%" >
+      </iframe>
 </div>
 ```
 
-When you add it to your webpage it should look something like this 
-(I used an iframe width of 800 for mine):
+When you add it to your webpage it should look something like this
+ (Below is using an iframe width of 750 and a height of 1000):
 
-<div style="width:800; text-align:left;"><iframe src="https://smash.gg/tournament/mitchell-s-unlisted-tournament/register/embed" frameborder="0" height="600" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="false"></iframe></div>
+<div style="width:750;">
+      <iframe src="https://smash.gg/tournament/mitchell-s-unlisted-tournament/register/embed"
+      	frameborder="1" height="1000" width="100%" >
+      </iframe>
+</div>
 
 &nbsp;
 
