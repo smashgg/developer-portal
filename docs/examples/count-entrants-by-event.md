@@ -19,7 +19,7 @@ query EventStandings($eventId: Int) {
     id
     name
     numEntrants
-	entrantSizeMin
+    entrantSizeMin
   }
 }
 ```
@@ -54,7 +54,7 @@ query EventStandings($eventId: Int) {
     id
     name
     numEntrants
-	entrantSizeMin
+    entrantSizeMin
   }
 }
 ```

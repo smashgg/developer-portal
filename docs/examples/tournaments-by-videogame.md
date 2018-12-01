@@ -14,17 +14,17 @@ For now, you can view the mapping of videogame IDs to their names <a href="https
 
 ```
 query TournamentsByVideogame($perPage: Int, $videogameId: Int) {
-    tournaments(query: {
-        perPage: $perPage
-      	page: 1
-      	sortBy: "startAt asc"
-        filter: {
-          past: false
-        	videogameIds: [
-            $videogameId
-          ]
-        }
-    }) {
+  tournaments(query: {
+    perPage: $perPage
+    page: 1
+    sortBy: "startAt asc"
+    filter: {
+      past: false
+      videogameIds: [
+        $videogameId
+      ]
+    }
+  }) {
     nodes {
       id
       name
@@ -76,15 +76,15 @@ Query Variables
 
 ```
 query TournamentsByVideogames($perPage: Int, $videogameIds: [Int]) {
-    tournaments(query: {
-        perPage: $perPage
-      	page: 1
-      	sortBy: "startAt asc"
-        filter: {
-          upcoming: true
-        	videogameIds: $videogameIds
-        }
-    }) {
+  tournaments(query: {
+    perPage: $perPage
+    page: 1
+    sortBy: "startAt asc"
+    filter: {
+      upcoming: true
+      videogameIds: $videogameIds
+    }
+  }) {
     nodes {
       id
       name
