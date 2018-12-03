@@ -8,7 +8,7 @@ In this case, we've chosen Genesis 5 as the tournament and Cloud 9 as the sponso
 
 ## Example Request
 
-```
+```graphql
 query PrefixSearchAttendees($tourneySlug:String!, $sponsor: String!) {
   tournament(slug: $tourneySlug) {
     id

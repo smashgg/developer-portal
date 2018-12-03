@@ -9,7 +9,7 @@ We'll include the name, and the seed id, of each entrant.
 
 ## Example Request
 
-```
+```graphql
 query PoolSeeds($phaseGroupId: Int) {
   phaseGroup(id: $phaseGroupId) {
     seeds {
