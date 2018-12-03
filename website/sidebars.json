@@ -15,6 +15,7 @@
 			"examples/pool-seeds",
 			"examples/tournaments-by-location",
 			"examples/tournaments-by-videogame",
+			"examples/tournaments-by-owner",
 			"examples/attendees-by-sponsor",
 			"examples/count-entrants-by-event"
 		],
