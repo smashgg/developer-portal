@@ -9,7 +9,7 @@ and **name** of the **top 3 placements** (note the variables!)
 
 ## Example #1 Request (basic)
 
-```
+```graphql
 query EventStandings($eventId: Int, $page: Int, $perPage: Int) {
   event(id: $eventId) {
     name
@@ -84,7 +84,7 @@ You can choose your own names for these variables! In the query above...
 
 ## Example #2 Request (Race Format)
 
-```
+```graphql
 query EventStandings($eventId: Int) {
   event(id:$eventId) {
     id

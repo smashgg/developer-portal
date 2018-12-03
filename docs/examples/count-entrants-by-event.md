@@ -13,7 +13,7 @@ You can also use that number to count the total number of players who competed i
 
 ## Example #1 Request (3v3 Teams Event)
 
-```
+```graphql
 query EventStandings($eventId: Int) {
   event(id:$eventId) {
     id
@@ -48,7 +48,7 @@ Request Variables
 
 ## Example #2 Request (1v1 Event)
 
-```
+```graphql
 query EventStandings($eventId: Int) {
   event(id:$eventId) {
     id

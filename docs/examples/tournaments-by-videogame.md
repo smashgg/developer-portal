@@ -12,7 +12,7 @@ For now, you can view the mapping of videogame IDs to their names <a href="https
 
 ## Example #1 Request (single videogame)
 
-```
+```graphql
 query TournamentsByVideogame($perPage: Int, $videogameId: Int) {
   tournaments(query: {
     perPage: $perPage
@@ -74,7 +74,7 @@ Query Variables
 
 ## Example #2 Request (array of videogames)
 
-```
+```graphql
 query TournamentsByVideogames($perPage: Int, $videogameIds: [Int]) {
   tournaments(query: {
     perPage: $perPage

@@ -9,7 +9,7 @@ It will only return tournaments which that user created.
 
 ## Example #1 Request
 
-```json
+```graphql
 query TournamentsByowner($perPage: Int, $ownerId: Int) {
     tournaments(query: {
       perPage: $perPage

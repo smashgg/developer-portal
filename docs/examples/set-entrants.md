@@ -10,7 +10,7 @@ so we will get the available fields for each of those, too!
 
 ## Example Request
 
-```
+```graphql
 query SetEntrants($setId: String!) {
   set(id: $setId) {
     id

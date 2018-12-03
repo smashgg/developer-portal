@@ -7,7 +7,7 @@ In these examples, we will query for tournaments in a given location!
 
 ## Example #1 Request (by Country)
 
-```
+```graphql
 query TournamentsByCountry($cCode: String!, $perPage: Int) {
   tournaments(query: {
     perPage: $perPage
@@ -69,7 +69,7 @@ Request Variables
 
 ## Example #2 Request (by State)
 
-```
+```graphql
 query TournamentsByState($perPage: Int, $state: String!) {
   tournaments(query: {
     perPage: $perPage
@@ -131,7 +131,7 @@ Request Variables
 
 ## Example #3 Request (by coordinates + radius distance)
 
-```
+```graphql
 query SocalTournaments($perPage: Int, $coordinates: String!, $radius: String!) {
   tournaments(query: {
     perPage: $perPage
