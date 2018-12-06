@@ -8,6 +8,9 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
+/* List of projects/orgs using your project for the users page */
+const users = require('./data/users');
+
 const siteConfig = {
 	title: 'Developer Portal', // Title for your website.
 	tagline: 'Turning passions into careers',
@@ -16,7 +19,7 @@ const siteConfig = {
 	// For github.io type URLs, you would set the url and baseUrl like:
 	//	 url: 'https://smash.gg.github.io',
 	//	 baseUrl: '/test-site/',
-
+	users,
 	apiUrl: 'https://api.smash.gg/gql/alpha/schema',
 
 	// Used for publishing and more
@@ -31,6 +34,7 @@ const siteConfig = {
 		{doc: 'intro', label: 'Docs'},
 		{href: 'https://developer.smash.gg/reference/query.doc.html', label: 'Schema'},
 		{page: 'explorer', label: 'API Explorer'},
+		{page: 'users', label: 'Users'},
 		{page: 'help', label: 'Help'},
 		// {blog: true, label: 'Blog'},
 	],
