@@ -2,13 +2,13 @@
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
 authorImageURL: https://imgur.com/HgkWbZt.png
-title: SmashTicker, a Chrome Extension for Finding Smash Bros. Events and Streams!
+title: SmashTicker (v2.1.2)
 sidebar_label: SmashTicker
 ---
 
 <a href="https://chrome.google.com/webstore/detail/smashticker-watch-people/nhjklhalmbccpfhpnedcleiabpkocggi" target="_blank">SmashTicker</a>
  is an <a href="https://github.com/AQuackenbos/SmashTicker" target="_blank">open source</a>
- Chrome extension for finding Twitch streams and tournament pages for all of your favorite
+ Chrome extension to quickly find Twitch streams and smash.gg tournament pages for all of your favorite
  Super Smash Bros. games!
 <!--truncate-->
 
