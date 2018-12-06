@@ -2,7 +2,34 @@
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
 authorImageURL: https://imgur.com/HgkWbZt.png
-title: SmashTicker, a Chrome extension for finding Smash Bros events and streams!
+title: SmashTicker, a Chrome Extension for Finding Smash Bros. Events and Streams!
+sidebar_label: SmashTicker
 ---
 
-Lorem Ipsum...
+<a href="https://chrome.google.com/webstore/detail/smashticker-watch-people/nhjklhalmbccpfhpnedcleiabpkocggi" target="_blank">SmashTicker</a>
+ is an <a href="https://github.com/AQuackenbos/SmashTicker" target="_blank">open source</a>
+ Chrome extension for finding Twitch streams and tournament pages for all of your favorite
+ Super Smash Bros. games!
+<!--truncate-->
+
+## The Creator
+
+<a href="https://github.com/AQuackenbos" target="_blank">Andrew Quackenbos</a>
+ developed this Chrome extension. 
+Originally, he was using our old public REST API.
+When I saw him <a href="https://www.reddit.com/r/smashbros/comments/a0kt0h/smashticker_for_chrome_updated_for_ultimate_now/" target="_blank">post about it on Reddit</a>,
+ I messaged him about our new GraphQL API.
+Within just a few hours, Andrew had already coverted his project!
+That was *so awesome*.
+
+## Browse Streams
+
+View the top Twitch streams across all Smash Bros. games, or specify a particular title to view streams for.
+
+![.gif of streams](https://imgur.com/wgM3z84.gif)
+
+## Browse Tournaments
+
+View featured upcoming tournaments for Super Smash Bros. games.
+
+![.gif of tournaments](https://imgur.com/YUeTV2l.gif)
