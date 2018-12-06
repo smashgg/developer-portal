@@ -14,4 +14,18 @@ module.exports = [
 		fbOpenSource: false,
 		pinned: false,
 	},
+	{
+		caption: 'smash.gg2',
+		image: 'https://imgur.com/eBFBDei.png',
+		infoLink: 'https://developer.smash.gg',
+		fbOpenSource: false,
+		pinned: false,
+	},
+	{
+		caption: 'smash.gg3',
+		image: 'https://imgur.com/eBFBDei.png',
+		infoLink: 'https://developer.smash.gg',
+		fbOpenSource: false,
+		pinned: false,
+	},
 ];
