@@ -33,3 +33,9 @@ View the top Twitch streams across all Smash Bros. games, or specify a particula
 View featured upcoming tournaments for Super Smash Bros. games.
 
 ![.gif of tournaments](https://imgur.com/YUeTV2l.gif)
+
+## Contribute
+
+Andrew welcomes contributions to his project!
+Open source available here on GitHub:
+ https://github.com/AQuackenbos/SmashTicker
