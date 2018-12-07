@@ -2,6 +2,7 @@
   "docs": {
     "Getting Started": [
 			"intro",
+			"glossary",
 			"intro-to-gql",
 			"authentication",
 			"testing-your-requests",
