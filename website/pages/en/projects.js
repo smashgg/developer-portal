@@ -47,7 +47,7 @@ class Users extends React.Component {
 							</p>
 						</div>
 						<div className="logos">{showcase}</div>
-						<p>Are you using this project?</p>
+						<p>Are you using the smash.gg public API?</p>
 						<p>
 							Edit this page with a{' '}
 							<a href="https://github.com/smashgg/developer-portal">
