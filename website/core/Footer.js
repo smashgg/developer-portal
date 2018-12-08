@@ -34,10 +34,10 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('intro.html', this.props.language)}>
+            <a href={this.docUrl('intro')}>
               Getting Started
             </a>
-            <a href={this.docUrl('event-standings.html', this.props.language)}>
+            <a href={this.docUrl('examples/set-entrants')}>
               Example Usage
             </a>
             <a
@@ -46,7 +46,7 @@ class Footer extends React.Component {
 				rel="noreferrer noopener">
               API Explorer
             </a>
-			{/* <a href={`${this.props.config.baseUrl}blog`}>Blog</a> */}
+			{<a href={`${this.props.config.baseUrl}blog`}>Projects</a>}
           </div>
 		  <div>
             <h5>smash.gg</h5>

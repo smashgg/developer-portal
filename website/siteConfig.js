@@ -32,7 +32,7 @@ const siteConfig = {
 		{href: 'https://developer.smash.gg/reference/query.doc.html', label: 'Schema'},
 		{page: 'explorer', label: 'API Explorer'},
 		{page: 'help', label: 'Help'},
-		// {blog: true, label: 'Blog'},
+		{blog: true, label: 'Projects'},
 	],
 
 	/* path to images for header/footer */
