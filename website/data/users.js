@@ -5,6 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+
+// TODO: actually get this to work in /pages/en/users.js
+
 module.exports = [
 	// Please add your logo in alphabetical order of caption.
 	{
