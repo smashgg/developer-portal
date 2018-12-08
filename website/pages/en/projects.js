@@ -38,7 +38,7 @@ class Users extends React.Component {
 
 		return (
 			<div className="mainContainer">
-				<Container padding={['bottom', 'top']}>
+				<Container>
 					<div className="showcaseSection">
 						<div className="prose">
 							<h1>Who is using the smash.gg public API?</h1>
