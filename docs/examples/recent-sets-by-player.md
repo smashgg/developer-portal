@@ -6,7 +6,8 @@ sidebar_label: Sets by Player
 In this example, we will query for recent sets involving a specific player
  (optionally including a specific opponent player).
 In future iterations, we will add support for filtering sets based on certain values
- (like whether a set is a DQ/bye or not, whether the participants were verified or not, etc.).
+ (like whether a set is a DQ/bye or not, whether the participants were verified or not, etc.)
+ and pagination for these results.
 
 Please note that currently, results will only include sets where the queried participant (attendee) was verified.
 You can read a deeper explanation of this topic in our
