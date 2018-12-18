@@ -10,7 +10,7 @@ In order to prevent against malicious attacks (or unintended for-loops), we have
 
 If you exceed these, your request will be rejected.
 
-**Exceeding 1 request per second**
+**Exceeding 10 requests per 10 seconds**
 
 ```json
 {
