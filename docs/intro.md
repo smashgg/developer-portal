@@ -23,5 +23,5 @@ You are welcome, and encouraged, to [contribute to our documentation](https://gi
 
  ## Featuring Projects
 
- We'll be posting about the awesome projects you create over on [our Projects page](/blog).
+ We'll be posting about the awesome projects you create over on [our Blog](/blog).
  If you have a project using our data that you'd like to share, please contact us using the info above.
