@@ -10,19 +10,20 @@ Brawlhalla Matchups is an <a href="https://github.com/henryaguerra/brawlhalla-ma
  source</a> Discord bot to find results for matchups between your favorite Brawlhalla players!
 <!--truncate-->
 
-## The creator
+## The Creator
 
 Henry "Mother Russia" Guerra is a Brawlhalla community member who created this Discord bot as
- a resource for the community to learn more about players' histories against each other
- in the scene.
+ a resource for the community to learn more about its players' histories against each other.
+When I asked him if he had anything he wanted to say to the community, he
+ simply said he would like to thank the community for being supportive of the project.
 
-## Add it to your server
+## Add it to your Server
 
 The <a href="https://github.com/henryaguerra/brawlhalla-matchups-bot/blob/master/README.md"
  target="_blank">readme file on the GitHub repo</a> explains how to quickly add the bot
  to a Discord server you own, using Discord oAuth.
 
-## Use it on your server
+## Use it on your Server
 
 To use the matchups bot, just type in the command with a couple of players you're interested in!
 In the below example, I looked at the top 8 bracket for the Brawlhalla Autumn Championships NA,
@@ -37,8 +38,9 @@ It seems too early to
 
 ![the gif example](https://imgur.com/LqEg3Vh.gif)
 
-## To contribute
+## To Contribute
 
 Henry welcomes conributions to the project via the
  <a href="https://github.com/henryaguerra/brawlhalla-matchups-bot" target="_blank">
  GitHub repo</a>!
+He can be reached via Discord (Mother Russia#3907) or by email at `henryaguerra@gmail.com`.
