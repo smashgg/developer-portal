@@ -7,7 +7,8 @@ sidebar_label: Brawlhalla Matchups
 ---
 
 Brawlhalla Matchups is an <a href="https://github.com/henryaguerra/brawlhalla-matchups-bot" target="_blank">open
- source</a> Discord bot to find results for matchups between your favorite Brawlhalla players!
+ source</a> Discord bot to find results for matchups between your favorite
+ <a href="https://www.brawlhalla.com/" target="_blank">Brawlhalla</a> players!
 <!--truncate-->
 
 ## The Creator
