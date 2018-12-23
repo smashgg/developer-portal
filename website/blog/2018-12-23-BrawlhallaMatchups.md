@@ -12,7 +12,7 @@ Brawlhalla Matchups is an <a href="https://github.com/henryaguerra/brawlhalla-ma
 
 ## The creator
 
-Henry "Mother Russia" Aguerra is a Brawlhalla community member who created this Discord bot as
+Henry "Mother Russia" Guerra is a Brawlhalla community member who created this Discord bot as
  a resource for the community to learn more about players' histories against each other
  in the scene.
 
