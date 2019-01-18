@@ -20,7 +20,8 @@
 			"examples/tournaments-by-videogame",
 			"examples/tournaments-by-owner",
 			"examples/attendees-by-sponsor",
-			"examples/count-entrants-by-event"
+			"examples/count-entrants-by-event",
+			"examples/update-phase-seeding"
 		],
 		"Widgets & Embeds": [
 			"widgets/registration"
