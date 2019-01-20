@@ -74,4 +74,12 @@ In my case, I decided to make my workflow:
 
 Here's what my sheet looked like after step 3:
 
+![sheet after step 3](https://imgur.com/CTb2Fqz.png)
+
 Here's what my second sheet looked like after step 5:
+
+![sheet after step 5](https://imgur.com/p1Lckbq.png)
+
+## Step 3: Updating the Seeding via API
+
+Now that we have our phase seeds ordered to our liking, we'll update them via API!
