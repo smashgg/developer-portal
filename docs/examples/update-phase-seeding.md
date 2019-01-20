@@ -45,13 +45,16 @@ Variables
 
 Obviously, you have the freedom to request fields you want here and omit fields you don't want.
 For example, you can add rankings data for a player.
-Regardless of which data you choose, you can write this to a .csv and follow the below steps
+At bare minimum, you will need `id` and `seedNum` for each Seed in the phase.
+Once you query for this data, you can write it to a .csv and follow the below steps
  or store/manipulate it in some other application of your choosing.
 
 ## Step 1 Alternative: Obtaining the current seeding via phase export
 
 To obtain the current phase seeding via phase export, go to the Bracket Setup page in tournament admin.
 Then, for the phase you want to update seeding for, click the export button to download a .csv of its current seeding.
+
+⚠ *Please note: the 'ID' column in this export is the id for Seed, not Entrant.* ⚠
 
 ![export button](https://imgur.com/plcr1y4.png)
 
@@ -64,19 +67,19 @@ I've highlighted the columns which we'll need later when we post the updated see
 ![google sheet](https://imgur.com/VaCZo2H.png)
 
 Here, you would move seeds around to your liking.
-Your worfklow is up to you!
+Your workflow is up to you!
 In my case, I decided to make my workflow:
 1) Add a column to my sheet for 'power'
 2) Assign a rough 1-10 'power' to each entrant in this column (1 = worst, 10 = best)
 3) Order my seeds by this power in a descending order
-4) Make any finer adjustments for the Top 8 or so as I see fit
+4) Make any finer adjustments in those 'power levels' as needed
 5) Copy and paste these into a separate sheet with just the info I need for updating (seedId and seedNum)
 
-Here's what my sheet looked like after step 3:
+Here's what my sheet looked like after my 'step 3':
 
 ![sheet after step 3](https://imgur.com/CTb2Fqz.png)
 
-Here's what my second sheet looked like after step 5:
+Here's what my second sheet looked like after my 'step 5':
 
 ![sheet after step 5](https://imgur.com/2pJaP8D.png)
 
@@ -150,3 +153,5 @@ After running the script successfully, we can check again in the admin UI to see
  the updated phase seeding:
 
 ![updated seeding](https://imgur.com/RApajkN.png)
+
+And we're done!
