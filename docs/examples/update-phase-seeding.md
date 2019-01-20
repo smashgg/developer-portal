@@ -78,8 +78,61 @@ Here's what my sheet looked like after step 3:
 
 Here's what my second sheet looked like after step 5:
 
-![sheet after step 5](https://imgur.com/p1Lckbq.png)
+![sheet after step 5](https://imgur.com/2pJaP8D.png)
 
 ## Step 3: Updating the Seeding via API
 
-Now that we have our phase seeds ordered to our liking, we'll update them via API!
+Now that we have our phase seeds finalized in a sheet, we'll update them via API!
+For our example, we've written a Python script to:
+1) Read the seeds off our sheet into an array
+2) Post them using a GQL mutation request
+
+```Python
+import csv
+import urllib2
+from graphqlclient import GraphQLClient
+
+## Make sure to run `pip install graphqlclient`
+phaseId = 1234567 # get your phase ID using a GQL query
+sheetsKey = 'YOUR_SHEETS_KEY'
+authToken = 'YOUR_AUTH_TOKEN'
+
+apiVersion = 'alpha'
+
+
+url = 'https://docs.google.com/spreadsheets/d/' + sheetsKey + '/export?format=csv'
+response = urllib2.urlopen(url)
+cr = csv.reader(response)
+
+seedMapping = []
+for index, row in enumerate(cr):
+    if index == 0: # skip the header row
+        continue
+    seedId = row[8]
+    seedNum = row[4]
+    seedMapping.append({
+        "seedId": seedId,
+        "seedNum": seedNum,
+    })
+
+numSeeds = len(seedMapping)
+
+print("Importing " + str(numSeeds) + " seeds to phase " + str(phaseId) + "...")
+
+client = GraphQLClient('https://gg-api-dev-keith.internal.smashgg.com/gql/' + apiVersion)
+client.inject_token('Bearer ' + authToken)
+
+result = client.execute('''
+mutation UpdatePhaseSeeding ($phaseId: Int!, $seedMapping: [UpdatePhaseSeedInfo]!) {
+  updatePhaseSeeding (phaseId: $phaseId, seedMapping: $seedMapping) {
+    id
+  }
+}
+''',
+{
+    "phaseId": phaseId,
+    "seedMapping": seedMapping,
+})
+
+print('Success!')
+```
