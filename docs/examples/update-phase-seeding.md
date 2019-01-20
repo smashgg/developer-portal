@@ -65,8 +65,13 @@ I've highlighted the columns which we'll need later when we post the updated see
 
 Here, you would move seeds around to your liking.
 Your worfklow is up to you!
-In my case, I decided to:
+In my case, I decided to make my workflow:
 1) Add a column to my sheet for 'power'
-2) Assign a rough 1-10 'power' to each entrant in this column (1 worst - 10 best)
+2) Assign a rough 1-10 'power' to each entrant in this column (1 = worst, 10 = best)
 3) Order my seeds by this power in a descending order
 4) Make any finer adjustments for the Top 8 or so as I see fit
+5) Copy and paste these into a separate sheet with just the info I need for updating (seedId and seedNum)
+
+Here's what my sheet looked like after step 3:
+
+Here's what my second sheet looked like after step 5:
