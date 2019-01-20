@@ -83,33 +83,38 @@ Here's what my second sheet looked like after step 5:
 ## Step 3: Updating the Seeding via API
 
 Now that we have our phase seeds finalized in a sheet, we'll update them via API!
+We can see what the current phase seeding looks like in the tournament admin UI
+ (I just entered/seeded these entrants in alphabetical order initially):
+
+![current seeding](https://imgur.com/Pz2E5Sa.png)
+
 For our example, we've written a Python script to:
 1) Read the seeds off our sheet into an array
 2) Post them using a GQL mutation request
 
 ```Python
 import csv
-import urllib2
+import urllib.request as urllib2
 from graphqlclient import GraphQLClient
+import codecs
 
 ## Make sure to run `pip install graphqlclient`
-phaseId = 1234567 # get your phase ID using a GQL query
+phaseId = 123456
 sheetsKey = 'YOUR_SHEETS_KEY'
 authToken = 'YOUR_AUTH_TOKEN'
 
 apiVersion = 'alpha'
 
-
 url = 'https://docs.google.com/spreadsheets/d/' + sheetsKey + '/export?format=csv'
-response = urllib2.urlopen(url)
-cr = csv.reader(response)
+ftpstream = urllib2.urlopen(url)
+cr = csv.reader(codecs.iterdecode(ftpstream, 'utf-8'))
 
 seedMapping = []
 for index, row in enumerate(cr):
     if index == 0: # skip the header row
         continue
-    seedId = row[8]
-    seedNum = row[4]
+    seedId = row[2] # check your columns!
+    seedNum = row[0] # check your columns!
     seedMapping.append({
         "seedId": seedId,
         "seedNum": seedNum,
@@ -136,3 +141,12 @@ mutation UpdatePhaseSeeding ($phaseId: Int!, $seedMapping: [UpdatePhaseSeedInfo]
 
 print('Success!')
 ```
+
+The output of this script will look something like this:
+
+![script terminal](https://imgur.com/Yk3zW4r.png)
+
+After running the script successfully, we can check again in the admin UI to see
+ the updated phase seeding:
+
+![updated seeding](https://imgur.com/RApajkN.png)
