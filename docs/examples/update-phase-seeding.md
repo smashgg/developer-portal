@@ -54,8 +54,6 @@ Once you query for this data, you can write it to a .csv and follow the below st
 To obtain the current phase seeding via phase export, go to the Bracket Setup page in tournament admin.
 Then, for the phase you want to update seeding for, click the export button to download a .csv of its current seeding.
 
-⚠ *Please note: the 'ID' column in this export is the id for Seed, not Entrant.* ⚠
-
 ![export button](https://imgur.com/plcr1y4.png)
 
 ## Step 2: Manipulating the Seeding
@@ -64,7 +62,7 @@ Once you have the current seeding in a format to your liking, you can get starte
 In this example, we'll be editing it in Google Sheets using the data from the .csv Phase Seeding Export download.
 I've highlighted the columns which we'll need later when we post the updated seeding using a GQL mutation.
 
-![google sheet](https://imgur.com/VaCZo2H.png)
+![google sheet](https://imgur.com/p9IlAMb.png)
 
 Here, you would move seeds around to your liking.
 Your workflow is up to you!
@@ -77,11 +75,11 @@ In my case, I decided to make my workflow:
 
 Here's what my sheet looked like after my 'step 3':
 
-![sheet after step 3](https://imgur.com/CTb2Fqz.png)
+![sheet after step 3](https://imgur.com/cE4271y.png)
 
 Here's what my second sheet looked like after my 'step 5':
 
-![sheet after step 5](https://imgur.com/2pJaP8D.png)
+![sheet after step 5](https://imgur.com/YUZEkKC.png)
 
 ## Step 3: Updating the Seeding via API
 
