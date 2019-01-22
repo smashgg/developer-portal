@@ -1,6 +1,6 @@
 ---
 id: update-phase-seeding
-title: Update Seeding for a Phase
+title: Update Phase Seeding
 ---
 
 In this example, we will update the seeding for a phase in one of our events.
