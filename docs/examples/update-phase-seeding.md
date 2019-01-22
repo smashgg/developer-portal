@@ -125,7 +125,7 @@ numSeeds = len(seedMapping)
 
 print("Importing " + str(numSeeds) + " seeds to phase " + str(phaseId) + "...")
 
-client = GraphQLClient('https://gg-api-dev-keith.internal.smashgg.com/gql/' + apiVersion)
+client = GraphQLClient('https://api.smash.gg/gql/' + apiVersion)
 client.inject_token('Bearer ' + authToken)
 
 result = client.execute('''
