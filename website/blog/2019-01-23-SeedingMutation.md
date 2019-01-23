@@ -2,7 +2,7 @@
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
 authorImageURL: https://imgur.com/HgkWbZt.png
-title: Seeding Mutation: our first write method!
+title: Seeding Mutation: our First Write Method
 sidebar_label: Seeding Mutation!
 ---
 
@@ -31,7 +31,7 @@ If this is your first time visiting our dev portal: welcome!
 We encourage you to join
  [our Discord](https://discord.gg/smashgg) and take part in our dev community.
 
-## How do I use the New Seeding Write Method?
+## How do I use the Seeding Write Method?
 
 We wrote [a basic example](/docs/examples/update-phase-seeding)
  for how to update the seeding for a phase.
