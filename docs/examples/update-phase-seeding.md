@@ -90,7 +90,8 @@ We can see what the current phase seeding looks like in the tournament admin UI
 ![current seeding](https://imgur.com/Pz2E5Sa.png)
 
 For our example, we've written a Python script to:
-1) Read the seeds off our sheet into an array
+1) Read the seeds off our sheet into an array (⚠️ Your sheet's share settings need to be
+ *'Anyone with the link'* )
 2) Post them using a GQL mutation request
 
 ```Python
@@ -106,6 +107,7 @@ authToken = 'YOUR_AUTH_TOKEN'
 
 apiVersion = 'alpha'
 
+# Make sure your sheet share link settings are 'anyone with the link'
 url = 'https://docs.google.com/spreadsheets/d/' + sheetsKey + '/export?format=csv'
 ftpstream = urllib2.urlopen(url)
 cr = csv.reader(codecs.iterdecode(ftpstream, 'utf-8'))
