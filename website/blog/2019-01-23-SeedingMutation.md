@@ -7,4 +7,32 @@ sidebar_label: Seeding Mutation!
 ---
 
 We're happy to announce our first write route for our public API!
+You can now update phase seeding via API on smash.gg
 <!--truncate-->
+
+## A First!
+
+This is **the first write method** we are making available to our users.
+It actually has already made its debut in the field for
+ [Genesis 6](https://smash.gg/g6), where we worked alongside its TOs to seed
+  their largest events using this new method.
+You can read about that in our Medium post here: https://blog.smash.gg/b3a75c936dcb
+
+## 3rd Party Platform
+
+We will, eventually, redesign and revamp the entire seeding experience on smash.gg.
+In the meantime, we are releasing this write method because it will enable our
+ passionate 3rd party developer community to do what they are best at:
+  create amazing, custom-tailored experiences & tools for themselves and others.
+We love seeing these creations, and we will continue to support them with more
+ and more functionality.
+
+If this is your first time visiting our dev portal, we encourage you to join
+ [our Discord](https://discord.gg/smashgg) and take part in our dev community!
+
+## How do I use the New Seeding Write Method?
+
+We wrote a basic example for using the seeding write method in
+ [our docs here](/docs/examples/update-phase-seeding).
+ You'll need to use an auth token belonging to an admin in your tournament-
+  if you do not already have an auth token, please read our
