@@ -142,7 +142,13 @@ mutation UpdatePhaseSeeding ($phaseId: Int!, $seedMapping: [UpdatePhaseSeedInfo]
     "seedMapping": seedMapping,
 })
 
-print('Success!')
+resData = json.loads(result)
+
+if 'errors' in resData:
+    print('Error:')
+    print(resData['errors'])
+else:
+    print('Success!')
 ```
 
 The output of this script will look something like this:
