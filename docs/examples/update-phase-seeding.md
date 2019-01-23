@@ -161,3 +161,11 @@ After running the script successfully, we can check again in the admin UI to see
 ![updated seeding](https://imgur.com/RApajkN.png)
 
 And we're done!
+
+## Step 4: Resolving Constraints and Schedule Conflicts (Optional)
+
+If you're running a tournament with several events, you may want to resolve custom
+ constraints (players requesting certain pools, or avoiding early matchups between
+  certain players).
+In this case, you will want to follow the steps to
+ [Resolve Schedule Conflicts](/docs/examples/resolve-conflicts).
