@@ -22,7 +22,8 @@
 			"examples/attendees-by-sponsor",
 			"examples/count-entrants-by-event",
 			"examples/update-phase-seeding",
-			"examples/resolve-conflicts"
+			"examples/resolve-conflicts",
+			"examples/randomize-phase-seeding"
 		],
 		"Widgets & Embeds": [
 			"widgets/registration"
