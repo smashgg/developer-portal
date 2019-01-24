@@ -14,7 +14,7 @@ In this example, I will be using a test tournament where:
 - My tournament has two waves: Wave A from 12pm-2pm, and Wave B from 2pm-4pm
 - Each event has 4 pools
 - So both events have Pools A1, A2, B1, and B2
-- Manyy people have registered for the tournament, and several are in both events
+- Many people have registered for the tournament, and several are in both events
 
 In this scenario, it is likely that I will have both schedule conflicts
  and custom contraints to solve for.
