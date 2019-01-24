@@ -53,13 +53,15 @@ Our example is very simple, but for a tournament like
  [Genesis 6](https://blog.smash.gg/b3a75c936dcb) this saves
  countless hours of time!
 
+**NOTE: You will need an API auth token belonging to a user who has admin permissions for your tournament.**
+
 My simple Python script for my example looks like this:
 ```Python
 from graphqlclient import GraphQLClient
 import json
 
 ## Make sure to run `pip install graphqlclient`
-tournamentId = 135256
+tournamentId = YOUR_TOURNAMENT_ID
 
 # These options define the top seeds I can lock for an event.
 # In this case, I locked the top 8 seeds for one of my events!
