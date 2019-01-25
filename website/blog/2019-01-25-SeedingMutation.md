@@ -6,9 +6,10 @@ title: Seeding Mutation: Our First Write Method
 sidebar_label: Seeding Mutation
 ---
 
-We're happy to announce our first write route for our public API
- is a seeding mutation for updating phase seeding, which was
- used to seed Ultimate Singles and Melee Singles for Genesis 6!
+We're happy to announce that our first write route for our public API
+ is a seeding mutation for updating phase seeding, which Genesis 6
+ [used for seeding their Ultimate Singles and Melee Singles
+ events](https://twitter.com/Genesis_Smash/status/1088640342310547456)!
 <!--truncate-->
 
 # First Write Method
