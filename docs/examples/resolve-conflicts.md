@@ -5,6 +5,10 @@ title: Resolve Schedule Conflicts
 
 In this example, we will invoke smash.gg's algorithm for resolving schedule conflicts
  (and other user-defined constraints) using an API request.
+
+**NOTE: You will need an API [auth token](/docs/authentication)
+ belonging to a user who has admin permissions for your tournament.**
+
 This is a separate step from updating phase seeds, which is explained in the
  [Update Phase Seeding doc](/docs/examples/update-phase-seeding).
 

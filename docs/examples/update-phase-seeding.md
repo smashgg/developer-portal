@@ -5,6 +5,9 @@ title: Update Phase Seeding
 
 In this example, we will update the seeding for a phase in one of our events.
 
+**NOTE: You will need an API [auth token](/docs/authentication)
+ belonging to a user who has admin permissions for your tournament.**
+
 ## Step 1: Obtaining the current seeding via API
 
 To obtain the current phase seeding via API, use a request like this one:

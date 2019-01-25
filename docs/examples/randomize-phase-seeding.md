@@ -6,7 +6,8 @@ title: Randomize Phase Seeding
 In this example, we will randomize (or 'shuffle') the phase seeding for a phase in an event.
 This is useful for tournament organizers who want to have a 'random seeding' event.
 
-**NOTE: You will need an API auth token belonging to a user who has admin permissions for your tournament.**
+**NOTE: You will need an API [auth token](/docs/authentication)
+ belonging to a user who has admin permissions for your tournament.**
 
 ## Step 1: Obtain and Randomize Seeding
 
