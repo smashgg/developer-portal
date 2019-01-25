@@ -8,13 +8,13 @@ sidebar_label: Seeding Mutation
 
 We're happy to announce our first write route for our public API
  is a seeding mutation for updating phase seeding, which was
- [used to seed Ultimate Singles and Melee Singles for Genesis 6](https://blog.smash.gg/seeding-genesis-6-via-api-b3a75c936dcb)!
+ used to seed Ultimate Singles and Melee Singles for Genesis 6!
 <!--truncate-->
 
 # First Write Method
 
 This is the first write method we are making available to our users.
-It actually has already made its debut in the field for
+As we mentioned, it has already made its debut in the field for
  [Genesis 6](https://smash.gg/g6), where we worked alongside TOs to seed
   their largest events using this new method.
 You can read about that in [Dr. Z's blog post](https://blog.smash.gg/b3a75c936dcb).
@@ -29,8 +29,8 @@ We love seeing these creations, and we are excited to support a wider range
  of possibilities with the addition of write methods!
 
 If this is your first time visiting our dev portal: welcome!
-We encourage you to join
- [our Discord](https://discord.gg/smashgg) and take part in our dev community.
+We encourage you to
+ [join our Discord](https://discord.gg/smashgg) and take part in our dev community.
 All of the information for getting started can be found here in the dev portal,
  starting with the [welcome page](/docs/intro).
 
