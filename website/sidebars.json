@@ -12,6 +12,7 @@
 		],
     "Example Usage": [
 			"examples/recent-sets-by-player",
+			"examples/stream-queue",
 			"examples/set-entrants",
 			"examples/event-standings",
 			"examples/pool-seeds",
