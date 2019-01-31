@@ -13,7 +13,7 @@ and **name** of the **top 3 placements** (note the variables!)
 <!--Request-->
 
 ```graphql
-query EventStandings($eventId: Int, $page: Int, $perPage: Int) {
+query EventStandings($eventId: Int!, $page: Int!, $perPage: Int!) {
   event(id: $eventId) {
     name
     standings(query: {
@@ -91,7 +91,7 @@ If you don't know what race format is, then don't worry about this!
 <!--Request-->
 
 ```graphql
-query EventStandings($eventId: Int) {
+query EventStandings($eventId: Int!) {
   event(id:$eventId) {
     id
     name

@@ -11,7 +11,7 @@ In these examples, we will query for tournaments in a given location!
 <!--Request-->
 
 ```graphql
-query TournamentsByCountry($cCode: String!, $perPage: Int) {
+query TournamentsByCountry($cCode: String!, $perPage: Int!) {
   tournaments(query: {
     perPage: $perPage
     filter: {

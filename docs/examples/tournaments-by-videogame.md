@@ -16,7 +16,7 @@ For now, you can view the mapping of videogame IDs to their names <a href="https
 <!--Request-->
 
 ```graphql
-query TournamentsByVideogame($perPage: Int, $videogameId: Int) {
+query TournamentsByVideogame($perPage: Int!, $videogameId: Int!) {
   tournaments(query: {
     perPage: $perPage
     page: 1
