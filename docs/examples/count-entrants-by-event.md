@@ -11,27 +11,26 @@ or a teams event (`entrantSizeMin` > 1).
 You can also use that number to count the total number of players who competed in a teams event
 (with some variance due to substitute players).
 
-## Example #1 Request (3v3 Teams Event)
+## Example #1 (3v3 Teams Event)
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
-query EventStandings($eventId: Int) {
+query CountEntrants($eventId: Int!) {
   event(id:$eventId) {
     id
     name
     numEntrants
     entrantSizeMin
   }
-}
-```
-
-Request Variables
-```
+},
 {
   "eventId": 29368
 }
 ```
 
-## Example #1 Response
+<!--Response-->
 
 ```json
 {
@@ -46,28 +45,28 @@ Request Variables
 }
 ```
 
-## Example #2 Request (1v1 Event)
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+## Example #2 (1v1 Event)
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
-query EventStandings($eventId: Int) {
+query CountEntrants($eventId: Int!) {
   event(id:$eventId) {
     id
     name
     numEntrants
     entrantSizeMin
   }
-}
-```
-
-Request Variables
-
-```json
+},
 {
   "eventId": 78790
 }
 ```
 
-## Example #2 Response
+<!--Response-->
 
 ```json
 {
@@ -82,3 +81,5 @@ Request Variables
   "actionRecords": []
 }
 ```
+
+<!--END_DOCUSAURUS_CODE_TABS-->

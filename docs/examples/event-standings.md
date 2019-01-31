@@ -7,7 +7,10 @@ In this example, we will query for the standings of the Melee Singles event at S
 To be specific, we will query for just the **standing**
 and **name** of the **top 3 placements** (note the variables!)
 
-## Example #1 Request (basic)
+## Example #1 (basic)
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
 query EventStandings($eventId: Int, $page: Int, $perPage: Int) {
@@ -25,12 +28,7 @@ query EventStandings($eventId: Int, $page: Int, $perPage: Int) {
       }
     }
   }
-}
-```
-
-Request Variables 
-
-```json
+},
 {
   "eventId": 78790,
   "page": 1,
@@ -38,15 +36,7 @@ Request Variables
 }
 ```
 
-You can choose your own names for these variables! In the query above...
-
-- *eventId* is the ID of the event we're getting standings for
-- *page* is the page of standings we have specified to retrieve (page 1 starts with 1st place)
-- *perPage* is the number of standings we are retrieving on that page
-
-**Don't forget to explore the schema in the graphiql explorer!**
-
-## Example #1 Response
+<!--Response-->
 
 ```json
 {
@@ -82,7 +72,23 @@ You can choose your own names for these variables! In the query above...
 }
 ```
 
-## Example #2 Request (Race Format)
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+You can choose your own names for these variables! In the query above...
+
+- *eventId* is the ID of the event we're getting standings for
+- *page* is the page of standings we have specified to retrieve (page 1 starts with 1st place)
+- *perPage* is the number of standings we are retrieving on that page
+
+**Don't forget to explore schema, and test queries, in the [API Explorer](/explorer)!**
+
+## Example #2 (Race Format)
+
+Race format is a bit of an exception to standings queries at the moment.
+If you don't know what race format is, then don't worry about this!
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
 query EventStandings($eventId: Int) {
@@ -100,18 +106,13 @@ query EventStandings($eventId: Int) {
       }
     }
   }
-}
-```
-
-Request Variables
-
-```json
+},
 {
   "eventId": 249917
 }
 ```
 
-## Example #2 Response
+<!--Response-->
 
 ```json
 {
@@ -151,3 +152,5 @@ Request Variables
   "actionRecords": []
 }
 ```
+
+<!--END_DOCUSAURUS_CODE_TABS-->

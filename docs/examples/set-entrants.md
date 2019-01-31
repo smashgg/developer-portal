@@ -8,7 +8,10 @@ a 3v3 Rocket League event.
 In a teams event, an entrant has multiple participants,
 so we will get the available fields for each of those, too!
 
-## Example Request
+## Example
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
 query SetEntrants($setId: String!) {
@@ -27,18 +30,13 @@ query SetEntrants($setId: String!) {
       }
     }
   }
-}
-```
-
-Request Variables
-
-```json
+},
 {
   "setId": "7851789"
 }
 ```
 
-## Example Response
+<!--Response-->
 
 ```json
 {
@@ -130,3 +128,5 @@ Request Variables
   "actionRecords": []
 }
 ```
+
+<!--END_DOCUSAURUS_CODE_TABS-->

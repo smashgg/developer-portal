@@ -7,7 +7,11 @@ In this example, we will query for the number of attendees (participants) in a t
 Optionally, we can include an array of eventIds to specify a count for a particular subset of events
  in that tournament.
 
-## Example #1 Request
+## Example #1
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
+
 ```GraphQL
 query AttendeeCount($tourneySlug:String!){
   tournament(slug:$tourneySlug){
@@ -18,18 +22,15 @@ query AttendeeCount($tourneySlug:String!){
       }
     }
   }
-}
-```
-
-Request Variables
-```GraphQl
+},
 {
   "tourneySlug":"shine-2018"
 }
 ```
 
-## Example #1 Response
-```GraphQL
+<!--Response-->
+
+```json
 {
   "data": {
     "tournament": {
@@ -44,8 +45,12 @@ Request Variables
   "actionRecords": []
 }
 ```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
-## Example #2 Request (specifying event(s))
+## Example #2 (specifying event(s))
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```GraphQL
 query AttendeeCount($tourneySlug:String!, $eventIds:[Int]){
@@ -61,19 +66,15 @@ query AttendeeCount($tourneySlug:String!, $eventIds:[Int]){
       }
     }
   }
-}
-```
-
-Request Variables
-```GraphQL
+},
 {
   "tourneySlug":"shine-2018",
   "eventIds":[78790]
 }
 ```
+<!--Response-->
 
-## Example #2 Response
-```GraphQL
+```json
 {
   "data": {
     "tournament": {
@@ -88,3 +89,5 @@ Request Variables
   "actionRecords": []
 }
 ```
+
+<!--END_DOCUSAURUS_CODE_TABS-->

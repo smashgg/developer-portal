@@ -7,7 +7,10 @@ In this example, we will query for upcoming tournaments filtered to particular o
 Please note that this query will not retrieve all tournaments the user was an admin for.
 It will only return tournaments which that user created.
 
-## Example #1 Request
+## Example
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
 query TournamentsByowner($perPage: Int, $ownerId: Int) {
@@ -23,19 +26,14 @@ query TournamentsByowner($perPage: Int, $ownerId: Int) {
       slug
     }
   }
-}
-```
-
-Query Variables
-
-```json
+},
 {
   "ownerId": 161429,
   "perPage": 4
 }
 ```
 
-## Example #1 Response
+<!--Response-->
 
 ```json
 {
@@ -68,3 +66,5 @@ Query Variables
   "actionRecords": []
 }
 ```
+
+<!--END_DOCUSAURUS_CODE_TABS-->

@@ -14,10 +14,13 @@ You can read a deeper explanation of this topic in our
  <a href="https://help.smash.gg/attendee-management/attendee-confirmation/attendee-confirmation-requests-overview"
  target="_blank">help center articles on attendee confirmation</a>.
 
-## Example #1 Request (not Specifying Opponent)
+## Example #1 (not Specifying Opponent)
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```GraphQL
-query setsByPlayer($playerId: Int!) {
+query SetsByPlayer($playerId: Int!) {
   player(id: $playerId) {
     id
     gamerTag
@@ -33,18 +36,13 @@ query setsByPlayer($playerId: Int!) {
       displayScore
     }
   }
-}
-```
-
-Request Variables
-
-```json
+},
 {
   "playerId": 148649
 }
 ```
 
-## Request #1 Response
+<!--Response-->
 
 ```json
 {
@@ -170,10 +168,15 @@ Request Variables
 }
 ```
 
-## Example #2 Request (Specifying Opponent Player)
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+## Example #2 (Specifying Opponent Player)
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```GraphQL
-query setsByPlayer($playerId: Int!, $oppPlayerId: Int!) {
+query SetsByPlayerAndOpponent($playerId: Int!, $oppPlayerId: Int!) {
   player(id: $playerId) {
     id
     gamerTag
@@ -189,19 +192,14 @@ query setsByPlayer($playerId: Int!, $oppPlayerId: Int!) {
       displayScore
     }
   }
-}
-```
-
-Request Variables
-
-```json
+},
 {
   "playerId": 1016,
   "oppPlayerId": 1017
 }
 ```
 
-## Example #2 Response
+<!--Response-->
 
 ```json
 {
@@ -282,3 +280,5 @@ Request Variables
   "actionRecords": []
 }
 ```
+
+<!--END_DOCUSAURUS_CODE_TABS-->

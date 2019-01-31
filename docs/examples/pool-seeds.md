@@ -7,7 +7,10 @@ In this example, we will query for the seeding of a phase group (a pool)
 in the Rivals of Aether Singles event at Genesis 5.
 We'll include the name, and the seed id, of each entrant. 
 
-## Example Request
+## Example
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
 query PoolSeeds($phaseGroupId: Int) {
@@ -19,18 +22,13 @@ query PoolSeeds($phaseGroupId: Int) {
       }
     }
   }
-}
-```
-
-Request Variables
-
-```json
+},
 {
   "phaseGroupId": "398727"
 }
 ```
 
-## Example Response
+<!--Response-->
 
 ```json
 {
@@ -157,3 +155,5 @@ Request Variables
   "actionRecords": []
 }
 ```
+
+<!--END_DOCUSAURUS_CODE_TABS-->

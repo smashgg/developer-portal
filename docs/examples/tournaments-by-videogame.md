@@ -10,7 +10,10 @@ and the second example will be for an array of videogames.
 
 For now, you can view the mapping of videogame IDs to their names <a href="https://docs.google.com/spreadsheets/d/1Iq-gueeLYeoVbf1oxVzh5942rX9RG8E6Wxn-yhSbvbQ/edit?usp=sharing" target="_blank">in this sheet here.</a>
 
-## Example #1 Request (single videogame)
+## Example #1 (Single Videogame)
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
 query TournamentsByVideogame($perPage: Int, $videogameId: Int) {
@@ -31,19 +34,14 @@ query TournamentsByVideogame($perPage: Int, $videogameId: Int) {
       slug
     }
   }
-}
-```
-
-Query Variables
-
-```json
+},
 {
   "perPage": 3,
   "videogameId": 287
 }
 ```
 
-## Example #1 Response
+<!--Response-->
 
 ```json
 {
@@ -72,7 +70,12 @@ Query Variables
 }
 ```
 
-## Example #2 Request (array of videogames)
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+## Example #2 (Array of Videogames)
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
 query TournamentsByVideogames($perPage: Int, $videogameIds: [Int]) {
@@ -91,19 +94,14 @@ query TournamentsByVideogames($perPage: Int, $videogameIds: [Int]) {
       slug
     }
   }
-}
-```
-
-Query Variables
-
-```json
+},
 {
   "perPage": 3,
   "videogameIds": [15, 24]
 }
 ```
 
-## Example #2 Response
+<!--Response-->
 
 ```json
 {
@@ -131,3 +129,5 @@ Query Variables
   "actionRecords": []
 }
 ```
+
+<!--END_DOCUSAURUS_CODE_TABS-->
