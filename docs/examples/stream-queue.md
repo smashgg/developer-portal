@@ -3,7 +3,7 @@ id: stream-queue
 title: Stream Queue
 ---
 
-In this example we will get a stream queue for a specific tournament, including:
+In this example we will get a stream queue on a given tournament, including:
 
 - Information about each stream
 - Information about the sets for each stream
@@ -11,14 +11,17 @@ In this example we will get a stream queue for a specific tournament, including:
 ## Example Request
 
 ```graphQL
-query StreamQueues($tourneyId:Int!){
-  streamQueue(tournamentId:$tourneyId){
-    stream{
-      streamSource
-      streamName
-    }
-    sets{
-      id
+query StreamQueueOnTournament($tourneySlug:String!){
+  tournament(slug:$tourneySlug){
+    id
+    streamQueue{
+      stream{
+        streamSource
+        streamName
+      }
+      sets{
+        id
+      }
     }
   }
 }
@@ -28,7 +31,7 @@ Variables
 
 ```json
 {
-  "tourneyId": 136691
+  "tourneySlug": "tournament/20190128-oh-really-stream-queues"
 }
 ```
 
@@ -42,129 +45,124 @@ Check the schema for what's available!
 ```json
 {
   "data": {
-    "streamQueue": [
-      {
-        "stream": {
-          "streamSource": "TWITCH",
-          "streamName": "furtiveraccoon"
+    "tournament": {
+      "streamQueue": [
+        {
+          "stream": {
+            "streamSource": "TWITCH",
+            "streamName": "furtiveraccoon"
+          },
+          "sets": [
+            {
+              "slots": [
+                {
+                  "entrant": {
+                    "name": "Buzz"
+                  }
+                },
+                {
+                  "entrant": {
+                    "name": "Middy"
+                  }
+                }
+              ]
+            },
+            {
+              "slots": [
+                {
+                  "entrant": {
+                    "name": "Bandit"
+                  }
+                },
+                {
+                  "entrant": {
+                    "name": "Outlaw"
+                  }
+                }
+              ]
+            },
+            {
+              "slots": [
+                {
+                  "entrant": {
+                    "name": "Maverick"
+                  }
+                },
+                {
+                  "entrant": {
+                    "name": "Samara"
+                  }
+                }
+              ]
+            },
+            {
+              "slots": [
+                {
+                  "entrant": {
+                    "name": "Junker"
+                  }
+                },
+                {
+                  "entrant": {
+                    "name": "Slider"
+                  }
+                }
+              ]
+            }
+          ]
         },
-        "sets": [
-          {
-            "id": "18274019",
-            "slots": [
-              {
-                "entrant": {
-                  "name": "Buzz"
-                }
-              },
-              {
-                "entrant": {
-                  "name": "Middy"
-                }
-              }
-            ]
+        {
+          "stream": {
+            "streamSource": "TWITCH",
+            "streamName": "smashgg"
           },
-          {
-            "id": "18274021",
-            "slots": [
-              {
-                "entrant": {
-                  "name": "Bandit"
+          "sets": [
+            {
+              "slots": [
+                {
+                  "entrant": {
+                    "name": "Dude"
+                  }
+                },
+                {
+                  "entrant": {
+                    "name": "Sticks"
+                  }
                 }
-              },
-              {
-                "entrant": {
-                  "name": "Outlaw"
+              ]
+            },
+            {
+              "slots": [
+                {
+                  "entrant": {
+                    "name": "Goose"
+                  }
+                },
+                {
+                  "entrant": {
+                    "name": "Swabbie"
+                  }
                 }
-              }
-            ]
-          },
-          {
-            "id": "18274002",
-            "slots": [
-              {
-                "entrant": {
-                  "name": "Maverick"
+              ]
+            },
+            {
+              "slots": [
+                {
+                  "entrant": {
+                    "name": "Marley"
+                  }
+                },
+                {
+                  "entrant": {
+                    "name": "Scout"
+                  }
                 }
-              },
-              {
-                "entrant": {
-                  "name": "Samara"
-                }
-              }
-            ]
-          },
-          {
-            "id": "18274004",
-            "slots": [
-              {
-                "entrant": {
-                  "name": "Junker"
-                }
-              },
-              {
-                "entrant": {
-                  "name": "Slider"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "stream": {
-          "streamSource": "TWITCH",
-          "streamName": "smashgg"
-        },
-        "sets": [
-          {
-            "id": "18274020",
-            "slots": [
-              {
-                "entrant": {
-                  "name": "Dude"
-                }
-              },
-              {
-                "entrant": {
-                  "name": "Sticks"
-                }
-              }
-            ]
-          },
-          {
-            "id": "18273983",
-            "slots": [
-              {
-                "entrant": {
-                  "name": "Goose"
-                }
-              },
-              {
-                "entrant": {
-                  "name": "Swabbie"
-                }
-              }
-            ]
-          },
-          {
-            "id": "18273986",
-            "slots": [
-              {
-                "entrant": {
-                  "name": "Marley"
-                }
-              },
-              {
-                "entrant": {
-                  "name": "Scout"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
   },
   "actionRecords": []
 }
