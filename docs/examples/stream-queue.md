@@ -32,7 +32,7 @@ query StreamQueueOnTournament($tourneySlug:String!){
 ```
 
 You can request other fields on sets, and there are also
- some other sets on stream that you can request.
+ some other fields on stream that you can request.
 Check the schema for what's available!
 
 <!--Response-->
