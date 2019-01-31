@@ -11,10 +11,10 @@
 			"benefits-of-gql"			
 		],
     "Example Usage": [
+			"examples/event-standings",
 			"examples/recent-sets-by-player",
 			"examples/stream-queue",
 			"examples/set-entrants",
-			"examples/event-standings",
 			"examples/pool-seeds",
 			"examples/attendee-counts",
 			"examples/tournaments-by-location",

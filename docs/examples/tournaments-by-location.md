@@ -5,10 +5,13 @@ title: Tournaments by Location
 
 In these examples, we will query for tournaments in a given location!
 
-## Example #1 Request (by Country)
+## Example #1 (by Country)
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
-query TournamentsByCountry($cCode: String!, $perPage: Int) {
+query TournamentsByCountry($cCode: String!, $perPage: Int!) {
   tournaments(query: {
     perPage: $perPage
     filter: {
@@ -21,19 +24,14 @@ query TournamentsByCountry($cCode: String!, $perPage: Int) {
       countryCode
     }
   }
-}
-```
-
-Request Variables
-
-```json
+},
 {
   "cCode": "JP",
   "perPage": 4
 }
 ```
 
-## Example #1 Response
+<!--Response-->
 
 ```json
 {
@@ -67,7 +65,16 @@ Request Variables
 }
 ```
 
-## Example #2 Request (by State)
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+## Example #2 (by State)
+
+To be clear, 'State' in this context means like 'United States' like California, Georgia, etc.
+State abbreviations can be found on external sites like this
+ [UPS resource](https://www.ups.com/worldshiphelp/WS15/ENU/AppHelp/Codes/State_Province_Codes.htm).
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
 query TournamentsByState($perPage: Int, $state: String!) {
@@ -83,19 +90,14 @@ query TournamentsByState($perPage: Int, $state: String!) {
       addrState
     }
   }
-}
-```
-
-Request Variables
-
-```json
+},
 {
   "perPage": 4,
   "state": "CT"
 }
 ```
 
-## Example #2 Response
+<!--Response-->
 
 ```json
 {
@@ -129,7 +131,12 @@ Request Variables
 }
 ```
 
-## Example #3 Request (by coordinates + radius distance)
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+## Example #3 (by coordinates + radius distance)
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
 
 ```graphql
 query SocalTournaments($perPage: Int, $coordinates: String!, $radius: String!) {
@@ -148,12 +155,7 @@ query SocalTournaments($perPage: Int, $coordinates: String!, $radius: String!) {
       city
     }
   }
-}
-```
-
-Request variables
-
-```json
+},
 {
   "perPage": 4,
   "coordinates": "33.7454725,-117.86765300000002",
@@ -161,7 +163,7 @@ Request variables
 }
 ```
 
-## Example #3 Response
+<!--Response-->
 
 ```json
 {
@@ -194,3 +196,5 @@ Request variables
   "actionRecords": []
 }
 ```
+
+<!--END_DOCUSAURUS_CODE_TABS-->

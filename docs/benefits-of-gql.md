@@ -20,7 +20,7 @@ If you want the name of each event, and the placement + names of the top 3 finis
 ## Example Request
 
 ```graphql
-query TournamentQuery($slug: String, $page: Int, $perPage: Int) {
+query TournamentQuery($slug: String, $page: Int!, $perPage: Int!) {
         tournament(slug: $slug){
             events {
               name

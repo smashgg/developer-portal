@@ -6,7 +6,11 @@ title: Attendees by Sponsor/Org
 In this example, we will query for the attendees of a tournament with a particular sponsor tag.
 In this case, we've chosen Genesis 5 as the tournament and Cloud 9 as the sponsor/org.
 
-## Example Request
+## Example
+
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--Request-->
 
 ```graphql
 query PrefixSearchAttendees($tourneySlug:String!, $sponsor: String!) {
@@ -27,19 +31,14 @@ query PrefixSearchAttendees($tourneySlug:String!, $sponsor: String!) {
       }
     }
   }
-}
-```
-
-Request Variables
-
-```json
+},
 {
   "tourneySlug": "genesis-5",
   "sponsor": "c9"
 }
 ```
 
-## Example Response
+<!--Response-->
 
 ```json
 {
@@ -68,3 +67,5 @@ Request Variables
   "actionRecords": []
 }
 ```
+
+<!--END_DOCUSAURUS_CODE_TABS-->
