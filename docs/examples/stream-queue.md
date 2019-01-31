@@ -8,7 +8,8 @@ In this example we will get a stream queue on a given tournament, including:
 - Information about each stream
 - Information about the sets for each stream
 
-## Example Request
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Example Request-->
 
 ```graphQL
 query StreamQueueOnTournament($tourneySlug:String!){
@@ -24,23 +25,17 @@ query StreamQueueOnTournament($tourneySlug:String!){
       }
     }
   }
-}
-```
-
-Variables
-
-```json
+},
 {
   "tourneySlug": "tournament/20190128-oh-really-stream-queues"
 }
 ```
 
-## Example Response
-
-In the response, the sets are ordered top-to-bottom as first-to-last in the queue.
 You can request other fields on sets, and there are also
  some other sets on stream that you can request.
 Check the schema for what's available!
+
+<!--Example Response-->
 
 ```json
 {
@@ -167,3 +162,9 @@ Check the schema for what's available!
   "actionRecords": []
 }
 ```
+
+In the response, the sets are ordered top-to-bottom as first-to-last in the queue.
+
+
+<!--END_DOCUSAURUS_CODE_TABS-->
+
