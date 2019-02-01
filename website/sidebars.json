@@ -10,7 +10,7 @@
 			"resource-limits",
 			"benefits-of-gql"			
 		],
-    "Example Usage": [
+    "Query Examples": [
 			"examples/event-standings",
 			"examples/recent-sets-by-player",
 			"examples/stream-queue",
@@ -20,8 +20,9 @@
 			"examples/tournaments-by-location",
 			"examples/tournaments-by-videogame",
 			"examples/tournaments-by-owner",
-			"examples/attendees-by-sponsor",
-			"examples/count-entrants-by-event",
+			"examples/attendees-by-sponsor"
+		],
+		"Mutation Examples": [
 			"examples/update-phase-seeding",
 			"examples/resolve-conflicts",
 			"examples/randomize-phase-seeding"

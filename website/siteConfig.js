@@ -73,6 +73,8 @@ const siteConfig = {
 	onPageNav: 'separate',
 	// No .html extensions for paths.
 	cleanUrl: true,
+	// Make nav collapsible
+	docsSideNavCollapsible: true,
 
 	// Show documentation's last contributor's name.
 	// enableUpdateBy: true,
