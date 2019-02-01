@@ -11,20 +11,33 @@
 			"benefits-of-gql"			
 		],
     "Example Usage": [
-			"examples/event-standings",
-			"examples/recent-sets-by-player",
-			"examples/stream-queue",
-			"examples/set-entrants",
-			"examples/pool-seeds",
-			"examples/attendee-counts",
-			"examples/tournaments-by-location",
-			"examples/tournaments-by-videogame",
-			"examples/tournaments-by-owner",
-			"examples/attendees-by-sponsor",
-			"examples/count-entrants-by-event",
-			"examples/update-phase-seeding",
-			"examples/resolve-conflicts",
-			"examples/randomize-phase-seeding"
+			"queries",
+			{
+				"type": "subcategory",
+				"label": "Query Examples",
+				"ids": [
+					"examples/event-standings",
+					"examples/recent-sets-by-player",
+					"examples/stream-queue",
+					"examples/set-entrants",
+					"examples/pool-seeds",
+					"examples/attendee-counts",
+					"examples/tournaments-by-location",
+					"examples/tournaments-by-videogame",
+					"examples/tournaments-by-owner",
+					"examples/attendees-by-sponsor"
+				]
+			},
+			"mutations",
+			{
+				"type": "subcategory",
+				"label": "Mutation Examples",
+				"ids": [
+						"examples/update-phase-seeding",
+						"examples/resolve-conflicts",
+						"examples/randomize-phase-seeding"
+				]
+			}
 		],
 		"Widgets & Embeds": [
 			"widgets/registration"
