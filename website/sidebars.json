@@ -10,34 +10,22 @@
 			"resource-limits",
 			"benefits-of-gql"			
 		],
-    "Example Usage": [
-			"queries",
-			{
-				"type": "subcategory",
-				"label": "Query Examples",
-				"ids": [
-					"examples/event-standings",
-					"examples/recent-sets-by-player",
-					"examples/stream-queue",
-					"examples/set-entrants",
-					"examples/pool-seeds",
-					"examples/attendee-counts",
-					"examples/tournaments-by-location",
-					"examples/tournaments-by-videogame",
-					"examples/tournaments-by-owner",
-					"examples/attendees-by-sponsor"
-				]
-			},
-			"mutations",
-			{
-				"type": "subcategory",
-				"label": "Mutation Examples",
-				"ids": [
-						"examples/update-phase-seeding",
-						"examples/resolve-conflicts",
-						"examples/randomize-phase-seeding"
-				]
-			}
+    "Query Examples": [
+			"examples/event-standings",
+			"examples/recent-sets-by-player",
+			"examples/stream-queue",
+			"examples/set-entrants",
+			"examples/pool-seeds",
+			"examples/attendee-counts",
+			"examples/tournaments-by-location",
+			"examples/tournaments-by-videogame",
+			"examples/tournaments-by-owner",
+			"examples/attendees-by-sponsor"
+		],
+		"Mutation Examples": [
+			"examples/update-phase-seeding",
+			"examples/resolve-conflicts",
+			"examples/randomize-phase-seeding"
 		],
 		"Widgets & Embeds": [
 			"widgets/registration"
