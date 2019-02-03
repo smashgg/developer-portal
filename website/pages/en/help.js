@@ -26,17 +26,23 @@ class Help extends React.Component {
         content: `Learn more using the [documentation on this site.](${docUrl(
           'intro.html',
           language,
-        )})`,
+        )}) including info for getting started, example queries/mutations, and an API explorer for testing requests.`,
         title: 'Browse Docs',
       },
       {
-        content: 'Ask questions about the documentation and project in our [discord.](https://discord.gg/pTSwKj)',
-        title: 'Join the community',
+        content: `Discuss the API, and its documentation, in our [Discord server.](https://discord.gg/smashgg)
+          *To access our dev channels, role yourself in the #flairing channel using* \`/roleme 3rd-party-devs\``,
+        title: 'Join the Community',
       },
-    //   {
-    //     content: "Find out what's new with this project by checking out the [blog!](/blog)",
-    //     title: 'Stay up to date',
-    //   },
+      {
+        content: `File bugs, suggest new queries/mutations, and submit other feedback to be tracked on our
+          [Trello board.](https://trello.com/invite/b/Vdxnwz43/9fd5241770e053aba8c2260c7af71069/api-alpha-feedback)`,
+        title: 'Submit Bugs'
+      },
+      {
+        content: `You can contact us directly/privately using devrelations@smash.gg`,
+        title: `Email Us`
+      },
     ];
 
     return (
@@ -46,7 +52,11 @@ class Help extends React.Component {
             <header className="postHeader">
               <h1>Need help?</h1>
             </header>
-            <GridBlock contents={supportLinks} layout="threeColumn" />
+            <p>
+              If you need help with the smash.gg public API, please use
+              one of the channels below!
+            </p>
+            <GridBlock contents={supportLinks} layout="fourColumn" />
           </div>
         </Container>
       </div>
