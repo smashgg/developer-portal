@@ -74,3 +74,8 @@ query set($setId:String!){
 ```
 
 <!--END_DOCUSAURUS_CODE_TABS-->
+
+## Coming soon: In-Progress Set
+
+There is a known issue with retrieving scores for
+ in-progress sets which we will be resolving soon.
