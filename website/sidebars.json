@@ -12,6 +12,7 @@
 		],
     "Query Examples": [
 			"examples/event-standings",
+			"examples/set-score",
 			"examples/recent-sets-by-player",
 			"examples/stream-queue",
 			"examples/set-entrants",

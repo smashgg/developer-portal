@@ -1,0 +1,81 @@
+---
+id: set-score
+title: Set Score
+---
+
+In this example, we will query for the current score on a set.
+For head-to-head sets, this will include the number of games won by each entrant.
+
+## Example #1 (Completed Head-to-Head Set)
+
+For this completed head-to-head set, one entrant won (ie their placement is '1'),
+ and they won 2 games to 0 so their stats for the set include a score of '2'.
+
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
+
+```GraphQL
+query set($setId:String!){
+  set(id:$setId){
+    id
+    slots{
+      standing{
+        placement
+        stats{
+          score {
+            label
+            value
+          }
+        }
+      }
+    }
+  }
+},
+{
+  "setId": "7794393"
+}
+```
+
+<!--Response-->
+
+```json
+{
+  "data": {
+    "set": {
+      "id": "7794393",
+      "slots": [
+        {
+          "standing": {
+            "placement": 1,
+            "stats": {
+              "score": {
+                "label": "Score",
+                "value": 2
+              }
+            }
+          }
+        },
+        {
+          "standing": {
+            "placement": 2,
+            "stats": {
+              "score": {
+                "label": "Score",
+                "value": 0
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "actionRecords": []
+}
+```
+
+<!--END_DOCUSAURUS_CODE_TABS-->
+
+## Coming soon: In-Progress Set
+
+There is a known issue with retrieving scores for
+ in-progress sets which we will be resolving soon.
