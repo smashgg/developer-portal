@@ -17,6 +17,7 @@
 			"examples/recent-sets-by-player",
 			"examples/stream-queue",
 			"examples/set-entrants",
+			"examples/get-phase-seeding",
 			"examples/pool-seeds",
 			"examples/attendee-counts",
 			"examples/tournaments-by-location",
