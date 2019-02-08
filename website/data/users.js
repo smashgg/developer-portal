@@ -16,7 +16,7 @@ module.exports = [
 	},
 	{
 		caption: 'SoCalSmash.Net',
-		image: 'https://imgur.com/Q4uYIK5.png',
+		image: 'https://imgur.com/KA5zHXl.png',
 		infoLink: 'https://socalsmash.net',
 		openSource: false,
 		pinned: true,
