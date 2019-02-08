@@ -41,15 +41,19 @@ class Users extends React.Component {
 						<Showcase users={openSourceToShowcase} /> */}
 						<div className="prose">
 							<p>
-								Is your project using smash.gg?
+								<i>
+									Is your project using smash.gg?
+								</i>
 							</p>
 							<p>
-								Edit this page with a{' '}
-								<a href="https://github.com/smashgg/developer-portal/edit/master/website/data/users.js">
-									Pull Request
-                </a>{' '}
-								to add your logo.
-              </p>
+								<i>
+									Edit this page with a{' '}
+									<a href="https://github.com/smashgg/developer-portal/edit/master/website/data/users.js">
+										Pull Request
+									</a>{' '}
+									to add your logo.
+              					</i>
+							</p>
 						</div>
 					</div>
 				</Container>
