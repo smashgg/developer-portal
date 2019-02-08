@@ -29,7 +29,7 @@ class Users extends React.Component {
 								Who is using the smash.gg public API?
 							</h1>
 							<p>
-								Data from smash.gg powers some of the esports world's popular projects.
+								Data from smash.gg powers some of the esports world's awesome projects!
               				</p>
 						</div>
 						<Showcase users={featuredToShowcase} />
