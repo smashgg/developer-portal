@@ -12,6 +12,7 @@
 const users = require('./data/users');
 
 const siteConfig = {
+	users,
 	title: 'Developer Portal', // Title for your website.
 	tagline: 'Turning passions into careers',
 	url: 'https://developer.smash.gg', // Your website URL
