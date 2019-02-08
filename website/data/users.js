@@ -15,6 +15,13 @@ module.exports = [
 		pinned: true,
 	},
 	{
+		caption: 'SoCalSmash.Net',
+		image: 'https://imgur.com/Q4uYIK5.png',
+		infoLink: 'https://socalsmash.net',
+		openSource: false,
+		pinned: true,
+	},
+	{
 		caption: 'SmashTicker',
 		image: 'https://lh3.googleusercontent.com/HJzDy4IhHwwpmb_LZtYs4tmth-Z4N8BYltaxBlgMjkIaB97HIer3HJY3V6Ebh39dKn2s0qGRGuo=w128-h128-e365',
 		infoLink: 'https://chrome.google.com/webstore/detail/smashticker-watch-people/nhjklhalmbccpfhpnedcleiabpkocggi',
