@@ -37,6 +37,7 @@ const siteConfig = {
 		{page: 'explorer', label: 'API Explorer'},
 		{page: 'help', label: 'Help'},
 		{blog: true, label: 'Blog'},
+		{href: '/users', label: 'Users'},
 	],
 
 	/* path to images for header/footer */
