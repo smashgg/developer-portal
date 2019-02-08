@@ -8,6 +8,9 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
+/* List of projects/orgs using your project for the users page */
+const users = require('./data/users');
+
 const siteConfig = {
 	title: 'Developer Portal', // Title for your website.
 	tagline: 'Turning passions into careers',
