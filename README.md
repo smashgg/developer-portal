@@ -13,7 +13,7 @@ Great question!
 
 Here are some quick tips for your docs!
 
-1. Make sure to use H2's as these are used for page nav. Especially for Request and Response in your examples
+1. Make sure to use H2's as these are used for page nav
 2. If you are linking to an external page (ie not on developer.smash.gg/*) please have these open in a new tab using
 `<a href="https://external-site.example" target="_blank">Hyperlink text</a>`
 3. If you are linking to a page within developer.smash.gg,
