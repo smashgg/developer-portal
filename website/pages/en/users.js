@@ -42,7 +42,7 @@ class Users extends React.Component {
 						<div className="prose">
 							<p>
 								<i>
-									Is your project using smash.gg?
+									Is your project using our API?
 								</i>
 							</p>
 							<p>
