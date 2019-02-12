@@ -3,7 +3,7 @@ id: join-discord
 title: Join our Discord
 ---
 
-Our Discord is the best place to discuss our public API, get help from our engineers and community devs,
+Our Discord server is the best place to discuss our public API, get help from our engineers and community devs,
  find collaborators, and promote your projects using the API!
 
 ## How to Join our Community on Discord
