@@ -6,8 +6,7 @@ title: socalsmash.net
 sidebar_label: socalsmash.net
 ---
 
-<a href="https://socalsmash.net" target="_blank">socalsmash.net</a> is a website to keep up with the *Super Smash Bros. Ultimate*
- competitive esports scene in Southern California (SoCal).
+<a href="https://socalsmash.net" target="_blank">socalsmash.net</a> is a website to keep up with the *Super Smash Bros. Ultimate* competitive esports scene in Southern California (SoCal).
 Currently, you will find a scoreboard area with recent tournament results, and a list of upcoming events in the SoCal region.
 
 ![preview image](https://imgur.com/L4Ksqh2.png)
