@@ -41,7 +41,6 @@ const siteConfig = {
 	],
 
 	// Twitter card stuff
-	twitter: true,
 	twitterImage: '/img/devgg.png',
 
 	/* path to images for header/footer */
