@@ -24,7 +24,7 @@ I always try to find little ways to contribute back to it, and as a front-end de
  design along with smash.gg’s data, improving my community’s digital presence just makes sense.
 The life and energy of the community is my inspiration, and I want its future to keep flourishing.*
 
-**How was your experience with the new public API?**
+**How was your experience working with our new public API?**
 
 *Working with the new API has been a very enjoyable learning experience.
 It was pretty simple to setup and understand; both smash.gg and GraphQL are well-documented and the smash.gg team has
