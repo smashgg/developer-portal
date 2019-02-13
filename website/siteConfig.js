@@ -40,6 +40,10 @@ const siteConfig = {
 		{href: '/users', label: 'Users'},
 	],
 
+	// Twitter card stuff
+	twitter: true,
+	twitterImage: '/img/devgg.png',
+
 	/* path to images for header/footer */
 	headerIcon: 'img/logo-white.svg',
 	footerIcon: 'img/favicon/favicon.ico',
