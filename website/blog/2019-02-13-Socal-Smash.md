@@ -6,7 +6,8 @@ title: socalsmash.net
 sidebar_label: socalsmash.net
 ---
 
-<a href="https://socalsmash.net" target="_blank">socalsmash.net</a> is a website to keep up with the Southern California (SoCal) Smash Ultimate competitive esports scene.
+<a href="https://socalsmash.net" target="_blank">socalsmash.net</a> is a website to keep up with the *Super Smash Bros. Ultimate*
+ competitive esports scene for Southern California (SoCal).
 Currently, you will find a scoreboard area with recent tournament results, and a list of upcoming events in the SoCal region.
 
 ![preview image](https://imgur.com/L4Ksqh2.png)
@@ -47,6 +48,8 @@ If you're interested in helping, you can contact me at `maiko.ssb@gmail.com`!*
 
 -------
 
-Maiko's project incorporates smash.gg data in an excellent, custom-tailored resource for his regional community.
-If you, too, are interested in building an application for local tournaments, then I recommend checking out examples like
+Congrats on the launch, Maiko!
+
+Maiko's project incorporates smash.gg data in an excellent, custom-tailored experience for his community.
+If you, too, are interested in building an application around local tournaments, then I recommend checking out our examples like
  [Tournaments by Location](/docs/examples/tournaments-by-location).
