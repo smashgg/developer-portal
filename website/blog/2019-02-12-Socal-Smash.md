@@ -13,7 +13,8 @@ Currently, you will find a scoreboard area with recent tournament results, and a
 
 <!--truncate-->
 
-I spoke with the creator of socalsmash.net, Maiko, to learn more about what went into this handy resource for his regional community.
+I spoke with the creator of socalsmash.net, <a href="twitter.com/maiko_ssb" target="_blank">Miguel "Maiko" G.</a>,
+ to learn more about what went into building this handy resource for his regional community.
 
 **What was your inspiration for building it?**
 
@@ -25,11 +26,11 @@ The life and energy of the community is my inspiration, and I want its future to
 
 **How was your experience with the new public API?**
 
-*Working with the new api has been a very enjoyable learning experience.
-It was pretty simple to setup and understand; both smash.gg and graphql are well documented and the smash.gg team has
- been very supportive and helpful via their [Discord channel](https://discord.gg/smashgg).*
+*Working with the new API has been a very enjoyable learning experience.
+It was pretty simple to setup and understand; both smash.gg and GraphQL are well-documented and the smash.gg team has
+ been very supportive and helpful via their [Discord channel](/docs/join-discord).*
 
-**What are you planning to do next with the site?**
+**What are you planning to do next with socalsmash.net?**
 
 *At the moment, the site only displays recent results and upcoming events, but there’s so much more to the SoCal scene than
  this.
@@ -43,3 +44,9 @@ With an array of community members such as players, photographers, commentators,
 *I haven’t looked for help yet, since I’ve been very busy building the foundation of the project and I want it to be quite strong.
 However, I do enjoy the idea of additional help, and it will eventually be needed.
 If you're interested in helping, you can contact me at `maiko.ssb@gmail.com`!*
+
+-------
+
+Maiko's project incorporates smash.gg data in an excellent, custom-tailored resource for his regional community.
+If you, too, are interested in building an application for local tournaments, then I recommend checking out examples like
+ [Tournaments by Location](/docs/examples/tournaments-by-location).
