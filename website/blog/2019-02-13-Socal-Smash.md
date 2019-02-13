@@ -13,7 +13,7 @@ Currently, you will find a scoreboard area with recent tournament results, and a
 
 <!--truncate-->
 
-I spoke with the creator of socalsmash.net, <a href="twitter.com/maiko_ssb" target="_blank">Miguel "Maiko" G.</a>,
+I spoke with the creator of socalsmash.net, <a href="https://twitter.com/maiko_ssb" target="_blank">Miguel "Maiko" G.</a>,
  to learn more about what went into building this handy resource for his regional community.
 
 **What was your inspiration for building it?**
