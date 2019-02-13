@@ -16,7 +16,7 @@ Currently, you will find a scoreboard area with recent tournament results, and a
 I spoke with the creator of socalsmash.net, <a href="https://twitter.com/maiko_ssb" target="_blank">Miguel "Maiko" G.</a>,
  to learn more about what went into building this handy resource for his regional community.
 
-**What was your inspiration for building it?**
+**What was your inspiration for building socalsmash.net?**
 
 *I’ve been part of the SoCal smash community for over four years now, and I must say it has been one of the most impactful
  changes to my life, in a very positive way.
@@ -30,7 +30,7 @@ The life and energy of the community is my inspiration, and I want its future to
 It was pretty simple to setup and understand; both smash.gg and GraphQL are well-documented and the smash.gg team has
  been very supportive and helpful via their [Discord channel](/docs/join-discord).*
 
-**What are you planning to do next with socalsmash.net?**
+**What are you planning to do next with the project?**
 
 *At the moment, the site only displays recent results and upcoming events, but there’s so much more to the SoCal scene than
  this.
