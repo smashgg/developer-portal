@@ -2,7 +2,7 @@
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
 authorImageURL: https://imgur.com/HgkWbZt.png
-title: socalsmash.net
+title: socalsmash.net (Release)
 sidebar_label: socalsmash.net
 ---
 
