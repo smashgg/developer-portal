@@ -23,15 +23,14 @@ class Help extends React.Component {
     const language = this.props.language || '';
     const supportLinks = [
       {
-        content: `Learn more using the [documentation on this site.](${docUrl(
+        content: `Learn more about using the smash.gg public API in our [official documentation.](${docUrl(
           'intro.html',
           language,
-        )}) including info for getting started, example queries/mutations, and an API explorer for testing requests.`,
+        )})`,
         title: 'Browse Docs',
       },
       {
-        content: `Discuss the API, and its documentation, in our [Discord server.](https://discord.gg/smashgg)
-          *To access our dev channels, role yourself in the #flairing channel using* \`/roleme 3rd-party-devs\``,
+        content: `Discuss the API, and its documentation, in our [Discord server](/docs/join-discord).`,
         title: 'Join the Community',
       },
       {
