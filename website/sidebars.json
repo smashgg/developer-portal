@@ -8,7 +8,7 @@
 			"authentication",
 			"testing-your-requests",
 			"sending-requests",
-			"resource-limits",
+			"rate-limits",
 			"benefits-of-gql"			
 		],
     "Query Examples": [

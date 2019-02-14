@@ -1,6 +1,6 @@
 ---
-id: resource-limits
-title: Resource Limits
+id: rate-limits
+title: Rate Limits
 ---
 
 In order to prevent malicious attacks (or unintended for-loops), we have a rate-limiting system.
