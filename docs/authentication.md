@@ -7,7 +7,7 @@ title: Authentication
 
 In order to access smash.gg’s API, you must use an authentication token.
 These tokens can be created from the <a href="https://smash.gg/admin/profile/developer" target="_blank">Developer Settings</a> page in your account settings.
-**If you do not have permission to create tokens, please contact us in our <a href="https://discord.gg/smashgg" target="_blank">Discord server!</a>** (message/tag `#furtive1457`)
+**If you do not have permission to create tokens, please contact us in our <a href="https://discord.gg/smashgg" target="_blank">Discord server!</a>** (message/tag `@furtive#1457`)
 
 First, click "Create new token"
 
