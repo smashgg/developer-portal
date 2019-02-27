@@ -9,15 +9,13 @@ This is useful for tournament organizers who want to have a 'random seeding' eve
 **NOTE: You will need an API [auth token](/docs/authentication)
  belonging to a user who has admin permissions for your tournament.**
 
-## Step 1: Obtain and Randomize Seeding
-
 The 3 basic steps for this are:
 
 1) Acquire current `seedMapping` via GQL query
 2) Shuffle that seeding to create a new `seedMapping`
 3) Post that new `seedMapping` via GQL mutation
 
-In my example here, I used one Python script to perform all three of these actions.
+In my example here, I use one Python script to perform all three of these actions.
 
 ```Python
 from graphqlclient import GraphQLClient
