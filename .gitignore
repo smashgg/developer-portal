@@ -1,6 +1,5 @@
 website/node_modules
 website/build
 graphdoc/schema
-
-
+*.DS_Store
 website/i18n/en.json
