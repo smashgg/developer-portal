@@ -23,6 +23,10 @@ a:link {
   color: #008ce0;
 }
 
+a:visited {
+  color: purple;
+}
+
 .homeSplashFade {
   padding-top: 50px;
 }
