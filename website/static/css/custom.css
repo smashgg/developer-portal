@@ -23,6 +23,10 @@ a:link {
   color: #008ce0;
 }
 
+a:link:hover{
+  text-decoration: underline;
+}
+
 a:visited {
   color: purple;
 }
