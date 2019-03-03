@@ -48,7 +48,7 @@ class Users extends React.Component {
 							<p>
 								<i>
 									Edit this page with a{' '}
-									<a href="https://github.com/smashgg/developer-portal/edit/master/website/data/users.js">
+									<a href="https://github.com/smashgg/developer-portal/edit/master/website/data/users.js" target="_blank">
 										Pull Request
 									</a>{' '}
 									to add your logo.
