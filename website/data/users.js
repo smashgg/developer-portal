@@ -8,6 +8,13 @@
 module.exports = [
 	// Please add your logo in alphabetical order of caption.
 	{
+		caption: 'Boost Legacy',
+		image: 'https://imgur.com/jBYfQ7o.jpg',
+		infoLink: 'https://github.com/pfeiferj/smash-gg-rocket-league-seeder/blob/master/README.md',
+		openSource: true,
+		pinned: true,
+	},
+	{
 		caption: 'Brawlhalla Matchups',
 		image: 'https://imgur.com/rO1rrqv.png',
 		infoLink: 'https://github.com/henryaguerra/brawlhalla-matchups-bot',
