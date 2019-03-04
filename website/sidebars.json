@@ -12,27 +12,30 @@
 			"benefits-of-gql"			
 		],
     "Query Examples": [
-			"examples/event-standings",
-			"examples/event-entrants",
-			"examples/set-score",
-			"examples/recent-sets-by-player",
-			"examples/stream-queue",
-			"examples/set-entrants",
-			"examples/get-phase-seeding",
-			"examples/pool-seeds",
-			"examples/attendee-counts",
-			"examples/tournaments-by-location",
-			"examples/tournaments-by-videogame",
-			"examples/tournaments-by-owner",
-			"examples/attendees-by-sponsor"
+			"examples/queries/event-standings",
+			"examples/queries/event-entrants",
+			"examples/queries/set-score",
+			"examples/queries/recent-sets-by-player",
+			"examples/queries/stream-queue",
+			"examples/queries/set-entrants",
+			"examples/queries/get-phase-seeding",
+			"examples/queries/pool-seeds",
+			"examples/queries/attendee-counts",
+			"examples/queries/tournaments-by-location",
+			"examples/queries/tournaments-by-videogame",
+			"examples/queries/tournaments-by-owner",
+			"examples/queries/attendees-by-sponsor"
 		],
 		"Mutation Examples": [
-			"examples/update-phase-seeding",
-			"examples/resolve-conflicts",
-			"examples/randomize-phase-seeding"
+			
 		],
 		"Widgets & Embeds": [
 			"widgets/registration"
+		],
+		"Full Examples": [
+			"e2e/update-phase-seeding",
+			"e2e/resolve-conflicts",
+			"e2e/randomize-phase-seeding"
 		]
   }
 }
