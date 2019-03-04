@@ -45,12 +45,12 @@ const siteConfig = {
 
 	/* path to images for header/footer */
 	headerIcon: 'img/logo-white.svg',
-	footerIcon: 'img/favicon/favicon.ico',
+	footerIcon: 'img/favicon/white-favicon.ico',
 	favicon: 'img/favicon/favicon.ico',
 
 	/* Colors for website */
 	colors: {
-		primaryColor: '#CB333B',
+		primaryColor: '#252E37',
 		secondaryColor: '#000000',
 	},
 
@@ -71,7 +71,7 @@ const siteConfig = {
 
 	highlight: {
 		// Highlight.js theme to use for syntax highlighting in code blocks.
-		theme: 'default',
+		theme: 'atom-one-dark',
 	},
 
 	// Add custom scripts here that would be placed in <script> tags.

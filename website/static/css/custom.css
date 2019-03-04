@@ -15,6 +15,31 @@
 @media only screen and (min-width: 1500px) {
 }
 
+.headerTitleWithLogo {
+  color: #ffffff;
+}
+
+a:link {
+  color: #008ce0;
+}
+
+a:visited {
+  color: purple;
+}
+
+.homeSplashFade {
+  padding-top: 50px;
+}
+
+.toc-headings a {
+  color: #000000;
+}
+
+.logo {
+  margin-top: 2px;
+  max-height: 20px;
+}
+
 .showcase {
   align-items: center;
   display: flex;
