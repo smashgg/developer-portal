@@ -2,18 +2,20 @@
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
 authorImageURL: https://imgur.com/HgkWbZt.png
-title: Lunar Phase Standings Tweets
-sidebar_label: Lunar Phase Standing Tweets
+title: Lunar Phase Event Results Tweets
+sidebar_label: Lunar Phase Event Results Tweets
 ---
 
-Delivering updates to your online audience can be a rewarding, but tedious, task for tournament organizers.
-Lunar Phase, a tournament-organizing and broadcast team based out of New York City, have automated some
- of the work involved in the post-event tweets for their events, like
- <a href="https://twitter.com/LunarPhaseProd/status/1102362770367021061" target="_blank">this one</a>.
-I spoke to <a href="https://twitter.com/gramofdata" target="_blank">Datagram</a>,
- who authored this automated process, to learn more.
+![tweet example](https://imgur.com/VXJMb0a.png)
+
+Lunar Phase, a tournament-organizing and broadcast team based out of New York City, have
+ automated their workflow for creating post-event results tweets with an
+ <a href="https://github.com/lunar-phase/smashgg-results" target="_blank">open-source solution</a>
+ powered by the smash.gg public API.
 
 <!--truncate-->
+I spoke to <a href="https://twitter.com/gramofdata" target="_blank">Datagram</a>,
+ who authored their automated process, to learn about what inspired them to build it.
 
 ## Tell me a quick bit about yourself
 
@@ -29,3 +31,23 @@ We're a NYC-based team that hosts several tournaments a month for a wide variety
  to dedicate to it.
 I figured if we were going to keep making result tweets, we needed to find a way to automate it.*
 
+## So you went to work, and it looks like you got it done
+
+*The fruit of my efforts was a pretty simple script that, given a tournament, grabs tags and twitter handles
+ for the finalists and spits out a summary for each event.
+There are improvements that can be made, but for now it gets the job done and saves us a good deal of time.*
+
+**<a href="https://github.com/lunar-phase/smashgg-results" target="_blank">(view the source code on GitHub)</a>**
+
+## How was your experience working with the smash.gg public API?
+
+*Working with the new smash.gg API has been fantastic!
+This was my first experience using GraphQL, but their API explorer made it really easy to find my way around
+ the API and try things out even before I had settled on a library to use for my implementation.
+The API is still under development, but smash.gg staff have been impressively quick at responding to and implementing requests.*
+
+--------------
+
+This project is a great example of how to add value to your events by automating appropriate tasks.
+If you're interested in using event standings for a project, I recommend checking out the
+ [Event Standings doc](/docs/examples/queries/event-standings)!
