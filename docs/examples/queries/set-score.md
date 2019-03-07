@@ -75,7 +75,71 @@ query set($setId:String!){
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-## Coming soon: In-Progress Set
+## Example #2 (In-Progress Set)
 
-There is a known issue with retrieving scores for
- in-progress sets which we will be resolving soon.
+<!--DOCUSAURUS_CODE_TABS-->
+<!--Request-->
+
+```GraphQL
+query InProgressSet{
+  set(id:"18273807"){
+    state
+    slots{
+      entrant{
+        name
+      }
+      standing{
+        stats{
+          score{
+            value
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+<!--Response-->
+
+```GraphQL
+{
+  "data": {
+    "set": {
+      "state": 2,
+      "slots": [
+        {
+          "entrant": {
+            "name": "Outlaw"
+          },
+          "standing": {
+            "stats": {
+              "score": {
+                "value": 1
+              }
+            }
+          }
+        },
+        {
+          "entrant": {
+            "name": "Raja"
+          },
+          "standing": {
+            "stats": {
+              "score": {
+                "value": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "queryComplexity": 15
+  },
+  "actionRecords": []
+}
+```
+
+<!--END_DOCUSAURUS_CODE_TABS-->
