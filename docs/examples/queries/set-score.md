@@ -75,7 +75,7 @@ query set($setId:String!){
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-## Example #2 (In-Progress Set)
+## Example #2 (In-Progress Head-to-Head Set)
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Request-->
