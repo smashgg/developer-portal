@@ -15,6 +15,8 @@
 			"examples/queries/event-standings",
 			"examples/queries/event-entrants",
 			"examples/queries/sets-in-event",
+			"examples/queries/sets-in-phase",
+			"examples/queries/sets-in-phase-group",
 			"examples/queries/set-score",
 			"examples/queries/recent-sets-by-player",
 			"examples/queries/stream-queue",
