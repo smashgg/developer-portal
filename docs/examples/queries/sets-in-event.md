@@ -4,11 +4,13 @@ title: Sets in Event
 ---
 
 In this example we will get the sets in an event.
+Here I have selected the Slap City Singles event at Genesis 6.
 
 ## Example #1 (All Sets in Event)
 
 To get all sets, don't pass any filters to the sets query.
 Instead, just iterate over the the pages as necessary.
+You can use a much larger `perPage` here- it is kept small in the example for demo purposes.
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Request-->
@@ -17,6 +19,7 @@ Instead, just iterate over the the pages as necessary.
 query EventSets($eventId:Int!){
   event(id:$eventId){
     id
+    name
     sets(
       page: 1
       perPage: 3
@@ -49,6 +52,7 @@ query EventSets($eventId:Int!){
   "data": {
     "event": {
       "id": 261856,
+      "name": "Slap City Singles",
       "sets": {
         "pageInfo": {
           "total": 93
