@@ -34,7 +34,7 @@ client.inject_token('Bearer ' + authToken)
 getSeedsResult = client.execute('''
 query getCurrentSeeds($phaseId:Int!){
   phase(id:$phaseId){
-    paginatedSeeds(query:{
+    seeds(query:{
       perPage: 100
     }){
       nodes{
@@ -61,7 +61,7 @@ if not resData['data']['phase']:
 else:
 	print('Current seeding acquired...')
 	seedMapping = []
-	for key, value in enumerate(resData['data']['phase']['paginatedSeeds']['nodes']):
+	for key, value in enumerate(resData['data']['phase']['seeds']['nodes']):
 		seedId = value['id']
 		seedNum = value['seedNum']
 		seedMapping.append({

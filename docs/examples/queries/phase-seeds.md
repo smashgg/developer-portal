@@ -16,7 +16,7 @@ To adjust phase seeding, please see
 ```GraphQL
 query PhaseSeeds($phaseId:Int!,$page:Int!,$perPage:Int!){
   phase(id:$phaseId){
-    paginatedSeeds(query:{
+    seeds(query:{
       page:$page
       perPage:$perPage
     }){
@@ -49,7 +49,7 @@ query PhaseSeeds($phaseId:Int!,$page:Int!,$perPage:Int!){
 {
   "data": {
     "phase": {
-      "paginatedSeeds": {
+      "seeds": {
         "pageInfo": {
           "total": 2105,
           "totalPages": 1053
@@ -100,7 +100,7 @@ The participants for the entrant will include all players on the roster.
 ```GraphQL
 query PhaseSeeds($phaseId:Int!,$page:Int!,$perPage:Int!){
   phase(id:$phaseId){
-    paginatedSeeds(query:{
+    seeds(query:{
       page:$page
       perPage:$perPage
     }){
@@ -134,7 +134,7 @@ query PhaseSeeds($phaseId:Int!,$page:Int!,$perPage:Int!){
 {
   "data": {
     "phase": {
-      "paginatedSeeds": {
+      "seeds": {
         "pageInfo": {
           "total": 69,
           "totalPages": 35
