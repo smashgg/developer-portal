@@ -18,7 +18,7 @@ query GetPhaseSeeds($phaseId:Int!) {
   phase(id:$phaseId){
     id
     numSeeds
-    paginatedSeeds(query:{
+    seeds(query:{
       page: 1
       perPage: 60
     })
