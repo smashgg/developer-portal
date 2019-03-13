@@ -12,6 +12,9 @@ It allows for ease of access to common API objects and aggregations so that deve
 
 <!--truncate-->
 
+I spoke to <a href="https://twitter.com/cookieissmashin" target="_blank">Brandon "cookiE" Cooke</a>, author of smashgg.js, to learn more about
+ his background and why he built this!
+
 ## Tell me a bit about yourself
 
 I am the co-founder, lead producer, and CTO of <a href="http://recursion.gg/" target="_blank">Recursion</a>, a professional Smash Bros
