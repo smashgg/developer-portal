@@ -33,7 +33,7 @@ query PoolSeeds($phaseGroupId: Int!, $page: Int!, $perPage: Int!) {
   }
 },
 {
-  "phaseGroupId": "398727",
+  "phaseGroupId": 398727,
   "page": 1,
   "perPage": 5
 }
