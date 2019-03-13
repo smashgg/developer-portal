@@ -16,13 +16,14 @@ You can use a much larger `perPage` here- it is kept small in the example for de
 <!--Request-->
 
 ```GraphQL
-query EventSets($eventId:Int!){
+query EventSets($eventId:Int!, $page:Int!, $perPage:Int!){
   event(id:$eventId){
     id
     name
     sets(
-      page: 1
-      perPage: 3
+      page: $page
+      perPage: $perPage
+      sortType: STANDARD
     ){
       pageInfo{
         total
@@ -41,7 +42,9 @@ query EventSets($eventId:Int!){
   }
 },
 {
-  "eventId":261856
+  "eventId":261856,
+  "page": 1,
+  "perPage": 3
 }
 ```
 
@@ -122,7 +125,7 @@ query EventSets($eventId:Int!){
   "extensions": {
     "queryComplexity": 13
   },
-  "actionRecords": [],
+  "actionRecords": []
 }
 ```
 

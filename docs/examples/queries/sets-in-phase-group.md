@@ -16,13 +16,14 @@ You can use a much larger `perPage` here- it is kept small in the example for de
 <!--Request-->
 
 ```GraphQL
-query PhaseGroupSets($phaseGroupId:Int!){
+query PhaseGroupSets($phaseGroupId:Int!, $page:Int!, $perPage:Int!){
   phaseGroup(id:$phaseGroupId){
     id
     displayIdentifier
     sets(
-      page: 1
-      perPage: 3
+      page: $page
+      perPage: $perPage
+      sortType: STANDARD
     ){
       pageInfo{
         total
@@ -41,7 +42,9 @@ query PhaseGroupSets($phaseGroupId:Int!){
   }
 },
 {
-  "phaseGroupId": 813313
+  "phaseGroupId": 813313,
+  "page": 1,
+  "perPage": 3
 }
 ```
 
@@ -122,7 +125,7 @@ query PhaseGroupSets($phaseGroupId:Int!){
   "extensions": {
     "queryComplexity": 13
   },
-  "actionRecords": [],
+  "actionRecords": []
 }
 ```
 
