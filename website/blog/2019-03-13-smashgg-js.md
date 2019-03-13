@@ -8,7 +8,7 @@ sidebar_label: smashgg.js
 
 <a href="https://www.npmjs.com/package/smashgg.js" target="_blank">smashgg.js</a> is an unofficial NodeJS SDK for the smash.gg public API.
 It allows for ease of access to common API objects and aggregations so that developers can "spend less time digging through JSON or writing
- GQL queries and more time getting their application up and running."
+ GQL queries, and more time getting their application up and running."
 
 <!--truncate-->
 
@@ -19,8 +19,8 @@ I spoke to <a href="https://twitter.com/cookieissmashin" target="_blank">Brandon
 
 I am the co-founder, lead producer, and CTO of <a href="http://recursion.gg/" target="_blank">Recursion</a>, a professional Smash Bros
  streaming company out of Atlanta, Georgia.
-I've been a member of Georgia's Melee scene dating back to 2015, and soon after I began streaming for the community.
-In 2016 this effort rebranded into Recursion and has been going strong ever since.
+I've been a member of Georgia's Melee scene dating back to 2015, and soon after that I began streaming for the community.
+In 2016, this effort rebranded into Recursion and has been going strong ever since.
 
 Outside of Smash, I am also a professional software engineer in Atlanta.
 I graduated in 2014 from Kennesaw State University and am approaching completion of my CS Masters at Georgia Tech.
