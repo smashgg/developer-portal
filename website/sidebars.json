@@ -21,6 +21,7 @@
 			"examples/queries/recent-sets-by-player",
 			"examples/queries/stream-queue",
 			"examples/queries/set-entrants",
+			"examples/queries/phase-groups-in-phase",
 			"examples/queries/get-phase-seeding",
 			"examples/queries/pool-seeds",
 			"examples/queries/attendee-counts",
