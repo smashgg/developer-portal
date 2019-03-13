@@ -13,18 +13,29 @@ We'll include the name, and the seed id, of each entrant.
 <!--Request-->
 
 ```graphql
-query PoolSeeds($phaseGroupId: Int!) {
+query PoolSeeds($phaseGroupId: Int!, $page: Int!, $perPage: Int!) {
   phaseGroup(id: $phaseGroupId) {
-    seeds {
-      id
-      entrant {
+    id
+    seeds(query:{
+      page: $page
+      perPage: $perPage
+    }){
+      pageInfo{
+        total
+      }
+      nodes{
+        entrant {
+        id
         name
+        }
       }
     }
   }
 },
 {
-  "phaseGroupId": "398727"
+  "phaseGroupId": "398727",
+  "page": 1,
+  "perPage": 5
 }
 ```
 
@@ -34,125 +45,50 @@ query PoolSeeds($phaseGroupId: Int!) {
 {
   "data": {
     "phaseGroup": {
-      "seeds": [
-        {
-          "id": 5637009,
-          "entrant": {
-            "name": "FullStream"
-          }
+      "id": 398727,
+      "seeds": {
+        "pageInfo": {
+          "total": 19
         },
-        {
-          "id": 6369388,
-          "entrant": {
-            "name": "ERG | Lord Bagel"
+        "nodes": [
+          {
+            "entrant": {
+              "id": 902669,
+              "name": "FullStream"
+            }
+          },
+          {
+            "entrant": {
+              "id": 905609,
+              "name": "FP | Jorane"
+            }
+          },
+          {
+            "entrant": {
+              "id": 1248107,
+              "name": "ERG | Lord Bagel"
+            }
+          },
+          {
+            "entrant": {
+              "id": 902688,
+              "name": "ICE | TheBestAdamCarra"
+            }
+          },
+          {
+            "entrant": {
+              "id": 1248525,
+              "name": "Tandori"
+            }
           }
-        },
-        {
-          "id": 5640356,
-          "entrant": {
-            "name": "FP | Jorane"
-          }
-        },
-        {
-          "id": 6427487,
-          "entrant": {
-            "name": "ICE | TheBestAdamCarra"
-          }
-        },
-        {
-          "id": 6369837,
-          "entrant": {
-            "name": "Tandori"
-          }
-        },
-        {
-          "id": 6311614,
-          "entrant": {
-            "name": "PhD | Cheesedog"
-          }
-        },
-        {
-          "id": 5638050,
-          "entrant": {
-            "name": "SSS HEAT | P-Cakes`"
-          }
-        },
-        {
-          "id": 6359891,
-          "entrant": {
-            "name": "[MB] | Youngblood"
-          }
-        },
-        {
-          "id": 6373129,
-          "entrant": {
-            "name": "Accel"
-          }
-        },
-        {
-          "id": 6428184,
-          "entrant": {
-            "name": "D'artagnan"
-          }
-        },
-        {
-          "id": 6347532,
-          "entrant": {
-            "name": "GShark"
-          }
-        },
-        {
-          "id": 6440792,
-          "entrant": {
-            "name": "Churro"
-          }
-        },
-        {
-          "id": 6423657,
-          "entrant": {
-            "name": "Sweet Lou"
-          }
-        },
-        {
-          "id": 5636974,
-          "entrant": {
-            "name": "Dcmaster"
-          }
-        },
-        {
-          "id": 6406094,
-          "entrant": {
-            "name": "MTEB"
-          }
-        },
-        {
-          "id": 5655698,
-          "entrant": {
-            "name": "NoMo"
-          }
-        },
-        {
-          "id": 6432213,
-          "entrant": {
-            "name": "Splish"
-          }
-        },
-        {
-          "id": 5661739,
-          "entrant": {
-            "name": "Vontre"
-          }
-        },
-        {
-          "id": 5975546,
-          "entrant": {
-            "name": "TipC"
-          }
-        }
-      ]
+        ]
+      }
     }
   },
-  "actionRecords": []
+  "extensions": {
+    "queryComplexity": 6
+  },
+  "actionRecords": [],
 }
 ```
 
