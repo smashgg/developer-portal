@@ -4,10 +4,11 @@ title: Testing your Requests
 ---
 
 We recommend testing your requests in our [API explorer](/explorer).
-For starters&mdash;and for inspiration&mdash;you can view examples written by the community
-under the **Example Usage** section of our dev portal.
+For starters&mdash;and for inspiration&mdash;you can view examples
+under the **Query Examples** section of our dev portal.
 
 To test and adapt an example:
+
 1) Copy one of the example queries and its query variables into the API explorer  
 (like [Tournaments by Location](examples/queries/tournaments-by-location)), then execute the query:  
 &nbsp;
