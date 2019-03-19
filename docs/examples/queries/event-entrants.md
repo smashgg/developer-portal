@@ -14,7 +14,7 @@ This is a paginated query- I chose a small `perPage` value for the sake of space
 <!--Request-->
 
 ```GraphQL
-query EventEntrants($eventId:Int!,$page:Int!,$perPage:Int!){
+query EventEntrants($eventId: ID!,$page:Int!,$perPage:Int!){
   event(id:$eventId){
     name
     entrants(query:{

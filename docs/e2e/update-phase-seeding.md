@@ -14,7 +14,7 @@ To do this, you will need an auth token belonging to an admin in your tournament
 To obtain the current phase seeding via API, use a request like this one:
 
 ```GraphQL
-query GetPhaseSeeds($phaseId:Int!) {
+query GetPhaseSeeds($phaseId:ID!) {
   phase(id:$phaseId){
     id
     numSeeds
@@ -135,7 +135,7 @@ client = GraphQLClient('https://api.smash.gg/gql/' + apiVersion)
 client.inject_token('Bearer ' + authToken)
 
 result = client.execute('''
-mutation UpdatePhaseSeeding ($phaseId: Int!, $seedMapping: [UpdatePhaseSeedInfo]!) {
+mutation UpdatePhaseSeeding ($phaseId: ID!, $seedMapping: [UpdatePhaseSeedInfo]!) {
   updatePhaseSeeding (phaseId: $phaseId, seedMapping: $seedMapping) {
     id
   }

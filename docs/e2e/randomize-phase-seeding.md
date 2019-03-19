@@ -32,7 +32,7 @@ client.inject_token('Bearer ' + authToken)
 
 ## Obtain Current Seeding
 getSeedsResult = client.execute('''
-query getCurrentSeeds($phaseId:Int!){
+query getCurrentSeeds($phaseId:ID!){
   phase(id:$phaseId){
     seeds(query:{
       perPage: 100
@@ -91,7 +91,7 @@ else:
 
 	## Post the shuffled seeding via GQL Mutation
 	seedingUpdateResult = client.execute('''
-	mutation UpdatePhaseSeeding ($phaseId: Int!, $seedMapping: [UpdatePhaseSeedInfo]!) {
+	mutation UpdatePhaseSeeding ($phaseId: ID!, $seedMapping: [UpdatePhaseSeedInfo]!) {
 	updatePhaseSeeding (phaseId: $phaseId, seedMapping: $seedMapping) {
 		id
 	}

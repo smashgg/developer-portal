@@ -20,7 +20,7 @@ You can read a deeper explanation of this topic in our
 <!--Request-->
 
 ```GraphQL
-query SetsByPlayer($playerId: Int!) {
+query SetsByPlayer($playerId: ID!) {
   player(id: $playerId) {
     id
     gamerTag
@@ -176,7 +176,7 @@ query SetsByPlayer($playerId: Int!) {
 <!--Request-->
 
 ```GraphQL
-query SetsByPlayerAndOpponent($playerId: Int!, $oppPlayerId: Int!) {
+query SetsByPlayerAndOpponent($playerId: ID!, $oppPlayerId: ID!) {
   player(id: $playerId) {
     id
     gamerTag

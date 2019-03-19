@@ -89,7 +89,7 @@ client = GraphQLClient('https://api.smash.gg/gql/' + apiVersion)
 client.inject_token('Bearer ' + authToken)
 
 result = client.execute('''
-mutation ResolveScheduleConflicts ($tournamentId: Int!, $options: ResolveConflictsOptions!) {
+mutation ResolveScheduleConflicts ($tournamentId: ID!, $options: ResolveConflictsOptions!) {
   resolveScheduleConflicts (tournamentId: $tournamentId, options: $options) {
     id
   }
