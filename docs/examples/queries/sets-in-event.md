@@ -16,7 +16,7 @@ You can use a much larger `perPage` here- it is kept small in the example for de
 <!--Request-->
 
 ```GraphQL
-query EventSets($eventId:Int!, $page:Int!, $perPage:Int!){
+query EventSets($eventId: ID!, $page:Int!, $perPage:Int!){
   event(id:$eventId){
     id
     name

@@ -53,7 +53,7 @@ query AttendeeCount($tourneySlug:String!){
 <!--Request-->
 
 ```GraphQL
-query AttendeeCount($tourneySlug:String!, $eventIds:[Int]){
+query AttendeeCount($tourneySlug:String!, $eventIds:[ID]){
   tournament(slug:$tourneySlug){
     name
     participants(query:{

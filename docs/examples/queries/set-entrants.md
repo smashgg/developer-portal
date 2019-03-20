@@ -14,7 +14,7 @@ so we will get the available fields for each of those, too!
 <!--Request-->
 
 ```graphql
-query SetEntrants($setId: String!) {
+query SetEntrants($setId: ID!) {
   set(id: $setId) {
     id
     slots {

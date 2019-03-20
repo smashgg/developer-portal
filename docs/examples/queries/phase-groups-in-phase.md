@@ -10,7 +10,7 @@ I have decided to query for the phase groups in the "R1 Pools" Phase of Genesis 
 <!--Request-->
 
 ```gql
-query PhaseGroupsByPhase($phaseId:Int!,$page:Int!,$perPage:Int!){
+query PhaseGroupsByPhase($phaseId: ID!,$page:Int!,$perPage:Int!){
   phase(id:$phaseId){
     phaseGroups(query: {
       page:$page

@@ -13,7 +13,7 @@ We'll include the name, and the seed id, of each entrant.
 <!--Request-->
 
 ```graphql
-query PoolSeeds($phaseGroupId: Int!, $page: Int!, $perPage: Int!) {
+query PoolSeeds($phaseGroupId: ID!, $page: Int!, $perPage: Int!) {
   phaseGroup(id: $phaseGroupId) {
     id
     seeds(query:{

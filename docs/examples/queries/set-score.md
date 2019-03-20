@@ -15,7 +15,7 @@ For this completed head-to-head set, one entrant won (ie their placement is '1')
 <!--Request-->
 
 ```GraphQL
-query set($setId:String!){
+query set($setId: ID!){
   set(id:$setId){
     id
     slots{

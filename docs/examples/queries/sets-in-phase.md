@@ -16,7 +16,7 @@ You can use a much larger `perPage` here- it is kept small in the example for de
 <!--Request-->
 
 ```GraphQL
-query PhaseSets($phaseId:Int!, $page:Int!, $perPage:Int!){
+query PhaseSets($phaseId: ID!, $page:Int!, $perPage:Int!){
   phase(id:$phaseId){
     id
     name
