@@ -72,6 +72,8 @@ smashgg.initialize('<your api key>');
 })()
 ```
 
+![response](https://imgur.com/ZTqXJJj.png)
+
 Why Node?
 Other than Node being a very hot language in today's day-and-age, NodeJS handles JSON responses from the API seamlessly -- since at the end of the day it's
  JavaScript.
