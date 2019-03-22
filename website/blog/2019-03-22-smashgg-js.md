@@ -6,6 +6,15 @@ title: smashgg.js - (Unofficial) NodeJS SDK
 sidebar_label: smashgg.js
 ---
 
+```js
+const smashgg = require('smashgg.js')
+const {Event} = smashgg
+
+var meleeAtFunction = await Event.get('function-1-recursion-regional', 'melee-singles')
+console.log('Set count: ' + meleeAtFunction.length)
+console.log('Set results: ' + meleeAtFunction.map(set => set.getDisplayScore())
+```
+
 <a href="https://www.npmjs.com/package/smashgg.js" target="_blank">smashgg.js</a> is an unofficial NodeJS SDK for the smash.gg public API.
 It allows for ease of access to common API objects and aggregations so that developers can "spend less time digging through JSON or writing
  GQL queries, and more time getting their application up and running."
