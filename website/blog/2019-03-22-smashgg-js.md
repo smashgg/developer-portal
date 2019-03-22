@@ -10,10 +10,11 @@ sidebar_label: smashgg.js
 const smashgg = require('smashgg.js')
 const {Event} = smashgg
 
-var meleeAtFunction = await Event.get('function-1-recursion-regional', 'melee-singles')
-var functionSets = await meleeAtFunction.getSets()
-console.log('Set count: ' + functionSets.length)
-console.log('Set results: ' + functionSets.map(set => set.getDisplayScore() + '\n'))
+var doublesAtBMR2 = await Event.get('bad-moon-rising-2', 'melee-doubles')
+var sets = await doublesAtBMR2.getSets()
+console.log('Bad Moon Rising 2 Doubles:')
+console.log('Set count: ' + sets.length)
+console.log('Set results: ' + sets.map(set => set.getDisplayScore()).join('\n'))
 ```
 
 <a href="https://www.npmjs.com/package/smashgg.js" target="_blank">smashgg.js</a> is an unofficial NodeJS SDK for the smash.gg public API.
@@ -63,26 +64,21 @@ const {Event} = smashgg;
 smashgg.initialize('<your api key>');
 
 (async function(){
-    let tournamentSlug = 'function-1-recursion-regional';
-    let eventSlug = 'melee-singles';
-    let meleeAtFunction = await Event.get(tournamentSlug, eventSlug);
 
-    let sets = await meleeAtFunction.getSets();
-    let phaseGroups = await meleeAtFunction.getPhaseGroups();
+    var doublesAtBMR2 = await Event.get('bad-moon-rising-2', 'melee-doubles')
+    var sets = await doublesAtBMR2.getSets()
 
-    console.log('Function 1 had %s sets played in %s phase groups', 
-        sets.length, phaseGroups.length);
+    console.log('Bad Moon Rising 2 Doubles:'.green)
+    console.log('Set count: %s', String(sets.length).blue)
+    console.log('Set results:\n%s', sets.map(set => 
+        `${set.getFullRoundText().magenta}: ${set.getDisplayScore().green}`
+    ).join('\n'))
 
-    console.log('Set Results:')
-    for(var i in sets){
-        console.log(`${String(sets[i].getFullRoundText()).magenta}: ${String(sets[i].getDisplayScore()).green}`);
-    }
-
-    return true; // exit async
+    return true;
 })()
 ```
 
-![response](https://imgur.com/ZTqXJJj.png)
+![response](https://imgur.com/2UrfKCH.png)
 
 Why Node?
 Other than Node being a very hot language in today's day-and-age, NodeJS handles JSON responses from the API seamlessly -- since at the end of the day it's
