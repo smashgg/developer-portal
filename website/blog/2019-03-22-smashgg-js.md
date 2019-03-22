@@ -42,8 +42,8 @@ Since then, I have been employed at companies as large as AT&T to as small as a 
 I have an extensive background in .NET served and served as a Senior developer in Nodejs and AWS technologies.
 I am currently using my accrued skills to drive DevOps at my current company where I am the Lead DevOps Engineer.*
 
-*I graduated in 2014 from Kennesaw State University and am approaching completion of my CS Masters at Georgia Tech.
-I'm also is a father, a guitarist of 11 years, an exercise enthusiast, avid spectator of sports, and enjoy doing coding side projects when time
+*I am approaching completion of my CS Masters at Georgia Tech.
+I'm also a father, a guitarist of 11 years, an exercise enthusiast, avid spectator of sports, and enjoy doing coding side projects when time
  allows.*
 
 ## What was your inspiration for building smashgg.js?
