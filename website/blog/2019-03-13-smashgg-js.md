@@ -45,6 +45,33 @@ This would offer to developers nicely named getter functions that abstracted out
  the developer wanted in the first place.
 This simplicity and abstraction allows developers to stay on task, and get to what they were trying to do in the first place: code.
 
+```js
+require('colors');
+const smashgg = require('smashgg.js');
+const {Event} = smashgg;
+
+smashgg.initialize('<your api key>');
+
+(async function(){
+    let tournamentSlug = 'function-1-recursion-regional';
+    let eventSlug = 'melee-singles';
+    let meleeAtFunction = await Event.get(tournamentSlug, eventSlug);
+
+    let sets = await meleeAtFunction.getSets();
+    let phaseGroups = await meleeAtFunction.getPhaseGroups();
+
+    console.log('Function 1 had %s sets played in %s phase groups', 
+        sets.length, phaseGroups.length);
+
+    console.log('Set Results:')
+    for(var i in sets){
+        console.log(`${String(sets[i].getFullRoundText()).magenta}: ${String(sets[i].getDisplayScore()).green}`);
+    }
+
+    return true; // exit async
+})()
+```
+
 Why Node?
 Other than Node being a very hot language in today's day-and-age, NodeJS handles JSON responses from the API seamlessly -- since at the end of the day it's
  JavaScript.
