@@ -11,8 +11,9 @@ const smashgg = require('smashgg.js')
 const {Event} = smashgg
 
 var meleeAtFunction = await Event.get('function-1-recursion-regional', 'melee-singles')
-console.log('Set count: ' + meleeAtFunction.length)
-console.log('Set results: ' + meleeAtFunction.map(set => set.getDisplayScore())
+var functionSets = await meleeAtFunction.getSets()
+console.log('Set count: ' + functionSets.length)
+console.log('Set results: ' + functionSets.map(set => set.getDisplayScore() + '\n'))
 ```
 
 <a href="https://www.npmjs.com/package/smashgg.js" target="_blank">smashgg.js</a> is an unofficial NodeJS SDK for the smash.gg public API.
