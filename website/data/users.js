@@ -29,6 +29,13 @@ module.exports = [
 		pinned: true,
 	},
 	{
+		caption: 'Smash Pros',
+		image: 'https://imgur.com/YEv88eD.png',
+		infoLink: 'https://play.google.com/store/apps/details?id=com.smashpros.mobile',
+		openSource: false,
+		pinned: true,
+	},
+	{
 		caption: 'SmashTicker',
 		image: 'https://lh3.googleusercontent.com/HJzDy4IhHwwpmb_LZtYs4tmth-Z4N8BYltaxBlgMjkIaB97HIer3HJY3V6Ebh39dKn2s0qGRGuo=w128-h128-e365',
 		infoLink: 'https://chrome.google.com/webstore/detail/smashticker-watch-people/nhjklhalmbccpfhpnedcleiabpkocggi',
