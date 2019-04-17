@@ -31,7 +31,7 @@ module.exports = [
 	{
 		caption: 'Smash Pros',
 		image: 'https://imgur.com/YEv88eD.png',
-		infoLink: 'https://play.google.com/store/apps/details?id=com.smashpros.mobile&hl=en_CA',
+		infoLink: 'https://play.google.com/store/apps/details?id=com.smashpros.mobile',
 		openSource: false,
 		pinned: true,
 	},
