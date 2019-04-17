@@ -64,3 +64,7 @@ Users will be able to find upcoming tournaments, view past results, track their 
 *We are currently looking for beta testers to try out the website and help us get it ready for launch.
 If you are interested in becoming a beta tester, please <a href="https://forms.gle/BRaJJTHF6stF74py9" target="_blank">apply here</a>.
 You can also get updates about these opportunities on <a href="https://twitter.com/SmashProsApp" target="_blank">our Twitter</a>.*
+
+------
+
+To download: <a href="https://play.google.com/store/apps/details?id=com.smashpros.mobile" target="_blank">Smash Pros on the Google Play Store</a>
