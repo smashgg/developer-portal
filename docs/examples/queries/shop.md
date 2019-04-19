@@ -1,6 +1,7 @@
 ---
 id: shop
-title: Shop
+title: Shop Info, Goals, and Order Messages
+sidebar_label: "Shop Info"
 ---
 
 In this example, we will query for a shop, its shop levels, and order messages by the shop slug.
@@ -13,8 +14,8 @@ In this case, we've chosen the Summit of Time Compendium as the shop.
 <!--Request-->
 
 ```graphql
-query Shop ($id: ID, $slug: String) {
-  shop (id: $id, slug: $slug) {
+query Shop ($slug: String) {
+  shop (slug: $slug) {
     id
     name
     slug
