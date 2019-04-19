@@ -14,13 +14,13 @@ In this case, we've chosen the Summit of Time Compendium as the shop.
 
 ```graphql
 query Shop ($id: ID, $slug: String) {
-	shop (id: $id, slug: $slug) {
-		id
-		name
+  shop (id: $id, slug: $slug) {
+    id
+    name
     slug
     messages(query:{
-      page:1
-      perPage:5
+        page:1
+        perPage:5
     }) {
       nodes {
         total
@@ -30,9 +30,9 @@ query Shop ($id: ID, $slug: String) {
       }
     }
     levels(query:{
-      page:1
-      perPage:5
-    }) {
+        page:1
+        perPage:5
+	}) {
       nodes {
         name
         goalAmount
