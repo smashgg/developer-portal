@@ -6,7 +6,9 @@ title: Authentication
 ## Generating a Token
 
 In order to access smash.gg’s API, you must use an authentication token.
-These tokens can be created from the <a href="https://smash.gg/admin/profile/developer" target="_blank">Developer Settings</a> page in your account settings.
+These tokens can be created from the
+<a href="https://smash.gg/admin/profile/developer" target="_blank">
+Developer Settings</a> page in your account settings.
 **If you do not have permission to create tokens, please fill out [this form](https://forms.gle/UBEG8HeaMLegcDCVA) and we'll give you access within 4-5 business days.**
 
 First, click "Create new token"
@@ -22,7 +24,6 @@ Click 'Save' to finish creating the token.
 ![image3](https://imgur.com/nEycaZA.png)
 
 ⚠ **Copy it down immediately- you will not be able to view it again!** ⚠
-
 
 ## Using the Token
 

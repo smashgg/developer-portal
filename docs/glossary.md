@@ -3,17 +3,21 @@ id: glossary
 title: Glossary
 ---
 
-If you're already familiar with our terminology, then you can skip this for now.
-If this is your first time working with our data, then we recommend giving this a quick read
- and revisiting it later.
+If you're already familiar with our terminology, then you can
+skip this for now.
+If this is your first time working with our data, then we
+recommend giving this a quick read
+and revisiting it later.
 
 ## Terms referring to people
 
 * **User**: A unique user account
 * **Player**: A player object, not necessarily linked to a User
 * **Participant** (AKA "Attendee"): A player’s representation in a tournament.
- This is for everyone that has registered or been added to a tournament (Spectators and competitors)
-* **Entrant**: When a User registers for an Event we create an Entrant. The Entrant is the Participants representation in the Event.
+ This is for everyone that has registered or been added to a
+ tournament (Spectators and competitors)
+* **Entrant**: When a User registers for an Event we create an Entrant.
+ The Entrant is the Participants representation in the Event.
  An Entrant is either a Team or Player in an Event.
 
 ## Terms referring to parts of competition

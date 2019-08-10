@@ -5,7 +5,8 @@ sidebar_label: Welcome
 ---
 
 We're excited for you to use our new API with your applications.
-Here on our developer portal, you will find documentation for getting started, examples to reference,
+Here on our developer portal, you will find documentation for
+getting started, examples to reference,
  news about projects using our API, and more!
 
 ## Featuring Projects

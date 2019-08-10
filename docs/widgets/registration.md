@@ -10,6 +10,7 @@ The embed code is available from the Registration Settings page in tournament ad
 ![image](https://imgur.com/oibRO0w.png)
 
 The copy+paste from registration settings will look like this:
+
 ```html
 <div style="width:500px;">
       <iframe src="https://smash.gg/tournament/${tournamentSlug}/register/embed"
