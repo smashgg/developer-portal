@@ -23,7 +23,7 @@ module.exports = [
 	},
 	{
 		caption: 'FGCombo',
-		image: 'https://i.imgur.com/qTLUcur.png',
+		image: 'https://imgur.com/qTLUcur.png',
 		infoLink: 'https://stats.fgcombo.com',
 		openSource: false,
 		pinned: true,
