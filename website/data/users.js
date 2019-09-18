@@ -22,6 +22,13 @@ module.exports = [
 		pinned: true,
 	},
 	{
+		caption: 'FGCombo',
+		image: 'https://i.imgur.com/qTLUcur.png',
+		infoLink: 'https://stats.fgcombo.com',
+		openSource: false,
+		pinned: true,
+	},
+	{
 		caption: 'Lunar Phase',
 		image: 'https://imgur.com/jtJPRso.png',
 		infoLink: 'https://github.com/lunar-phase/smashgg-results',
