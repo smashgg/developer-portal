@@ -13,7 +13,7 @@ It will only return tournaments which that user created.
 <!--Request-->
 
 ```graphql
-query TournamentsByowner($perPage: Int!, $ownerId: ID!) {
+query TournamentsByOwner($perPage: Int!, $ownerId: ID!) {
     tournaments(query: {
       perPage: $perPage
       filter: {

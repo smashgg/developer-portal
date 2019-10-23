@@ -92,7 +92,7 @@ If you don't know what race format is, then don't worry about this!
 
 ```graphql
 query EventStandings($eventId: ID!) {
-  event(id:$eventId) {
+  event(id: $eventId) {
     id
     name
     phaseGroups {

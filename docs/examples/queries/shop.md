@@ -19,7 +19,7 @@ query Shop ($slug: String) {
     id
     name
     slug
-    messages(query:{
+    messages(query: {
         page:1
         perPage:5
     }) {
@@ -30,10 +30,10 @@ query Shop ($slug: String) {
         name
       }
     }
-    levels(query:{
+    levels(query: {
         page:1
         perPage:5
-	}) {
+    }) {
       nodes {
         name
         goalAmount

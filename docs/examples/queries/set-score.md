@@ -15,13 +15,13 @@ For this completed head-to-head set, one entrant won (ie their placement is '1')
 <!--Request-->
 
 ```GraphQL
-query set($setId: ID!){
-  set(id:$setId){
+query set($setId: ID!) {
+  set(id: $setId) {
     id
-    slots{
-      standing{
+    slots {
+      standing {
         placement
-        stats{
+        stats {
           score {
             label
             value
@@ -81,16 +81,16 @@ query set($setId: ID!){
 <!--Request-->
 
 ```GraphQL
-query InProgressSet{
-  set(id:"18273807"){
+query InProgressSet {
+  set(id: "18273807") {
     state
-    slots{
-      entrant{
+    slots {
+      entrant {
         name
       }
-      standing{
-        stats{
-          score{
+      standing {
+        stats {
+          score {
             value
           }
         }

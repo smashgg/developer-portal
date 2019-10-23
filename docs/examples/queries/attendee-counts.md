@@ -13,11 +13,11 @@ Optionally, we can include an array of eventIds to specify a count for a particu
 <!--Request-->
 
 ```GraphQL
-query AttendeeCount($tourneySlug:String!){
-  tournament(slug:$tourneySlug){
+query AttendeeCount($tourneySlug:String!) {
+  tournament(slug:$tourneySlug) {
     name
-    participants(query:{}){
-      pageInfo{
+    participants(query: {}) {
+      pageInfo {
         total
       }
     }
@@ -53,15 +53,15 @@ query AttendeeCount($tourneySlug:String!){
 <!--Request-->
 
 ```GraphQL
-query AttendeeCount($tourneySlug:String!, $eventIds:[ID]){
-  tournament(slug:$tourneySlug){
+query AttendeeCount($tourneySlug: String!, $eventIds: [ID]) {
+  tournament(slug: $tourneySlug) {
     name
-    participants(query:{
-      filter:{
+    participants(query: {
+      filter: {
         eventIds:$eventIds
       }
-    }){
-      pageInfo{
+    }) {
+      pageInfo {
         total
       }
     }

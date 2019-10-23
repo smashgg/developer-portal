@@ -16,14 +16,14 @@ We'll include the name, and the seed id, of each entrant.
 query PoolSeeds($phaseGroupId: ID!, $page: Int!, $perPage: Int!) {
   phaseGroup(id: $phaseGroupId) {
     id
-    seeds(query:{
+    seeds(query: {
       page: $page
       perPage: $perPage
     }){
-      pageInfo{
+      pageInfo {
         total
       }
-      nodes{
+      nodes {
         entrant {
         id
         name

@@ -17,22 +17,22 @@ You can use a much larger `perPage` here- it is kept small in the example for de
 <!--Request-->
 
 ```GraphQL
-query SetsAtStation($eventId:ID!,$stationNumbers:[Int]){
-  event(id: $eventId){
+query SetsAtStation($eventId: ID!, $stationNumbers: [Int]) {
+  event(id: $eventId) {
     name
     sets(
       page: 1
       perPage: 3
       filters: {
       stationNumbers: $stationNumbers
-    }){
-      nodes{
+    }) {
+      nodes {
         id
-        station{
+        station {
           number
         }
-        slots{
-          entrant{
+        slots {
+          entrant {
             name
           }
         }

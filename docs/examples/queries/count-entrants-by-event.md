@@ -18,7 +18,7 @@ You can also use that number to count the total number of players who competed i
 
 ```graphql
 query CountEntrants($eventId: ID!) {
-  event(id:$eventId) {
+  event(id: $eventId) {
     id
     name
     numEntrants
@@ -54,7 +54,7 @@ query CountEntrants($eventId: ID!) {
 
 ```graphql
 query CountEntrants($eventId: ID!) {
-  event(id:$eventId) {
+  event(id: $eventId) {
     id
     name
     numEntrants
