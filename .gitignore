@@ -4,6 +4,7 @@ website/node_modules
 # generated files
 website/.docusaurus
 website/.cache-loader
+website/build
 
 # misc
 *.DS_Store
