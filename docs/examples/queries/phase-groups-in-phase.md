@@ -10,16 +10,16 @@ I have decided to query for the phase groups in the "R1 Pools" Phase of Genesis 
 <!--Request-->
 
 ```gql
-query PhaseGroupsByPhase($phaseId: ID!,$page:Int!,$perPage:Int!){
-  phase(id:$phaseId){
+query PhaseGroupsByPhase($phaseId: ID!, $page: Int!, $perPage: Int!) {
+  phase(id: $phaseId) {
     phaseGroups(query: {
-      page:$page
-      perPage:$perPage
+      page: $page
+      perPage: $perPage
     }) {
-      pageInfo{
+      pageInfo {
         total
       }
-      nodes{
+      nodes {
         id
         displayIdentifier
       }

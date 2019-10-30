@@ -16,23 +16,23 @@ You can use a much larger `perPage` here- it is kept small in the example for de
 <!--Request-->
 
 ```GraphQL
-query EventSets($eventId: ID!, $page:Int!, $perPage:Int!){
-  event(id:$eventId){
+query EventSets($eventId: ID!, $page: Int!, $perPage: Int!) {
+  event(id: $eventId) {
     id
     name
     sets(
       page: $page
       perPage: $perPage
       sortType: STANDARD
-    ){
-      pageInfo{
+    ) {
+      pageInfo {
         total
       }
-      nodes{
+      nodes {
         id
-        slots{
+        slots {
           id
-          entrant{
+          entrant {
             id
             name
           }

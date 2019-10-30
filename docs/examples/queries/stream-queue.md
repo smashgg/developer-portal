@@ -12,15 +12,15 @@ In this example we will get a stream queue on a given tournament, including:
 <!--Request-->
 
 ```graphQL
-query StreamQueueOnTournament($tourneySlug:String!){
-  tournament(slug:$tourneySlug){
+query StreamQueueOnTournament($tourneySlug: String!) {
+  tournament(slug: $tourneySlug) {
     id
-    streamQueue{
-      stream{
+    streamQueue {
+      stream {
         streamSource
         streamName
       }
-      sets{
+      sets {
         id
       }
     }

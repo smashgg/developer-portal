@@ -14,12 +14,12 @@ This is a paginated query- I chose a small `perPage` value for the sake of space
 <!--Request-->
 
 ```GraphQL
-query EventEntrants($eventId: ID!,$page:Int!,$perPage:Int!){
-  event(id:$eventId){
+query EventEntrants($eventId: ID!, $page: Int!, $perPage: Int!) {
+  event(id: $eventId) {
     name
-    entrants(query:{
-      page:$page
-      perPage:$perPage
+    entrants(query: {
+      page: $page
+      perPage: $perPage
     }){
       pageInfo{
         total

@@ -14,21 +14,21 @@ To adjust phase seeding, please see
 <!--Request-->
 
 ```GraphQL
-query PhaseSeeds($phaseId: ID!,$page:Int!,$perPage:Int!){
-  phase(id:$phaseId){
-    seeds(query:{
-      page:$page
-      perPage:$perPage
+query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
+  phase(id:$phaseId) {
+    seeds(query: {
+      page: $page
+      perPage: $perPage
     }){
-      pageInfo{
+      pageInfo {
         total
         totalPages
       }
-      nodes{
+      nodes {
         id
         seedNum
-        entrant{
-          participants{
+        entrant {
+          participants {
             gamerTag
           }
         }
@@ -98,22 +98,22 @@ The participants for the entrant will include all players on the roster.
 <!--Request-->
 
 ```GraphQL
-query PhaseSeeds($phaseId: ID!,$page:Int!,$perPage:Int!){
-  phase(id:$phaseId){
-    seeds(query:{
-      page:$page
-      perPage:$perPage
-    }){
-      pageInfo{
+query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
+  phase(id: $phaseId) {
+    seeds(query: {
+      page: $page
+      perPage: $perPage
+    }) {
+      pageInfo {
         total
         totalPages
       }
-      nodes{
+      nodes {
         id
         seedNum
-        entrant{
+        entrant {
           name
-          participants{
+          participants {
             gamerTag
           }
         }
