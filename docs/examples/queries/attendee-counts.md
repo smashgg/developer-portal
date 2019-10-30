@@ -5,14 +5,23 @@ title: Attendee Counts
 
 In this example, we will query for the number of attendees (participants) in a tournament.
 Optionally, we can include an array of eventIds to specify a count for a particular subset of events
- in that tournament.
+in that tournament.
 
 ## Example #1
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```GraphQL
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
+
+```graphql
 query AttendeeCount($tourneySlug:String!){
   tournament(slug:$tourneySlug){
     name
@@ -28,7 +37,9 @@ query AttendeeCount($tourneySlug:String!){
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -45,14 +56,22 @@ query AttendeeCount($tourneySlug:String!){
   "actionRecords": []
 }
 ```
-<!--END_DOCUSAURUS_CODE_TABS-->
+
+</TabItem>
+</Tabs>
 
 ## Example #2 (specifying event(s))
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
-```GraphQL
+```graphql
 query AttendeeCount($tourneySlug:String!, $eventIds:[ID]){
   tournament(slug:$tourneySlug){
     name
@@ -72,7 +91,10 @@ query AttendeeCount($tourneySlug:String!, $eventIds:[ID]){
   "eventIds":[78790]
 }
 ```
-<!--Response-->
+
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -90,4 +112,5 @@ query AttendeeCount($tourneySlug:String!, $eventIds:[ID]){
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

@@ -7,17 +7,17 @@ In this example, we will randomize (or 'shuffle') the phase seeding for a phase 
 This is useful for tournament organizers who want to have a 'random seeding' event.
 
 **NOTE: You will need an API [auth token](/docs/authentication)
- belonging to a user who has admin permissions for your tournament.**
+belonging to a user who has admin permissions for your tournament.**
 
 The 3 basic steps for this are:
 
-1) Acquire current `seedMapping` via GQL query
-2) Shuffle that seeding to create a new `seedMapping`
-3) Post that new `seedMapping` via GQL mutation
+1. Acquire current `seedMapping` via GQL query
+2. Shuffle that seeding to create a new `seedMapping`
+3. Post that new `seedMapping` via GQL mutation
 
 In my example here, I use one Python script to perform all three of these actions.
 
-```Python
+```python
 from graphqlclient import GraphQLClient
 import json
 import random

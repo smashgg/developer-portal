@@ -8,9 +8,18 @@ In this case, we've chosen Genesis 5 as the tournament and Cloud 9 as the sponso
 
 ## Example
 
-<!--DOCUSAURUS_CODE_TABS-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+
+<TabItem value="graphql">
 
 ```graphql
 query PrefixSearchAttendees($tourneySlug:String!, $sponsor: String!) {
@@ -38,7 +47,9 @@ query PrefixSearchAttendees($tourneySlug:String!, $sponsor: String!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -68,4 +79,5 @@ query PrefixSearchAttendees($tourneySlug:String!, $sponsor: String!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

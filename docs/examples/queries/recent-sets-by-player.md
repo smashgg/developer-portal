@@ -3,23 +3,32 @@ id: recent-sets-by-player
 title: Recent Sets by Player(s)
 sidebar_label: Sets by Player
 ---
+
 In this example, we will query for recent sets involving a specific player
- (optionally including a specific opponent player).
+(optionally including a specific opponent player).
 In future iterations, we will add support for filtering sets based on certain values
- (like whether a set is a DQ/bye or not, whether the participants were verified or not, etc.)
- and pagination for these results.
+(like whether a set is a DQ/bye or not, whether the participants were verified or not, etc.)
+and pagination for these results.
 
 Please note that currently, results will only include sets where the queried participant (attendee) was verified.
-You can read a deeper explanation of this topic in our
- <a href="https://help.smash.gg/attendee-management/attendee-confirmation/attendee-confirmation-requests-overview"
+You can read a deeper explanation of this topic in our <a href="https://help.smash.gg/attendee-management/attendee-confirmation/attendee-confirmation-requests-overview"
  target="_blank">help center articles on attendee confirmation</a>.
 
 ## Example #1 (not Specifying Opponent)
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```GraphQL
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
+
+```graphql
 query SetsByPlayer($playerId: ID!) {
   player(id: $playerId) {
     id
@@ -42,7 +51,9 @@ query SetsByPlayer($playerId: ID!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -168,14 +179,21 @@ query SetsByPlayer($playerId: ID!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>
 
 ## Example #2 (Specifying Opponent Player)
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
-```GraphQL
+```graphql
 query SetsByPlayerAndOpponent($playerId: ID!, $oppPlayerId: ID!) {
   player(id: $playerId) {
     id
@@ -199,7 +217,9 @@ query SetsByPlayerAndOpponent($playerId: ID!, $oppPlayerId: ID!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -281,4 +301,5 @@ query SetsByPlayerAndOpponent($playerId: ID!, $oppPlayerId: ID!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

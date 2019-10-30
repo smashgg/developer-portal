@@ -9,12 +9,21 @@ For head-to-head sets, this will include the number of games won by each entrant
 ## Example #1 (Completed Head-to-Head Set)
 
 For this completed head-to-head set, one entrant won (ie their placement is '1'),
- and they won 2 games to 0 so their stats for the set include a score of '2'.
+and they won 2 games to 0 so their stats for the set include a score of '2'.
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```GraphQL
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
+
+```graphql
 query set($setId: ID!){
   set(id:$setId){
     id
@@ -36,7 +45,9 @@ query set($setId: ID!){
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -73,24 +84,31 @@ query set($setId: ID!){
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>
 
 ## Example #2 (In-Progress Head-to-Head Set)
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
-```GraphQL
-query InProgressSet{
-  set(id:"18273807"){
+```graphql
+query InProgressSet {
+  set(id: "18273807") {
     state
-    slots{
-      entrant{
+    slots {
+      entrant {
         name
       }
-      standing{
-        stats{
-          score{
+      standing {
+        stats {
+          score {
             value
           }
         }
@@ -100,9 +118,11 @@ query InProgressSet{
 }
 ```
 
-<!--Response-->
+</TabItem>
 
-```GraphQL
+<TabItem value="json">
+
+```graphql
 {
   "data": {
     "set": {
@@ -142,4 +162,5 @@ query InProgressSet{
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

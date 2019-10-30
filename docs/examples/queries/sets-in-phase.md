@@ -12,10 +12,19 @@ To get all sets, don't pass any filters to the sets query.
 Instead, just iterate over the the pages as necessary.
 You can use a much larger `perPage` here- it is kept small in the example for demo purposes.
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```GraphQL
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
+
+```graphql
 query PhaseSets($phaseId: ID!, $page:Int!, $perPage:Int!){
   phase(id:$phaseId){
     id
@@ -48,7 +57,9 @@ query PhaseSets($phaseId: ID!, $page:Int!, $perPage:Int!){
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -129,4 +140,5 @@ query PhaseSets($phaseId: ID!, $page:Int!, $perPage:Int!){
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

@@ -9,8 +9,17 @@ It will only return tournaments which that user created.
 
 ## Example
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
 ```graphql
 query TournamentsByowner($perPage: Int!, $ownerId: ID!) {
@@ -33,7 +42,9 @@ query TournamentsByowner($perPage: Int!, $ownerId: ID!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -67,4 +78,5 @@ query TournamentsByowner($perPage: Int!, $ownerId: ID!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

@@ -28,6 +28,5 @@ The POST body can have the type `application/json` and should be in the followin
 and `operationName` is only used when multiple queries are present.
 
 The `query` parameter should be filled with a GraphQL query as shown in the examples.
-For more information on HTTP requests, please refer to the 
-<a href="https://graphql.github.io/learn/serving-over-http/" target="_blank">official GraphQL documentation 
+For more information on HTTP requests, please refer to the <a href="https://graphql.github.io/learn/serving-over-http/" target="_blank">official GraphQL documentation
 on requests over HTTP</a>.
