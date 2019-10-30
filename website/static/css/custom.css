@@ -1,18 +1,40 @@
-/* your custom css */
-
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+:root {
+  --ifm-color-primary: #252e37;
+  --ifm-color-primary-dark: #1d242c;
+  --ifm-color-primary-darker: #161b21;
+  --ifm-color-primary-darkest: #0e1216;
+  --ifm-color-primary-light: #50575e;
+  --ifm-color-primary-lighter: #7c8187;
+  --ifm-color-primary-lightest: #a7abaf;
+  --ifm-link-hover-decoration: none;
+  --ifm-code-font-size: 90%;
+  --ifm-font-size-base: 16px;
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary-lighter);
 }
 
-@media only screen and (min-width: 1024px) {
+html[data-theme='dark'] {
+  --ifm-hero-background-color: var(--ifm-color-primary-dark);
+  --ifm-color-primary: var(--ifm-color-primary-lightest);
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary-lighter);
 }
 
-@media only screen and (max-width: 1023px) {
+.button {
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 3px;
+  color: var(--ifm-color-primary);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding: 10px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: background 0.3s, color 0.3s;
 }
 
-@media only screen and (min-width: 1400px) {
-}
-
-@media only screen and (min-width: 1500px) {
+.button:hover {
+  background: var(--ifm-color-primary);
+  color: #fff;
 }
 
 .headerTitleWithLogo {
@@ -27,6 +49,25 @@ a:visited {
   color: purple;
 }
 
+.navbar__brand {
+  max-height: 20px;
+}
+
+.navbar__logo {
+  width: 92px;
+  box-sizing: border-box;
+}
+
+.footer .footer__logo {
+  height: 58px;
+}
+
+html[data-theme='dark'] .navbar__logo {
+  background: url(/img/logo-white.svg) no-repeat;
+  background-size: contain;
+  padding-left: 92px;
+}
+
 .homeSplashFade {
   padding-top: 50px;
 }
@@ -38,49 +79,4 @@ a:visited {
 .logo {
   margin-top: 2px;
   max-height: 20px;
-}
-
-.showcase {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.showcase .link {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 180px;
-  margin: 5px;
-  padding: 5px;
-}
-
-.showcase .link:hover {
-  text-decoration: underline;
-}
-
-.showcase .link .caption {
-  line-height: 20px;
-  height: 20px;
-}
-
-.showcase .link img {
-  max-height: 110px;
-  padding: 20px;
-  width: 110px;
-  align-self: center;
-}
-
-@media only screen and (max-width: 735px) {
-  .showcase .link {
-    height: 134px;
-  }
-
-  .showcase .link img {
-    max-height: 64px;
-    padding: 20px;
-    width: 64px;
-  }
 }
