@@ -25,23 +25,23 @@ values={[
 <TabItem value="graphql">
 
 ```graphql
-query EventSets($eventId: ID!, $page:Int!, $perPage:Int!){
-  event(id:$eventId){
+query EventSets($eventId: ID!, $page: Int!, $perPage: Int!) {
+  event(id: $eventId) {
     id
     name
     sets(
       page: $page
       perPage: $perPage
       sortType: STANDARD
-    ){
-      pageInfo{
+    ) {
+      pageInfo {
         total
       }
-      nodes{
+      nodes {
         id
-        slots{
+        slots {
           id
-          entrant{
+          entrant {
             id
             name
           }

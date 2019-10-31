@@ -21,15 +21,15 @@ values={[
 <TabItem value="graphql">
 
 ```graphql
-query StreamQueueOnTournament($tourneySlug:String!){
-  tournament(slug:$tourneySlug){
+query StreamQueueOnTournament($tourneySlug: String!) {
+  tournament(slug: $tourneySlug) {
     id
-    streamQueue{
-      stream{
+    streamQueue {
+      stream {
         streamSource
         streamName
       }
-      sets{
+      sets {
         id
       }
     }

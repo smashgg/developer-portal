@@ -22,11 +22,11 @@ values={[
 <TabItem value="graphql">
 
 ```graphql
-query AttendeeCount($tourneySlug:String!){
-  tournament(slug:$tourneySlug){
+query AttendeeCount($tourneySlug: String!) {
+  tournament(slug: $tourneySlug) {
     name
-    participants(query:{}){
-      pageInfo{
+    participants(query: {}) {
+      pageInfo {
         total
       }
     }
@@ -72,15 +72,15 @@ values={[
 <TabItem value="graphql">
 
 ```graphql
-query AttendeeCount($tourneySlug:String!, $eventIds:[ID]){
-  tournament(slug:$tourneySlug){
+query AttendeeCount($tourneySlug: String!, $eventIds: [ID]) {
+  tournament(slug: $tourneySlug) {
     name
-    participants(query:{
-      filter:{
+    participants(query: {
+      filter: {
         eventIds:$eventIds
       }
-    }){
-      pageInfo{
+    }) {
+      pageInfo {
         total
       }
     }

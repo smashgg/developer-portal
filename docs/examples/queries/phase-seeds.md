@@ -20,6 +20,7 @@ values={[
 ]
 }>
 
+<<<<<<< HEAD
 <TabItem value="graphql">
 
 ```graphql
@@ -28,16 +29,24 @@ query PhaseSeeds($phaseId: ID!,$page:Int!,$perPage:Int!){
     seeds(query:{
       page:$page
       perPage:$perPage
+=======
+```GraphQL
+query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
+  phase(id:$phaseId) {
+    seeds(query: {
+      page: $page
+      perPage: $perPage
+>>>>>>> e55282e53fa5dda4404e33f2a71fb1168000d70c
     }){
-      pageInfo{
+      pageInfo {
         total
         totalPages
       }
-      nodes{
+      nodes {
         id
         seedNum
-        entrant{
-          participants{
+        entrant {
+          participants {
             gamerTag
           }
         }
@@ -116,22 +125,22 @@ values={[
 <TabItem value="graphql">
 
 ```graphql
-query PhaseSeeds($phaseId: ID!,$page:Int!,$perPage:Int!){
-  phase(id:$phaseId){
-    seeds(query:{
-      page:$page
-      perPage:$perPage
-    }){
-      pageInfo{
+query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
+  phase(id: $phaseId) {
+    seeds(query: {
+      page: $page
+      perPage: $perPage
+    }) {
+      pageInfo {
         total
         totalPages
       }
-      nodes{
+      nodes {
         id
         seedNum
-        entrant{
+        entrant {
           name
-          participants{
+          participants {
             gamerTag
           }
         }

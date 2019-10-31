@@ -26,22 +26,22 @@ values={[
 <TabItem value="graphql">
 
 ```graphql
-query SetsAtStation($eventId:ID!,$stationNumbers:[Int]){
-  event(id: $eventId){
+query SetsAtStation($eventId: ID!, $stationNumbers: [Int]) {
+  event(id: $eventId) {
     name
     sets(
       page: 1
       perPage: 3
       filters: {
       stationNumbers: $stationNumbers
-    }){
-      nodes{
+    }) {
+      nodes {
         id
-        station{
+        station {
           number
         }
-        slots{
-          entrant{
+        slots {
+          entrant {
             name
           }
         }

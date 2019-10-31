@@ -33,12 +33,12 @@ query SetsByPlayer($playerId: ID!) {
   player(id: $playerId) {
     id
     gamerTag
-    recentSets{
+    recentSets {
       id
       phaseGroupId
-      event{
+      event {
         name
-        tournament{
+        tournament {
           name
         }
       }
@@ -198,12 +198,12 @@ query SetsByPlayerAndOpponent($playerId: ID!, $oppPlayerId: ID!) {
   player(id: $playerId) {
     id
     gamerTag
-    recentSets(opponentId: $oppPlayerId){
+    recentSets(opponentId: $oppPlayerId) {
       id
       phaseGroupId
-      event{
+      event {
         name
-        tournament{
+        tournament {
           name
         }
       }

@@ -19,16 +19,16 @@ values={[
 <TabItem value="graphql">
 
 ```gql
-query PhaseGroupsByPhase($phaseId: ID!,$page:Int!,$perPage:Int!){
-  phase(id:$phaseId){
+query PhaseGroupsByPhase($phaseId: ID!, $page: Int!, $perPage: Int!) {
+  phase(id: $phaseId) {
     phaseGroups(query: {
-      page:$page
-      perPage:$perPage
+      page: $page
+      perPage: $perPage
     }) {
-      pageInfo{
+      pageInfo {
         total
       }
-      nodes{
+      nodes {
         id
         displayIdentifier
       }

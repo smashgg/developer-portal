@@ -27,7 +27,7 @@ values={[
 
 ```graphql
 query CountEntrants($eventId: ID!) {
-  event(id:$eventId) {
+  event(id: $eventId) {
     id
     name
     numEntrants
@@ -72,7 +72,7 @@ values={[
 
 ```graphql
 query CountEntrants($eventId: ID!) {
-  event(id:$eventId) {
+  event(id: $eventId) {
     id
     name
     numEntrants

@@ -14,6 +14,7 @@ and they won 2 games to 0 so their stats for the set include a score of '2'.
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+<<<<<<< HEAD
 <Tabs
 defaultValue="graphql"
 values={[
@@ -26,11 +27,16 @@ values={[
 ```graphql
 query set($setId: ID!){
   set(id:$setId){
+=======
+```GraphQL
+query set($setId: ID!) {
+  set(id: $setId) {
+>>>>>>> e55282e53fa5dda4404e33f2a71fb1168000d70c
     id
-    slots{
-      standing{
+    slots {
+      standing {
         placement
-        stats{
+        stats {
           score {
             label
             value

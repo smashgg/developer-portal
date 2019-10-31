@@ -110,7 +110,7 @@ values={[
 
 ```graphql
 query EventStandings($eventId: ID!) {
-  event(id:$eventId) {
+  event(id: $eventId) {
     id
     name
     phaseGroups {
