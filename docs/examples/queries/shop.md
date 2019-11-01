@@ -9,9 +9,18 @@ In this case, we've chosen the Summit of Time Compendium as the shop.
 
 ## Example
 
-<!--DOCUSAURUS_CODE_TABS-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+
+<TabItem value="graphql">
 
 ```graphql
 query Shop ($slug: String) {
@@ -48,7 +57,9 @@ query Shop ($slug: String) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -127,8 +138,9 @@ query Shop ($slug: String) {
       }
     }
   },
-  "actionRecords": [],
+  "actionRecords": []
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

@@ -1,0 +1,18 @@
+.heroProjectTitle {
+  display: block;
+  width: 269px;
+  height: 58px;
+  background: url(/img/logo-dark.svg) 0 0 no-repeat;
+  text-indent: -20000px;
+  margin: 0 auto;
+}
+
+html[data-theme='dark'] .heroProjectTitle {
+  background-image: url(/img/logo-white.svg);
+}
+
+.heroProjectTagline {
+  font-weight: 400;
+  line-height: 1em;
+  margin: 0.7em 0 1.3em;
+}

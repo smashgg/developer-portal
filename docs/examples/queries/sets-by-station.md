@@ -5,7 +5,7 @@ title: Sets at Stations
 
 In this example we will get the sets in an event at a particular station or set of stations.
 Here I have selected the <a href="https://smash.gg/tournament/super-smash-bros-ultimate-release-event/events/super-smash-bros-ultimate/brackets/271970/592933/matches" target="_blank">ladder event</a>
- Team Calyptus ran for the release of Super Smash Bros. Ultimate.
+Team Calyptus ran for the release of Super Smash Bros. Ultimate.
 
 ## Example #1 (Sets at a Station)
 
@@ -13,10 +13,19 @@ The `stationNumbers` filter for sets queries accepts a set of station numbers.
 I filtered the results for this to sets at Station 3 in the event.
 You can use a much larger `perPage` here- it is kept small in the example for demo purposes.
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```GraphQL
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
+
+```graphql
 query SetsAtStation($eventId: ID!, $stationNumbers: [Int]) {
   event(id: $eventId) {
     name
@@ -46,7 +55,9 @@ query SetsAtStation($eventId: ID!, $stationNumbers: [Int]) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -120,4 +131,5 @@ query SetsAtStation($eventId: ID!, $stationNumbers: [Int]) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

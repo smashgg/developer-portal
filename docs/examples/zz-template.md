@@ -7,18 +7,30 @@ Hello, world
 
 ## Example 1
 
-<!--DOCUSAURUS_CODE_TABS-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
 
-```GraphQL
+<TabItem value="graphql">
+
+```graphql
 Hello, world
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
-Goodbye, moon
+(Goodbye, moon)
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

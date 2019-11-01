@@ -1,17 +1,41 @@
 {
-	"scripts": {
-		"examples": "docusaurus-examples",
-		"start": "docusaurus-start",
-		"build": "docusaurus-build",
-		"publish-gh-pages": "docusaurus-publish",
-		"write-translations": "docusaurus-write-translations",
-		"version": "docusaurus-version",
-		"rename-version": "docusaurus-rename-version"
-	},
-	"devDependencies": {
-		"docusaurus": "1.7.2",
-		"graphiql": "0.12.0",
-		"graphql": "0.13.2",
-		"unfetch": "3.0.0"
-	}
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "eslint:check": "eslint src --ext .js,.jsx,.ts,.tsx --max-warnings 1",
+    "eslint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --config .prettierrc.json --write '**/*.{ts,js,tsx,jsx,scss,css,html,md}'",
+    "format:check": "prettier --config .prettierrc.json --check '**/*.{ts,js,tsx,jsx,scss,css,html,md}'"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.31",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.31",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "classnames": "^2.2.6",
+    "graphiql": "0.12.0",
+    "graphql": "0.13.2",
+    "unfetch": "3.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

@@ -6,8 +6,17 @@ title: Phase Groups in Phase
 In this example, we will query for the phase groups (aka 'pools') in a phase.
 I have decided to query for the phase groups in the "R1 Pools" Phase of Genesis 6.
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
 ```gql
 query PhaseGroupsByPhase($phaseId: ID!, $page: Int!, $perPage: Int!) {
@@ -33,7 +42,9 @@ query PhaseGroupsByPhase($phaseId: ID!, $page: Int!, $perPage: Int!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -75,4 +86,5 @@ query PhaseGroupsByPhase($phaseId: ID!, $page: Int!, $perPage: Int!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

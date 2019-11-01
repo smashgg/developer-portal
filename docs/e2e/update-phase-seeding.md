@@ -7,28 +7,24 @@ In this example, we will update the seeding for a phase in one of our events.
 To do this, you will need an auth token belonging to an admin in your tournament!
 
 **NOTE: You will need an API [auth token](/docs/authentication)
- belonging to a user who has admin permissions for your tournament.**
+belonging to a user who has admin permissions for your tournament.**
 
 ## Step 1: Obtaining the current seeding via API
 
 To obtain the current phase seeding via API, use a request like this one:
 
-```GraphQL
-query GetPhaseSeeds($phaseId:ID!) {
-  phase(id:$phaseId){
+```graphql
+query GetPhaseSeeds($phaseId: ID!) {
+  phase(id: $phaseId) {
     id
     numSeeds
-    seeds(query:{
-      page: 1
-      perPage: 60
-    })
-    {
-      nodes{
+    seeds(query: { page: 1, perPage: 60 }) {
+      nodes {
         id
         seedNum
-        entrant{
+        entrant {
           id
-          participants{
+          participants {
             id
             gamerTag
           }
@@ -41,7 +37,7 @@ query GetPhaseSeeds($phaseId:ID!) {
 
 Variables
 
-```GraphQL
+```graphql
 {
   "phaseId": 519453
 }
@@ -51,7 +47,7 @@ Obviously, you have the freedom to request fields you want here and omit fields 
 For example, you can add rankings data for a player.
 At bare minimum, you will need `id` and `seedNum` for each Seed in the phase.
 Once you query for this data, you can write it to a .csv and follow the below steps
- or store/manipulate it in some other application of your choosing.
+or store/manipulate it in some other application of your choosing.
 
 ## Step 1 Alternative: Obtaining the current seeding via phase export
 
@@ -71,11 +67,12 @@ I've highlighted the columns which we'll need later when we post the updated see
 Here, you would move seeds around to your liking.
 Your workflow is up to you!
 In my case, I decided to make my workflow:
-1) Add a column to my sheet for 'power'
-2) Assign a rough 1-10 'power' to each entrant in this column (1 = worst, 10 = best)
-3) Order my seeds by this power in a descending order
-4) Make any finer adjustments in those 'power levels' as needed
-5) Copy and paste these into a separate sheet with just the info I need for updating (seedId and seedNum)
+
+1. Add a column to my sheet for 'power'
+2. Assign a rough 1-10 'power' to each entrant in this column (1 = worst, 10 = best)
+3. Order my seeds by this power in a descending order
+4. Make any finer adjustments in those 'power levels' as needed
+5. Copy and paste these into a separate sheet with just the info I need for updating (seedId and seedNum)
 
 Here's what my sheet looked like after my 'step 3':
 
@@ -89,16 +86,17 @@ Here's what my second sheet looked like after my 'step 5':
 
 Now that we have our phase seeds finalized in a sheet, we'll update them via API!
 We can see what the current phase seeding looks like in the tournament admin UI
- (I just entered/seeded these entrants in alphabetical order initially):
+(I just entered/seeded these entrants in alphabetical order initially):
 
 ![current seeding](https://imgur.com/Pz2E5Sa.png)
 
 For our example, we've written a Python script to:
-1) Read the seeds off our sheet into an array (⚠️ Your sheet's share settings need to be
- *'Anyone with the link'* )
-2) Post them using a GQL mutation request
 
-```Python
+1. Read the seeds off our sheet into an array (⚠️ Your sheet's share settings need to be
+   _'Anyone with the link'_ )
+2. Post them using a GQL mutation request
+
+```python
 import csv
 import urllib.request as urllib2
 from graphqlclient import GraphQLClient
@@ -160,7 +158,7 @@ The output of this script will look something like this:
 ![script terminal](https://imgur.com/Yk3zW4r.png)
 
 After running the script successfully, we can check again in the admin UI to see
- the updated phase seeding:
+the updated phase seeding:
 
 ![updated seeding](https://imgur.com/RApajkN.png)
 
@@ -169,7 +167,7 @@ And we're done!
 ## Step 4: Resolving Constraints and Schedule Conflicts (Optional)
 
 If you're running a tournament with several events, you may want to resolve custom
- constraints (players requesting certain pools, or avoiding early matchups between
-  certain players).
+constraints (players requesting certain pools, or avoiding early matchups between
+certain players).
 In this case, you will want to follow the steps to
- [Resolve Schedule Conflicts](/docs/examples/resolve-conflicts).
+[Resolve Schedule Conflicts](/docs/examples/resolve-conflicts).

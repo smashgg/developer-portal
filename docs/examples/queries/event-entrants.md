@@ -9,11 +9,20 @@ This is a paginated query- I chose a small `perPage` value for the sake of space
 
 ## Example
 
-<!--DOCUSAURUS_CODE_TABS-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
 
-```GraphQL
+<TabItem value="graphql">
+
+```graphql
 query EventEntrants($eventId: ID!, $page: Int!, $perPage: Int!) {
   event(id: $eventId) {
     name
@@ -41,7 +50,9 @@ query EventEntrants($eventId: ID!, $page: Int!, $perPage: Int!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -78,4 +89,5 @@ query EventEntrants($eventId: ID!, $page: Int!, $perPage: Int!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

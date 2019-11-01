@@ -7,8 +7,17 @@ In these examples, we will query for tournaments in a given location!
 
 ## Example #1 (by Country)
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
 ```graphql
 query TournamentsByCountry($cCode: String!, $perPage: Int!) {
@@ -31,7 +40,9 @@ query TournamentsByCountry($cCode: String!, $perPage: Int!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -65,16 +76,23 @@ query TournamentsByCountry($cCode: String!, $perPage: Int!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>
 
 ## Example #2 (by State)
 
 To be clear, 'State' in this context means like 'United States' like California, Georgia, etc.
 State abbreviations can be found on external sites like this
- [UPS resource](https://www.ups.com/worldshiphelp/WS15/ENU/AppHelp/Codes/State_Province_Codes.htm).
+[UPS resource](https://www.ups.com/worldshiphelp/WS15/ENU/AppHelp/Codes/State_Province_Codes.htm).
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
 ```graphql
 query TournamentsByState($perPage: Int, $state: String!) {
@@ -97,7 +115,9 @@ query TournamentsByState($perPage: Int, $state: String!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -131,12 +151,19 @@ query TournamentsByState($perPage: Int, $state: String!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>
 
 ## Example #3 (by coordinates + radius distance)
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
 ```graphql
 query SocalTournaments($perPage: Int, $coordinates: String!, $radius: String!) {
@@ -163,7 +190,9 @@ query SocalTournaments($perPage: Int, $coordinates: String!, $radius: String!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -197,4 +226,5 @@ query SocalTournaments($perPage: Int, $coordinates: String!, $radius: String!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

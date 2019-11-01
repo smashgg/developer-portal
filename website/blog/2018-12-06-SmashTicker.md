@@ -7,9 +7,10 @@ sidebar_label: SmashTicker
 ---
 
 <a href="https://chrome.google.com/webstore/detail/smashticker-watch-people/nhjklhalmbccpfhpnedcleiabpkocggi" target="_blank">SmashTicker</a>
- is an <a href="https://github.com/AQuackenbos/SmashTicker" target="_blank">open source</a>
- Chrome extension to quickly find Twitch streams and smash.gg tournament pages for all of your favorite
- Super Smash Bros. games!
+is an <a href="https://github.com/AQuackenbos/SmashTicker" target="_blank">open source</a>
+Chrome extension to quickly find Twitch streams and smash.gg tournament pages for all of your favorite
+Super Smash Bros. games!
+
 <!--truncate-->
 
 ## Browse Streams
@@ -27,15 +28,15 @@ View featured upcoming tournaments for Super Smash Bros. games.
 ## The Creator
 
 <a href="https://github.com/AQuackenbos" target="_blank">Andrew Quackenbos</a>
- developed this Chrome extension
- (originally using our old public REST API).
+developed this Chrome extension
+(originally using our old public REST API).
 When I saw him <a href="https://www.reddit.com/r/smashbros/comments/a0kt0h/smashticker_for_chrome_updated_for_ultimate_now/" target="_blank">post about it on Reddit</a>,
- I messaged him about our new GraphQL API.
+I messaged him about our new GraphQL API.
 Within just a few hours, Andrew had already converted his project to using it!
-That was *so awesome*.
+That was _so awesome_.
 
 ## Contribute
 
 Andrew welcomes contributions to his project!
 Open source available here on GitHub:
- https://github.com/AQuackenbos/SmashTicker
+https://github.com/AQuackenbos/SmashTicker

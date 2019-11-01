@@ -30,27 +30,24 @@ of the top 3 finishers, from EVO 2018, then all you need to do is ask.
 
 ```graphql
 query TournamentQuery($slug: String, $page: Int!, $perPage: Int!) {
-        tournament(slug: $slug) {
-            events {
-              name
-              standings(query: {
-                page: $page
-                perPage: $perPage
-              }) {
-                nodes{
-                  standing
-                  entrant {
-                    name
-                  }
-                }
-              }
-            }
+  tournament(slug: $slug) {
+    events {
+      name
+      standings(query: { page: $page, perPage: $perPage }) {
+        nodes {
+          standing
+          entrant {
+            name
+          }
         }
+      }
     }
+  }
+}
 ```
 
-Request variables! *Adjust to taste- want 4 or 5 standings
-instead of 3? Just change the value.*
+Request variables! _Adjust to taste- want 4 or 5 standings
+instead of 3? Just change the value._
 
 ```json
 {
@@ -69,9 +66,8 @@ fit for your application's uses.
 It will reduce the number of requests - and the size of the
 responses - that your application will be handling.
 That, in turn, will translate into **time savings** and **data savings** for your end users.
-For comparison, retrieving the top 3 standings in our *old*
-API for just Melee Singles alone at EVO 2018
-<a href="https://api.smash.gg/tournament/evo-2018/event/evo-2018-1/standings?entityType=event&expand[]=entrants&mutations[]=playerData&mutations[]=standingLosses&page=1&per_page=3" target="_blank">involved a 21.1 KB response</a>!
+For comparison, retrieving the top 3 standings in our _old_
+API for just Melee Singles alone at EVO 2018 <a href="https://api.smash.gg/tournament/evo-2018/event/evo-2018-1/standings?entityType=event&expand[]=entrants&mutations[]=playerData&mutations[]=standingLosses&page=1&per_page=3" target="_blank">involved a 21.1 KB response</a>!
 
 ```json
 {

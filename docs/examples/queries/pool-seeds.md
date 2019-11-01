@@ -5,12 +5,21 @@ title: Pool Seeds
 
 In this example, we will query for the seeding of a phase group (a pool)
 in the Rivals of Aether Singles event at Genesis 5.
-We'll include the name, and the seed id, of each entrant. 
+We'll include the name, and the seed id, of each entrant.
 
 ## Example
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
 ```graphql
 query PoolSeeds($phaseGroupId: ID!, $page: Int!, $perPage: Int!) {
@@ -39,7 +48,9 @@ query PoolSeeds($phaseGroupId: ID!, $page: Int!, $perPage: Int!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -88,8 +99,9 @@ query PoolSeeds($phaseGroupId: ID!, $page: Int!, $perPage: Int!) {
   "extensions": {
     "queryComplexity": 6
   },
-  "actionRecords": [],
+  "actionRecords": []
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

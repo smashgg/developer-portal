@@ -1,5 +1,14 @@
+# dependencies
 website/node_modules
+
+# generated files
+website/.docusaurus
+website/.cache-loader
 website/build
-graphdoc/schema
+
+# misc
 *.DS_Store
-website/i18n/en.json
+
+website/npm-debug.log*
+website/yarn-debug.log*
+website/yarn-error.log*

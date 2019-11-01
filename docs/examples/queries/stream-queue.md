@@ -8,10 +8,19 @@ In this example we will get a stream queue on a given tournament, including:
 - Information about each stream
 - Information about the sets for each stream
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```graphQL
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
+
+```graphql
 query StreamQueueOnTournament($tourneySlug: String!) {
   tournament(slug: $tourneySlug) {
     id
@@ -32,10 +41,12 @@ query StreamQueueOnTournament($tourneySlug: String!) {
 ```
 
 You can request other fields on sets, and there are also
- some other fields on stream that you can request.
+some other fields on stream that you can request.
 Check the schema for what's available!
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -165,4 +176,5 @@ Check the schema for what's available!
 
 In the response, the sets are ordered top-to-bottom as first-to-last in the queue.
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

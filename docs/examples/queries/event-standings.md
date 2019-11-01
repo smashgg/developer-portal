@@ -9,8 +9,17 @@ and **name** of the **top 3 placements** (note the variables!)
 
 ## Example #1 (basic)
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
 ```graphql
 query EventStandings($eventId: ID!, $page: Int!, $perPage: Int!) {
@@ -36,7 +45,9 @@ query EventStandings($eventId: ID!, $page: Int!, $perPage: Int!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -72,13 +83,14 @@ query EventStandings($eventId: ID!, $page: Int!, $perPage: Int!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>
 
 You can choose your own names for these variables! In the query above...
 
-- *eventId* is the ID of the event we're getting standings for
-- *page* is the page of standings we have specified to retrieve (page 1 starts with 1st place)
-- *perPage* is the number of standings we are retrieving on that page
+- _eventId_ is the ID of the event we're getting standings for
+- _page_ is the page of standings we have specified to retrieve (page 1 starts with 1st place)
+- _perPage_ is the number of standings we are retrieving on that page
 
 **Don't forget to explore schema, and test queries, in the [API Explorer](/explorer)!**
 
@@ -87,8 +99,14 @@ You can choose your own names for these variables! In the query above...
 Race format is a bit of an exception to standings queries at the moment.
 If you don't know what race format is, then don't worry about this!
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
 ```graphql
 query EventStandings($eventId: ID!) {
@@ -112,7 +130,9 @@ query EventStandings($eventId: ID!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -153,4 +173,5 @@ query EventStandings($eventId: ID!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

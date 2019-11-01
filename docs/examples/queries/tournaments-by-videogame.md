@@ -4,7 +4,7 @@ title: Tournaments by Videogame
 ---
 
 In this example, we will query for upcoming tournaments filtered to particular videogames and in ascending order for their start date/time.
-In others words, "Give me the next *x* upcoming tournaments for *Videogame(s)*."
+In others words, "Give me the next _x_ upcoming tournaments for _Videogame(s)_."
 The first example will be for a single videogame,
 and the second example will be for an array of videogames.
 
@@ -12,8 +12,17 @@ For now, you can view the mapping of videogame IDs to their names <a href="https
 
 ## Example #1 (Single Videogame)
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
 ```graphql
 query TournamentsByVideogame($perPage: Int!, $videogameId: ID!) {
@@ -41,7 +50,9 @@ query TournamentsByVideogame($perPage: Int!, $videogameId: ID!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -70,12 +81,19 @@ query TournamentsByVideogame($perPage: Int!, $videogameId: ID!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>
 
 ## Example #2 (Array of Videogames)
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+<TabItem value="graphql">
 
 ```graphql
 query TournamentsByVideogames($perPage: Int, $videogameIds: [ID]) {
@@ -101,7 +119,9 @@ query TournamentsByVideogames($perPage: Int, $videogameIds: [ID]) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -130,4 +150,5 @@ query TournamentsByVideogames($perPage: Int, $videogameIds: [ID]) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>

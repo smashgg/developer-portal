@@ -5,20 +5,38 @@ title: Phase Seeds
 
 In this example, we will get the seeding for a given phase.
 To adjust phase seeding, please see
- [phase seeding mutation](/docs/examples/update-phase-seeding).
+[phase seeding mutation](/docs/examples/update-phase-seeding).
 
 ## Example #1 (1v1)
 
-<!--DOCUSAURUS_CODE_TABS-->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-<!--Request-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
 
+<<<<<<< HEAD
+<TabItem value="graphql">
+
+```graphql
+query PhaseSeeds($phaseId: ID!,$page:Int!,$perPage:Int!){
+  phase(id:$phaseId){
+    seeds(query:{
+      page:$page
+      perPage:$perPage
+=======
 ```GraphQL
 query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
   phase(id:$phaseId) {
     seeds(query: {
       page: $page
       perPage: $perPage
+>>>>>>> e55282e53fa5dda4404e33f2a71fb1168000d70c
     }){
       pageInfo {
         total
@@ -43,7 +61,9 @@ query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -85,19 +105,26 @@ query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>
 
 ## Example #2 (Teams Event)
 
-Note that if you are using a *teams* event, then you will want to request the name of the entrant itself
- (ie the team name).
+Note that if you are using a _teams_ event, then you will want to request the name of the entrant itself
+(ie the team name).
 The participants for the entrant will include all players on the roster.
 
-<!--DOCUSAURUS_CODE_TABS-->
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
 
-<!--Request-->
+<TabItem value="graphql">
 
-```GraphQL
+```graphql
 query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
   phase(id: $phaseId) {
     seeds(query: {
@@ -128,7 +155,9 @@ query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
 }
 ```
 
-<!--Response-->
+</TabItem>
+
+<TabItem value="json">
 
 ```json
 {
@@ -190,4 +219,5 @@ query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
 }
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>
