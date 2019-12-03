@@ -24,18 +24,22 @@ const supportLinks = [
   {
     content: (
       <>
-        File bugs, suggest new queries/mutations, and submit other feedback to
-        be tracked on our{' '}
-        <Link to="https://trello.com/invite/b/Vdxnwz43/9fd5241770e053aba8c2260c7af71069/api-alpha-feedback">
-          Trello board
-        </Link>
-        .
+        <p>
+          File bugs using the form at  <Link to="/help/bugs">developer.smash.gg/help/bugs</Link>.
+        </p>
+        <p>
+          Suggest new queries, mutations, and other feedback using the form at <Link to="/help/feedback">developer.smash.gg/help/feedback</Link>.
+        </p>
       </>
     ),
-    title: 'Submit Bugs',
+    title: 'Submit Bugs or Feedback',
   },
   {
-    content: `You can contact us directly/privately using devrelations@smash.gg`,
+    content: (
+      <>
+        You can contact us directly/privately using <Link href="mailto:devrelations@smash.gg">devrelations@smash.gg</Link>
+      </>
+    ),
     title: `Email Us`,
   },
 ];
