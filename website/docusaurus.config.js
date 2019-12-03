@@ -13,7 +13,17 @@ module.exports = {
     repoUrl,
     apiUrl: 'https://api.smash.gg/gql/alpha/schema',
   },
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+      'https://buttons.github.io/buttons.js',
+      {
+        src: "https://smashgg.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-7vydwo/b/20/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=d4b7b8c3",
+        async: true,
+      },
+      {
+        src: "https://smashgg.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-7vydwo/b/20/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=1d971c66",
+        async: true,
+      }
+  ],
   themeConfig: {
     image: 'img/devgg.png',
     navbar: {
