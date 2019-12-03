@@ -3,24 +3,26 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 
 function Help() {
-  window.ATL_JQ_PAGE_PROPS = {
-    'd4b7b8c3': {
-      triggerFunction: (showCollectorDialog) => {
-        $('#report-bugs').click((evt) => {
-          evt.preventDefault()
-          showCollectorDialog();
-        });
-      }
-    },
-    '1d971c66': {
-      triggerFunction: (showCollectorDialog) => {
-        $('#submit-feedback').click((evt) => {
-          evt.preventDefault()
-          showCollectorDialog();
-        });
-      }
-    },
-  };
+  if (typeof window !== 'undefined') {
+    window.ATL_JQ_PAGE_PROPS = {
+      'd4b7b8c3': {
+        triggerFunction: (showCollectorDialog) => {
+          $('#report-bugs').click((evt) => {
+            evt.preventDefault()
+            showCollectorDialog();
+          });
+        }
+      },
+      '1d971c66': {
+        triggerFunction: (showCollectorDialog) => {
+          $('#submit-feedback').click((evt) => {
+            evt.preventDefault()
+            showCollectorDialog();
+          });
+        }
+      },
+    };
+  }
 
   const supportLinks = [
     {
