@@ -2,49 +2,67 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 
-const supportLinks = [
-  {
-    content: (
-      <>
-        Learn more about using the smash.gg public API in our{' '}
-        <Link to="docs/intro">official documentation</Link>
-      </>
-    ),
-    title: 'Browse Docs',
-  },
-  {
-    content: (
-      <>
-        Discuss the API, and its documentation, in our{' '}
-        <Link to="docs/join-discord">Discord server</Link>
-      </>
-    ),
-    title: 'Join the Community',
-  },
-  {
-    content: (
-      <>
-        <p>
-          File bugs using the form at  <Link to="/help/bugs">developer.smash.gg/help/bugs</Link>.
-        </p>
-        <p>
-          Suggest new queries, mutations, and other feedback using the form at <Link to="/help/feedback">developer.smash.gg/help/feedback</Link>.
-        </p>
-      </>
-    ),
-    title: 'Submit Bugs or Feedback',
-  },
-  {
-    content: (
-      <>
-        You can contact us directly/privately using <Link href="mailto:devrelations@smash.gg">devrelations@smash.gg</Link>
-      </>
-    ),
-    title: `Email Us`,
-  },
-];
-
 function Help() {
+  window.ATL_JQ_PAGE_PROPS = {
+    'd4b7b8c3': {
+      triggerFunction: (showCollectorDialog) => {
+        $('#report-bugs').click((evt) => {
+          evt.preventDefault()
+          showCollectorDialog();
+        });
+      }
+    },
+    '1d971c66': {
+      triggerFunction: (showCollectorDialog) => {
+        $('#submit-feedback').click((evt) => {
+          evt.preventDefault()
+          showCollectorDialog();
+        });
+      }
+    },
+  };
+
+  const supportLinks = [
+    {
+      content: (
+        <>
+          Learn more about using the smash.gg public API in our{' '}
+          <Link to="docs/intro">official documentation</Link>
+        </>
+      ),
+      title: 'Browse Docs',
+    },
+    {
+      content: (
+        <>
+          Discuss the API and its documentation in our <Link to="docs/join-discord">Discord server</Link>
+        </>
+      ),
+      title: 'Join the Community',
+    },
+    {
+      content: (
+        <>
+          <p>
+            Found an issue while using the API? <Link to="javascript:void(0);" id="report-bugs">Report it here.</Link>
+          </p>
+          <p>
+            Want to suggest new queries, mutations, or provide other feedback? <Link to="javascript:void(0);" id="submit-feedback">Let us know here!</Link>
+          </p>
+        </>
+      ),
+      title: 'Submit Bugs or Feedback',
+    },
+    {
+      content: (
+        <>
+          You can contact us directly using <Link href="mailto:devrelations@smash.gg">devrelations@smash.gg</Link>
+        </>
+      ),
+      title: `Email Us`,
+    },
+  ];
+
   return (
     <Layout title="Help">
       <div className="container container--fluid padding-horiz--xl margin-top--lg">
