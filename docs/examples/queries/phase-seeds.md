@@ -23,11 +23,11 @@ values={[
 <TabItem value="graphql">
 
 ```graphql
-query PhaseSeeds($phaseId: ID!,$page:Int!,$perPage:Int!) {
-  phase(id:$phaseId) {
+query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
+  phase(id: $phaseId) {
     seeds(query: {
-      page:$page
-      perPage:$perPage
+      page: $page
+      perPage: $perPage
     }) {
       pageInfo {
         total
