@@ -280,4 +280,3 @@ API for just Melee Singles alone at EVO 2018 <a href="https://api.smash.gg/tourn
   "actionRecords": []
 }
 ```
-
