@@ -110,6 +110,10 @@ module.exports = {
       trackingID: 'UA-58622313-9',
     },
   },
+  algolia: {
+    apiKey: '36e9b03106508b49af23386dd55c92c3',
+    indexName: 'developer-portal',
+  },
   presets: [
     [
       '@docusaurus/preset-classic',
