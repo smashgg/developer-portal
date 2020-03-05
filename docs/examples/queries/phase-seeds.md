@@ -25,6 +25,7 @@ values={[
 ```graphql
 query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
   phase(id:$phaseId) {
+    id
     seeds(query: {
       page: $page
       perPage: $perPage
@@ -37,7 +38,9 @@ query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
         id
         seedNum
         entrant {
+          id
           participants {
+            id
             gamerTag
           }
         }
@@ -118,6 +121,7 @@ values={[
 ```graphql
 query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
   phase(id: $phaseId) {
+    id
     seeds(query: {
       page: $page
       perPage: $perPage
@@ -130,8 +134,10 @@ query PhaseSeeds($phaseId: ID!, $page: Int!, $perPage: Int!) {
         id
         seedNum
         entrant {
+          id
           name
           participants {
+            id
             gamerTag
           }
         }

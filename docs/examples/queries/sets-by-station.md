@@ -28,6 +28,7 @@ values={[
 ```graphql
 query SetsAtStation($eventId: ID!, $stationNumbers: [Int]) {
   event(id: $eventId) {
+    id
     name
     sets(
       page: 1
@@ -38,10 +39,13 @@ query SetsAtStation($eventId: ID!, $stationNumbers: [Int]) {
       nodes {
         id
         station {
+          id
           number
         }
         slots {
+          id
           entrant {
+            id
             name
           }
         }
@@ -63,22 +67,28 @@ query SetsAtStation($eventId: ID!, $stationNumbers: [Int]) {
 {
   "data": {
     "event": {
+      "id": 122755,
       "name": "Ultimate Ladder",
       "sets": {
         "nodes": [
           {
             "id": 17469475,
             "station": {
+              "id": 128144,
               "number": 3
             },
             "slots": [
               {
+                "id": "17469475-0",
                 "entrant": {
+                  "id": 2343797,
                   "name": "halitic"
                 }
               },
               {
+                "id": "17469475-1",
                 "entrant": {
+                  "id": 2334450,
                   "name": "BananeMitBart"
                 }
               }
@@ -87,16 +97,21 @@ query SetsAtStation($eventId: ID!, $stationNumbers: [Int]) {
           {
             "id": 17469065,
             "station": {
+              "id": 128144,
               "number": 3
             },
             "slots": [
               {
+                "id": "17469065-0",
                 "entrant": {
+                  "id": 2307981,
                   "name": "SoulBlade"
                 }
               },
               {
+                "id": "17469065-1",
                 "entrant": {
+                  "id": 2333916,
                   "name": "Lili"
                 }
               }
@@ -105,16 +120,21 @@ query SetsAtStation($eventId: ID!, $stationNumbers: [Int]) {
           {
             "id": 17468927,
             "station": {
+              "id": 128144,
               "number": 3
             },
             "slots": [
               {
+                "id": "17468927-0",
                 "entrant": {
+                  "id": 2334450,
                   "name": "BananeMitBart"
                 }
               },
               {
+                "id": "17468927-1",
                 "entrant": {
+                  "id": 2295087,
                   "name": "Dr. Wurstpeter"
                 }
               }

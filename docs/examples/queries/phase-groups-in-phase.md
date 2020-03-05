@@ -21,6 +21,7 @@ values={[
 ```gql
 query PhaseGroupsByPhase($phaseId: ID!, $page: Int!, $perPage: Int!) {
   phase(id: $phaseId) {
+    id
     phaseGroups(query: {
       page: $page
       perPage: $perPage
