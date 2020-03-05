@@ -122,7 +122,7 @@ query EventStandings($eventId: ID!) {
       id
       seeds(query: {page: 1}) {
         nodes {
-        	id
+          id
           standings(containerType: "groups") {
             id
             metadata
