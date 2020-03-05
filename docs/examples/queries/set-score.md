@@ -28,7 +28,9 @@ query set($setId: ID!) {
   set(id: $setId) {
     id
     slots {
+      id
       standing {
+        id
         placement
         stats {
           score {
@@ -53,10 +55,12 @@ query set($setId: ID!) {
 {
   "data": {
     "set": {
-      "id": "7794393",
+      "id": 7794393,
       "slots": [
         {
+          "id": "7794393-0",
           "standing": {
+            "id": "placeholder_standing_seeds_5093733_sets_7794393",
             "placement": 1,
             "stats": {
               "score": {
@@ -67,7 +71,9 @@ query set($setId: ID!) {
           }
         },
         {
+          "id": "7794393-1",
           "standing": {
+            "id": "placeholder_standing_seeds_5093047_sets_7794393",
             "placement": 2,
             "stats": {
               "score": {

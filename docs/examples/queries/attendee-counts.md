@@ -24,6 +24,7 @@ values={[
 ```graphql
 query AttendeeCount($tourneySlug: String!) {
   tournament(slug: $tourneySlug) {
+  	id
     name
     participants(query: {}) {
       pageInfo {
@@ -74,6 +75,7 @@ values={[
 ```graphql
 query AttendeeCount($tourneySlug: String!, $eventIds: [ID]) {
   tournament(slug: $tourneySlug) {
+  	id
     name
     participants(query: {
       filter: {

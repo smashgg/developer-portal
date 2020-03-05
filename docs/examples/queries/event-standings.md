@@ -24,14 +24,16 @@ values={[
 ```graphql
 query EventStandings($eventId: ID!, $page: Int!, $perPage: Int!) {
   event(id: $eventId) {
+    id
     name
     standings(query: {
       perPage: $perPage,
       page: $page
     }){
       nodes {
-        standing
+        placement
         entrant {
+          id
           name
         }
       }
@@ -58,20 +60,23 @@ query EventStandings($eventId: ID!, $page: Int!, $perPage: Int!) {
       "standings": {
         "nodes": [
           {
-            "standing": 1,
+            "placement": 1,
             "entrant": {
+              "id": 1977436,
               "name": "PG | Zain"
             }
           },
           {
-            "standing": 2,
+            "placement": 2,
             "entrant": {
+              "id": 1947633,
               "name": "Liquid | Hungrybox"
             }
           },
           {
-            "standing": 3,
+            "placement": 3,
             "entrant": {
+              "id": 1966411,
               "name": "C9 | Mang0"
             }
           }
@@ -115,11 +120,13 @@ query EventStandings($eventId: ID!) {
     name
     phaseGroups {
       id
-      seeds {
-        id
-        standings(containerType: "groups") {
-          id
-          metadata
+      seeds(query: {page: 1}) {
+        nodes {
+        	id
+          standings(containerType: "groups") {
+            id
+            metadata
+          }
         }
       }
     }
@@ -143,28 +150,42 @@ query EventStandings($eventId: ID!) {
       "phaseGroups": [
         {
           "id": 793662,
-          "seeds": [
-            {
-              "id": 8076251,
-              "standings": [
-                {
-                  "id": "4467977",
-                  "metadata": {
-                    "verifiedProgress": {
-                      "kills": 34
-                    },
-                    "unverifiedProgress": {
-                      "kills": 0
+          "seeds": {
+            "nodes": [
+              {
+                "id": 8076251,
+                "standings": [
+                  {
+                    "id": 4467977,
+                    "metadata": {
+                      "verifiedProgress": {
+                        "kills": 94
+                      },
+                      "unverifiedProgress": {
+                        "kills": 0
+                      }
                     }
                   }
-                }
-              ]
-            },
-            {
-              "id": 8076254,
-              "standings": null
-            }
-          ]
+                ]
+              },
+              {
+                "id": 8076254,
+                "standings": [
+                  {
+                    "id": 5332860,
+                    "metadata": {
+                      "verifiedProgress": {
+                        "kills": 6
+                      },
+                      "unverifiedProgress": {
+                        "kills": 0
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     }

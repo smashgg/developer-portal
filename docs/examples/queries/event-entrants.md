@@ -25,18 +25,20 @@ values={[
 ```graphql
 query EventEntrants($eventId: ID!, $page: Int!, $perPage: Int!) {
   event(id: $eventId) {
+    id
     name
     entrants(query: {
       page: $page
       perPage: $perPage
-    }){
-      pageInfo{
+    }) {
+      pageInfo {
         total
         totalPages
       }
-      nodes{
+      nodes {
         id
-        participants{
+        participants {
+          id
           gamerTag
         }
       }
