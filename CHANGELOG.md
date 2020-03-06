@@ -1,3 +1,9 @@
+# Friday, March 6, 2020
+✔️ Field `seed` was added to object type `SetSlot`
+✔️ Field `phase` was added to object type `PhaseGroup`
+✔️ Field `entrant` was added to object type `Team`
+✔️ Field `event` was added to object type `Team`
+
 # Thursday, March 5, 2020
 
 ## New / updated fields
