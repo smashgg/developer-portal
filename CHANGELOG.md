@@ -32,11 +32,11 @@
 
 ✔️ Deprecation reason on field `ContactInfo.city` changed from `None` to `This entire type is deprecated. Use User.location`
 
-✔️ Deprecation reason on field `ContactInfo.nameLast` changed from `None` to `This entire type is deprecated. Use User.location`
+✔️ Deprecation reason on field `ContactInfo.nameLast` changed from `None` to `This entire type is deprecated. Use User.name`
 
-✔️ Deprecation reason on field `ContactInfo.name` changed from `None` to `This entire type is deprecated. Use User.location`
+✔️ Deprecation reason on field `ContactInfo.name` changed from `None` to `This entire type is deprecated. Use User.name`
 
-✔️ Deprecation reason on field `ContactInfo.nameFirst` changed from `None` to `This entire type is deprecated. Use User.location`
+✔️ Deprecation reason on field `ContactInfo.nameFirst` changed from `None` to `This entire type is deprecated. Use User.name`
 
 ✔️ Deprecation reason on field `ContactInfo.country` changed from `None` to `This entire type is deprecated. Use User.location`
 
