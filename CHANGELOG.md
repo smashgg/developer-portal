@@ -1,3 +1,10 @@
+# Monday, March 9, 2020
+✔️ Type `StandingContainer` was added with description `The containing entity that contextualizes this standing. Event standings, for example, represent an entrant's standing in the entire event vs. Set standings which is an entrant's standing in only a single set within an event.`
+
+✔️ Field `container` was added to object type `Standing`
+
+✔️ Field `standing` was added to object type `Entrant`
+
 # Friday, March 6, 2020
 ✔️ Field `seed` was added to object type `SetSlot`
 
