@@ -5,6 +5,10 @@
 
 ✔️ Field `standing` was added to object type `Entrant`
 
+✔️ Field `checkedIn` was added to object type `Participant`
+
+✔️ Field `checkedInAt` was added to object type `Participant`
+
 # Friday, March 6, 2020
 ✔️ Field `seed` was added to object type `SetSlot`
 
