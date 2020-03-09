@@ -40,29 +40,29 @@
 
 ## Deprecations
 ### Event
-✔️ Deprecation reason on field `Event.rulesetSettings` changed from `None` to `Use ruleset`
+⚠️ Deprecation reason on field `Event.rulesetSettings` changed from `None` to `Use ruleset`
 
 ### Participant
-✔️ Deprecation reason on field `Participant.contactInfo` changed from `None` to `Use User.location`
+⚠️ Deprecation reason on field `Participant.contactInfo` changed from `None` to `Use User.location`
 
 ### ContactInfo
-✔️ Deprecation reason on field `ContactInfo.countryId` changed from `None` to `This entire type is deprecated. Use User.location`
+⚠️ Deprecation reason on field `ContactInfo.countryId` changed from `None` to `This entire type is deprecated. Use User.location`
 
-✔️ Deprecation reason on field `ContactInfo.state` changed from `None` to `This entire type is deprecated. Use User.location`
+⚠️ Deprecation reason on field `ContactInfo.state` changed from `None` to `This entire type is deprecated. Use User.location`
 
-✔️ Deprecation reason on field `ContactInfo.city` changed from `None` to `This entire type is deprecated. Use User.location`
+⚠️ Deprecation reason on field `ContactInfo.city` changed from `None` to `This entire type is deprecated. Use User.location`
 
-✔️ Deprecation reason on field `ContactInfo.nameLast` changed from `None` to `This entire type is deprecated. Use User.name`
+⚠️ Deprecation reason on field `ContactInfo.nameLast` changed from `None` to `This entire type is deprecated. Use User.name`
 
-✔️ Deprecation reason on field `ContactInfo.name` changed from `None` to `This entire type is deprecated. Use User.name`
+⚠️ Deprecation reason on field `ContactInfo.name` changed from `None` to `This entire type is deprecated. Use User.name`
 
-✔️ Deprecation reason on field `ContactInfo.nameFirst` changed from `None` to `This entire type is deprecated. Use User.name`
+⚠️ Deprecation reason on field `ContactInfo.nameFirst` changed from `None` to `This entire type is deprecated. Use User.name`
 
-✔️ Deprecation reason on field `ContactInfo.country` changed from `None` to `This entire type is deprecated. Use User.location`
+⚠️ Deprecation reason on field `ContactInfo.country` changed from `None` to `This entire type is deprecated. Use User.location`
 
-✔️ Deprecation reason on field `ContactInfo.zipcode` changed from `None` to `This entire type is deprecated. Use User.location`
+⚠️ Deprecation reason on field `ContactInfo.zipcode` changed from `None` to `This entire type is deprecated. Use User.location`
 
-✔️ Deprecation reason on field `ContactInfo.stateId` changed from `None` to `This entire type is deprecated. Use User.location`
+⚠️ Deprecation reason on field `ContactInfo.stateId` changed from `None` to `This entire type is deprecated. Use User.location`
 
 ## Removing previously deprecated, now unused fields
 ### Station
@@ -220,9 +220,9 @@ Use entity resolvers directly instead (i.e. Participant.user instead of Particip
 
 ❌ Field `approved` was removed from object type `Tournament` and `League`
 
-⚠️ Field `contactTwitter` was removed from object type `Tournament` and `League`
+❌ Field `contactTwitter` was removed from object type `Tournament` and `League`
 
-⚠️ Field `contactPhone` was removed from object type `Tournament` and `League`
+❌ Field `contactPhone` was removed from object type `Tournament` and `League`
 
 ❌ Field `gettingThere` was removed from object type `Tournament` and `League`
 
@@ -236,7 +236,7 @@ Use entity resolvers directly instead (i.e. Participant.user instead of Particip
 
 ❌ Field `defaultTab` was removed from object type `Tournament` and `League`
 
-⚠️ Field `contactEmail` was removed from object type `Tournament` and `League`
+❌ Field `contactEmail` was removed from object type `Tournament` and `League`
 
 ❌ Field `prizes` was removed from object type `Tournament` and `League`
 
@@ -322,7 +322,7 @@ Use entity resolvers directly instead (i.e. Participant.user instead of Particip
 
 ✔️ Field `stream` was added to object type `User`
 
-## Removals & Deprecations
+## Field removals
 
 ### Player
 ❌ Field `twitchStream` was removed from object type `Player`. Please use `User.authorizations`.
