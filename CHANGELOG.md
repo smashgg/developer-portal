@@ -1,3 +1,8 @@
+# Tuesday, March 10, 2020
+✔️ Un-deprecated `Participant.contactInfo`
+
+✔️ `Participant.contactInfo` description changed to `Contact Info selected during registration. Falls back to User.location and/or User.name if necessary. These fields are for admin use only and do not respect user privacy settings. DO NOT display this information publicly.`
+
 # Monday, March 9, 2020
 ✔️ Type `StandingContainer` was added with description `The containing entity that contextualizes this standing. Event standings, for example, represent an entrant's standing in the entire event vs. Set standings which is an entrant's standing in only a single set within an event.`
 
