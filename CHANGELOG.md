@@ -1,3 +1,7 @@
+# Wednesday, March 11, 2020
+✔️ Field `entrant` was added to object type `GameSelection`
+✔️ Field `participant` was added to object type `GameSelection`
+
 # Tuesday, March 10, 2020
 ✔️ Un-deprecated `Participant.contactInfo`
 
