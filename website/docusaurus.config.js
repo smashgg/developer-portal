@@ -2,6 +2,10 @@
 const repoUrl = 'https://github.com/smashgg/developer-portal';
 
 module.exports = {
+    algolia: {
+    apiKey: '89c46064287024ef645cdfe67ff077ca',
+    indexName: 'smash',
+  },
   title: 'Developer Portal',
   tagline: 'Turning passions into careers',
   url: 'https://developer.smash.gg',
