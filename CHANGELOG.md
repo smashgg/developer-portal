@@ -1,3 +1,7 @@
+
+# Tuesday, April 21, 2020
+✔️ Field `user` was added to object type `Player`
+
 # Wednesday, March 11, 2020
 ✔️ Field `entrant` was added to object type `GameSelection`
 
