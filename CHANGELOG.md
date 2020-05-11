@@ -1,4 +1,7 @@
 
+# Monday, May 11, 2020
+✔️ Field `showByes` was added to input object type `SetFilters`
+
 # Tuesday, April 21, 2020
 ✔️ Field `user` was added to object type `Player`
 
