@@ -1,4 +1,7 @@
 
+# Tuesday, May 26, 2020
+✔️ Field `stage` was added to object type `Game` with description `The stage that this game was played on (if applicable)`
+
 # Monday, May 11, 2020
 ✔️ Field `showByes` was added to input object type `SetFilters`
 
