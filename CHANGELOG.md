@@ -1,3 +1,9 @@
+# Monday, June 1, 2020
+✔️ Field `event` was added to object type `Phase`
+✔️ Field `phaseOrder` was added to object type `Phase`
+✔️ Field `state` was added to object type `Phase`
+✔️ Field `startAt` was added to object type `PhaseGroup`
+* Fixed bug with `ids` filter on input object type `TournamentPageFilter`
 
 # Tuesday, May 26, 2020
 ✔️ Field `stage` was added to object type `Game` with description `The stage that this game was played on (if applicable)`
