@@ -1,3 +1,10 @@
+# Friday, July 17, 2020
+✔️ Field `isFinal` was added to object type `Standing`
+
+✔️ Field `isDisqualified` was added to object type `Entrant`
+
+✔️ Field `url` was added to object type `Shop`
+
 # Monday, June 1, 2020
 ✔️ Field `event` was added to object type `Phase`
 
