@@ -25,6 +25,10 @@ module.exports = {
       }
   ],
   themeConfig: {
+    algolia: {
+        apiKey: '89c46064287024ef645cdfe67ff077ca',
+        indexName: 'smash',
+    },
     image: 'img/devgg.png',
     navbar: {
       title: 'Developer Portal',
