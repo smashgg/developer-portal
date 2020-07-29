@@ -11,21 +11,15 @@ and modify their own personal data.
 
 Currently smash.gg only supports the authorization code grant flow and refresh token.
 
-
 I would recommend becoming familiar with the various OAuth concepts such as `resource owner`,
 `authorization server`, and `client` before moving on.
-There are many resources available on the web for learning these, and
-<a href="https://dzone.com/articles/oauth-20-beginners-guide" target="_blank">this blog post</a>
-gives a good overview for beginners.
+There are many resources available on the web for learning these, and <a href="https://dzone.com/articles/oauth-20-beginners-guide" target="_blank">this blog post</a> gives a good overview for beginners.
 
-
-<a href="https://tools.ietf.org/html/rfc6749" target="_blank">Click here</a>
-for the official OAuth 2.0 specification
+<a href="https://tools.ietf.org/html/rfc6749" target="_blank">Click here</a> for the official OAuth 2.0 specification
 
 ## How do I use OAuth?
 
-The first step is to create an OAuth application via the
-<a href="https://smash.gg/admin/profile/developer/applications" target="_blank">smash.gg developer portal</a>
+The first step is to create an OAuth application via the <a href="https://smash.gg/admin/profile/developer/applications" target="_blank">smash.gg developer portal</a>
 
 ### Authorization code flow
 
@@ -36,6 +30,7 @@ The authorization code grant flow is a quick 5 step process:
 3. Resource owner approves token usage and scopes.
 4. Smash.gg sends an **authorization code** to application's `redirect_uri`.
 5. Application server sends this code to smash.gg's token url in exchange for an **access token**.
+
 
 
 Example authorization url:
@@ -56,7 +51,8 @@ query params for this url are:
 `redirect_uri`: This is where the resource owner gets redirected to during step 4 above.
 The authorization code is included as the query parameter `code`
 
-
+\
+\
 Example redirect url:
 
 ```
@@ -80,8 +76,8 @@ The following parameters must be sent with a `application/x-www-form-urlencoded`
 
 `redirect_uri`: The same redirect uri from before.
 
-
-
+\
+\
 Example access token response:
 
 ```

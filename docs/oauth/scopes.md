@@ -12,9 +12,9 @@ the time of authentication.
 ## What scopes do I have access to?
 
 Please keep in mind that we are still actively developing new scopes to be available here.
-
-| user.identity | Allows use of `currentUser` query |
+| Scope | Description |
 |-|-|
+| user.identity | Allows use of `currentUser` query |
 | user.email | Allows use of `email` field in `currentUser` query |
 
 Coming soon: tournament scopes :)
