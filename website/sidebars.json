@@ -1,6 +1,6 @@
 {
-  "docs": {
-    "Getting Started": [
+	"docs": {
+		"Getting Started": [
 			"intro",
 			"join-discord",
 			"glossary",
@@ -9,9 +9,9 @@
 			"testing-your-requests",
 			"sending-requests",
 			"rate-limits",
-			"benefits-of-gql"			
+			"benefits-of-gql"
 		],
-    "Query Examples": [
+		"Query Examples": [
 			"examples/queries/event-standings",
 			"examples/queries/event-entrants",
 			"examples/queries/league-schedule",
@@ -44,6 +44,10 @@
 			"e2e/update-phase-seeding",
 			"e2e/resolve-conflicts",
 			"e2e/randomize-phase-seeding"
+		],
+		"OAuth": [
+			"oauth/oauth-overview",
+			"oauth/scopes"
 		]
-  }
+	}
 }
