@@ -54,6 +54,13 @@ const users = [
     pinned: true,
   },
   {
+    caption: 'TournaBot',
+    image: 'https://i.imgur.com/VOv3YBE.png',
+    infoLink: 'https://github.com/Ayaan-Govil/TournaBot',
+    openSource: false,
+    pinned: true,
+  },
+  {
     caption: 'Twitch Rivals',
     image:
       'https://smashgg.imgix.net/images/tournament/121788/image-5b5213207f45a30e8e1c938187f8de3e.jpg?auto=compress,format&w=280&h=280&fit=crop',
