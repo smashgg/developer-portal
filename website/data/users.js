@@ -55,8 +55,8 @@ const users = [
   },
   {
     caption: 'TournaBot',
-    image: 'https://i.imgur.com/VOv3YBE.png',
-    infoLink: 'https://github.com/Ayaan-Govil/TournaBot',
+    image: 'https://i.imgur.com/UN1gKXO.png',
+    infoLink: 'https://top.gg/bot/719283403698077708',
     openSource: false,
     pinned: true,
   },
