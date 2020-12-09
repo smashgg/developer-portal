@@ -1,3 +1,6 @@
+# Wednesday, December 9, 2020
+✔️ Field `setRecordWithoutByes` was added to object type `Seed`
+
 # Friday, July 17, 2020
 ✔️ Field `isFinal` was added to object type `Standing`
 
