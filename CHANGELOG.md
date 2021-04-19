@@ -1,8 +1,8 @@
+# Monday, April 19, 2021
+✔️ Field `totalPoints` was added to object type `Standing`
+
 # Wednesday, March 31, 2021
 ✔️ Field `requiredConnections` was added to object type `Participant`
-
-# Wednesday, December 9, 2020
-✔️ Field `setRecordWithoutByes` was added to object type `Seed`
 
 # Wednesday, December 9, 2020
 ✔️ Field `setRecordWithoutByes` was added to object type `Seed`
