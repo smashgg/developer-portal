@@ -38,6 +38,13 @@ const users = [
     pinned: true,
   },
   {
+    caption: 'Smashthèque',
+    image: 'https://s3.eu-west-3.amazonaws.com/static.smashtheque.fr/img/smashtheque-256.png',
+    infoLink: 'https://www.smashtheque.fr/',
+    openSource: true,
+    pinned: true,
+  },
+  {
     caption: 'SmashTicker',
     image:
       'https://lh3.googleusercontent.com/HJzDy4IhHwwpmb_LZtYs4tmth-Z4N8BYltaxBlgMjkIaB97HIer3HJY3V6Ebh39dKn2s0qGRGuo=w128-h128-e365',
