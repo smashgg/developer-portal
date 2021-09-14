@@ -43,7 +43,8 @@
 		"Full Examples": [
 			"e2e/update-phase-seeding",
 			"e2e/resolve-conflicts",
-			"e2e/randomize-phase-seeding"
+			"e2e/randomize-phase-seeding",
+			"e2e/full-php-http-example" 
 		]
   }
 }
