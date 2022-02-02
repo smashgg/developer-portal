@@ -1,3 +1,40 @@
+# Wednesday, February 2, 2022
+❌ Type `TeamType` was removed
+
+❌ Type `TeamsPageFilter` was removed
+
+❌ Type `TeamsPaginationQuery` was removed
+
+✔️ Type `Character` was added
+
+✔️ Field `initialSeedNum` was added to object type `Entrant`
+
+⚠️ Enum value `XBOX` was added to `SocialConnectionType` enum
+
+✔️ Field `competitionTier` was added to object type `Event`
+
+✔️ Input Field `leagueEntrantId: ID` was added to input type `LeagueEventsFilter`
+
+❌ Type for argument `query` on field `Tournament.teams` changed from `TeamsPaginationQuery!` to `TeamPaginationQuery!`
+
+✔️ Field `characters` was added to object type `Videogame`
+
+✔️ Input Field `eventIds: [ID]` was added to input type `TeamPaginationFilter`
+
+✔️ Input Field `rosterComplete: Boolean` was added to input type `TeamPaginationFilter`
+
+✔️ Input Field `eventId: ID` was added to input type `TeamPaginationFilter`
+
+✔️ Input Field `rosterIncomplete: Boolean` was added to input type `TeamPaginationFilter`
+
+❌ `TeamPaginationFilter.memberStatus` type changed from `TeamMemberStatus` to `[TeamMemberStatus]`
+
+⚠️ Enum value `XBOX` was added to `AuthorizationType` enum
+
+✔️ Field `entrant` was added to object type `Query`
+
+✔️ Argument `slug: String` added to `Query.videogame`
+
 # Thursday, September 9, 2021
 ✔️ Type `EventTeamConnection` was added
 
