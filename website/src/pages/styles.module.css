@@ -2,13 +2,13 @@
   display: block;
   width: 269px;
   height: 58px;
-  background: url(/img/logo-dark.svg) 0 0 no-repeat;
+  background: url(/img/new_logo-dark.svg) 0 0 no-repeat;
   text-indent: -20000px;
   margin: 0 auto;
 }
 
 html[data-theme='dark'] .heroProjectTitle {
-  background-image: url(/img/logo-white.svg);
+  background-image: url(/img/new_logo-white.svg);
 }
 
 .heroProjectTagline {

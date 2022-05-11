@@ -30,7 +30,7 @@ module.exports = {
       title: 'Developer Portal',
       logo: {
         alt: 'Developer Portal Logo',
-        src: 'img/logo-dark.svg',
+        src: 'img/new_logo-dark.svg',
       },
       links: [
         { to: 'docs/intro', label: 'Docs', position: 'right' },
@@ -48,7 +48,7 @@ module.exports = {
     footer: {
       logo: {
         alt: 'start.gg',
-        src: 'img/favicon/white-favicon.ico',
+        src: 'img/favicon/favicon.ico',
       },
       copyright: `Copyright © ${new Date().getFullYear()} start.gg`,
       style: 'dark',
