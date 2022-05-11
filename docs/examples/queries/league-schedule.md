@@ -22,7 +22,7 @@ values={[
 
 ```graphql
 query LeagueSchedule {
-  league(slug: "twt") {
+  league(slug: "tekken-world-tour-2019") {
     id
     name
     events(query: {

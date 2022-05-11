@@ -22,7 +22,7 @@ values={[
 
 ```graphql
 query LeagueStandings {
-  league(slug: "twt") {
+  league(slug: "tekken-world-tour-2019") {
     id
     name
     standings (query: {
@@ -36,9 +36,9 @@ query LeagueStandings {
       nodes {
         id
         placement
-        player {
+        entrant {
           id
-          gamerTag
+          name
         }
       }
     }
@@ -58,88 +58,88 @@ query LeagueStandings {
       "name": "TEKKEN World Tour 2019",
       "standings": {
         "pageInfo": {
-          "totalPages": 2091,
-          "total": 20903
+          "totalPages": 194,
+          "total": 1940
         },
         "nodes": [
           {
-            "id": 9023904,
+            "id": 32795085,
             "placement": 1,
-            "player": {
-              "id": 415882,
-              "gamerTag": "Knee"
+            "entrant": {
+              "id": 7838988,
+              "name": "ROX Dragons | Knee"
             }
           },
           {
-            "id": 9039466,
+            "id": 32795157,
             "placement": 2,
-            "player": {
-              "id": 135159,
-              "gamerTag": "Anakin"
+            "entrant": {
+              "id": 7838615,
+              "name": "RB | Anakin"
             }
           },
           {
-            "id": 9022193,
+            "id": 32795041,
             "placement": 3,
-            "player": {
-              "id": 529161,
-              "gamerTag": "LowHigh"
+            "entrant": {
+              "id": 7839254,
+              "name": "UYU | LowHigh"
             }
           },
           {
-            "id": 9616190,
+            "id": 32795747,
             "placement": 4,
-            "player": {
-              "id": 492169,
-              "gamerTag": "JDCR"
+            "entrant": {
+              "id": 7839209,
+              "name": "JDCR"
             }
           },
           {
-            "id": 9023903,
+            "id": 32795084,
             "placement": 5,
-            "player": {
-              "id": 1156544,
-              "gamerTag": "chikurin"
+            "entrant": {
+              "id": 7839910,
+              "name": "THY | chikurin"
             }
           },
           {
-            "id": 9282431,
+            "id": 32795590,
             "placement": 6,
-            "player": {
-              "id": 304592,
-              "gamerTag": "kkokkoma"
+            "entrant": {
+              "id": 7838776,
+              "name": "Talon | kkokkoma"
             }
           },
           {
-            "id": 9027190,
+            "id": 32795099,
             "placement": 7,
-            "player": {
-              "id": 519204,
-              "gamerTag": "Super Akouma"
+            "entrant": {
+              "id": 7839237,
+              "name": "CRaZY | Super Akouma"
             }
           },
           {
-            "id": 10745306,
+            "id": 32796233,
             "placement": 8,
-            "player": {
-              "id": 768254,
-              "gamerTag": "Arslan Ash"
+            "entrant": {
+              "id": 7839602,
+              "name": "VS| RB | Ash | Arslan Ash"
             }
           },
           {
-            "id": 12398528,
+            "id": 32796601,
             "placement": 9,
-            "player": {
-              "id": 1258070,
-              "gamerTag": "Awais Honey"
+            "entrant": {
+              "id": 7840143,
+              "name": "GG | Awais Honey"
             }
           },
           {
-            "id": 9024234,
+            "id": 32795087,
             "placement": 10,
-            "player": {
-              "id": 543721,
-              "gamerTag": "Rangchu"
+            "entrant": {
+              "id": 7839282,
+              "name": "Donuts USG | Rangchu"
             }
           }
         ]
