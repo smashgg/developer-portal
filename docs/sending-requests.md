@@ -7,7 +7,7 @@ sidebar_label: Sending Requests
 Unlike our old REST API, our GraphQL API has a single endpoint:
 
 ```html
-https://api.smash.gg/gql/alpha
+https://api.start.gg/gql/alpha
 ```
 
 You can use cURL or any other method of making HTTP requests.

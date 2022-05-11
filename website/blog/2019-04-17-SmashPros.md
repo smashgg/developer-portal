@@ -10,7 +10,7 @@ sidebar_label: Smash Pros v1.1.3
 
 <a href="https://play.google.com/store/apps/details?id=com.smashpros.mobile&hl=en_CA" target="_blank">Smash Pros</a>
 is a mobile app serving competitive Super Smash Bros. Ultimate players.
-The latest release includes a tournament-finder feature powered by smash.gg data!
+The latest release includes a tournament-finder feature powered by start.gg data!
 
 <!--truncate-->
 
@@ -47,7 +47,7 @@ out to and become in the near future._
 ## How has your experience been with our public API?
 
 _Working with the API has been a breath of fresh air.
-This was our first time working with a GraphQL API, and smash.gg provided plenty of resources to get started.
+This was our first time working with a GraphQL API, and start.gg provided plenty of resources to get started.
 The variety of examples given along with the API explorer allowed us to quickly build the right queries for our use case.
 When we ran into trouble, the development team was readily available to answer any questions in
 [the community Discord](/docs/join-discord).
