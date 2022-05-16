@@ -45,7 +45,7 @@ Once the tweet is sent, I store the tournament ID in a DB so I don't tweet twice
 ## How did you like working with the new API?
 
 _It's pretty funny.
-I always wanted to learn GraphQL and thanks to Smash.gg I got a opportunity to test it.
+I always wanted to learn GraphQL and thanks to start.gg I got a opportunity to test it.
 At the beginning it was confusing but once you get it, it's a pleasure to work with.
 For an alpha it's pretty well documented and even a complete beginner with GraphQL is able to make something out of it._
 
@@ -58,4 +58,4 @@ So I don't need contributors :p_
 
 _Actually I'm working on a seeding tool for TOs.
 Since Ultimate brought a lot of new players, seeding became complicated.
-So I'm making a tool that ranks every French smash.gg player to help TOs in their seeding._
+So I'm making a tool that ranks every French start.gg player to help TOs in their seeding._

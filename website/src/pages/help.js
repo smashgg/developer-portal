@@ -28,7 +28,7 @@ function Help() {
     {
       content: (
         <>
-          Learn more about using the smash.gg public API in our{' '}
+          Learn more about using the start.gg public API in our{' '}
           <Link to="docs/intro">official documentation</Link>
         </>
       ),
@@ -58,7 +58,7 @@ function Help() {
     {
       content: (
         <>
-          You can contact us directly using <Link href="mailto:devrelations@smash.gg">devrelations@smash.gg</Link>
+          You can contact us directly using <Link href="mailto:devrelations@start.gg">devrelations@start.gg</Link>
         </>
       ),
       title: `Email Us`,
@@ -70,7 +70,7 @@ function Help() {
       <div className="container container--fluid padding-horiz--xl margin-top--lg">
         <h1>Need help?</h1>
         <p>
-          If you need help with the smash.gg public API, please use one of the
+          If you need help with the start.gg public API, please use one of the
           channels below!
         </p>
 

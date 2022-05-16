@@ -3,7 +3,7 @@ id: benefits-of-gql
 title: Benefits of GraphQL
 ---
 
-GraphQL is awesome for the smash.gg public API. Why?
+GraphQL is awesome for the start.gg public API. Why?
 **Because you can get exactly what you need without a bunch of
 extraneous data.**
 
@@ -67,7 +67,7 @@ It will reduce the number of requests - and the size of the
 responses - that your application will be handling.
 That, in turn, will translate into **time savings** and **data savings** for your end users.
 For comparison, retrieving the top 3 standings in our _old_
-API for just Melee Singles alone at EVO 2018 <a href="https://api.smash.gg/tournament/evo-2018/event/evo-2018-1/standings?entityType=event&expand[]=entrants&mutations[]=playerData&mutations[]=standingLosses&page=1&per_page=3" target="_blank">involved a 21.1 KB response</a>!
+API for just Melee Singles alone at EVO 2018 <a href="https://api.start.gg/tournament/evo-2018/event/evo-2018-1/standings?entityType=event&expand[]=entrants&mutations[]=playerData&mutations[]=standingLosses&page=1&per_page=3" target="_blank">involved a 21.1 KB response</a>!
 
 ```json
 {

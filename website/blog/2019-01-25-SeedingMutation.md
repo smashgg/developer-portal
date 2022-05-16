@@ -17,13 +17,13 @@ events](https://twitter.com/Genesis_Smash/status/1088640342310547456)!
 
 This is the first write method we are making available to our users.
 As we mentioned, it has already made its debut in the field for
-[Genesis 6](https://smash.gg/g6), where we worked alongside TOs to seed
+[Genesis 6](https://start.gg/g6), where we worked alongside TOs to seed
 their largest events using this new method.
-You can read about that in [Dr. Z's blog post](https://blog.smash.gg/b3a75c936dcb).
+You can read about that in [Dr. Z's blog post](https://blog.start.gg/b3a75c936dcb).
 
 ## 3rd Party Platform
 
-We will, eventually, redesign and revamp the entire seeding experience on smash.gg.
+We will, eventually, redesign and revamp the entire seeding experience on start.gg.
 In the meantime, we are releasing this write method to enable our
 passionate 3rd party developer community to do what they are best at:
 **create excellent, custom-tailored experiences & tools for themselves and others.**

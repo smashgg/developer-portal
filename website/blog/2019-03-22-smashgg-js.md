@@ -19,7 +19,7 @@ console.log(
 );
 ```
 
-<a href="https://www.npmjs.com/package/smashgg.js" target="_blank">smashgg.js</a> is an unofficial NodeJS SDK for the smash.gg public API.
+<a href="https://www.npmjs.com/package/smashgg.js" target="_blank">smashgg.js</a> is an unofficial NodeJS SDK for the start.gg public API.
 It allows for ease of access to common API objects and aggregations so that developers can "spend less time digging through JSON or writing
 GQL queries, and more time getting their application up and running."
 
@@ -50,7 +50,7 @@ allows._
 
 ## What was your inspiration for building smashgg.js?
 
-_smash.gg offers a vast array of rich information about tournaments.
+_start.gg offers a vast array of rich information about tournaments.
 This information is regularly harvested by developers for their applications; whether those apps automate certain aspects of tournament organizing
 or attempt to aggregate data about an event, devs are always interacting with the API.
 In an attempt to make their life easier, I decided to create smashgg.js, a NodeJS-based SDK wrapping around the API.
