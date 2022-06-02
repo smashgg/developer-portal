@@ -5,11 +5,11 @@ title: OAuth Overview
 
 ## What is OAuth?
 
-The OAuth 2.0 flow enables developers to create applications that utilize personal data from smash.gg.
+The OAuth 2.0 flow enables developers to create applications that utilize personal data from start.gg.
 This allows for far more powerful integrations than using a public access token- users can access
 and modify their own personal data.
 
-Currently smash.gg only supports the authorization code grant flow and refresh token.
+Currently start.gg only supports the authorization code grant flow and refresh token.
 
 I would recommend becoming familiar with the various OAuth concepts such as `resource owner`,
 `authorization server`, and `client` before moving on.
@@ -19,24 +19,24 @@ There are many resources available on the web for learning these, and <a href="h
 
 ## How do I use OAuth?
 
-The first step is to create an OAuth application via the <a href="https://smash.gg/admin/profile/developer/applications" target="_blank">smash.gg developer portal</a>
+The first step is to create an OAuth application via the <a href="https://start.gg/admin/profile/developer/applications" target="_blank">start.gg developer portal</a>
 
 ### Authorization code flow
 
 The authorization code grant flow is a quick 5 step process:
 
-1. Client redirects resource owner to smash.gg authorization url.
-2. Resource owner signs in with smash.gg
+1. Client redirects resource owner to start.gg authorization url.
+2. Resource owner signs in with start.gg
 3. Resource owner approves token usage and scopes.
-4. Smash.gg sends an **authorization code** to application's `redirect_uri`.
-5. Application server sends this code to smash.gg's token url in exchange for an **access token**.
+4. start.gg sends an **authorization code** to application's `redirect_uri`.
+5. Application server sends this code to start.gg's token url in exchange for an **access token**.
 
 
 
 Example authorization url:
 
 ```
-http://smash.gg/oauth/authorize?response_type=code&client_id=0&scope=user.identity%20user.email&redirect_uri=http%3A%2F%2Fexampleurl.com%2Foauth
+http://start.gg/oauth/authorize?response_type=code&client_id=0&scope=user.identity%20user.email&redirect_uri=http%3A%2F%2Fexampleurl.com%2Foauth
 ```
 
 There is a tool in your application's settings that will generate this url for you. The required
@@ -59,10 +59,10 @@ Example redirect url:
 http://exampleurl.com/oauth?code=dsbf6h12sd8mdfwEzF
 ```
 
-This endpoint is responsible for sending a POST request to smash.gg's token url:
-`api.smash.gg/oauth/access_token`
+This endpoint is responsible for sending a POST request to start.gg's token url:
+`api.start.gg/oauth/access_token`
 
-The following parameters must be sent with a `application/x-www-form-urlencoded` Content Type header:
+The following parameters must be sent with a `application/json` Content Type header:
 
 `grant_type`: must be `authorization_code`.
 
@@ -97,10 +97,10 @@ restricted to the scopes that were approved.
 This access token will expire in `expires_in` seconds, so you can use the `refresh_token` to
 obtain a new access token before the user's access expires.
 
-To refresh a token, send a POST request to smash.gg's refresh token url:
-`api.smash.gg/oauth/refresh`
+To refresh a token, send a POST request to start.gg's refresh token url:
+`api.start.gg/oauth/refresh`
 
-The following parameters must be sent with a `application/x-www-form-urlencoded` Content Type header:
+The following parameters must be sent with a `application/json` Content Type header:
 
 `grant_type`: must be `refresh_token`.
 
