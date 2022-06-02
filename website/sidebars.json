@@ -47,7 +47,8 @@
 		],
 		"OAuth": [
 			"oauth/oauth-overview",
-			"oauth/scopes"
+			"oauth/scopes",
+			"oauth/example-oauth-flow"
 		]
 	}
 }
