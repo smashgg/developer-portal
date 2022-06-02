@@ -1,3 +1,107 @@
+# Wednesday, February 2, 2022
+❌ Type `TeamType` was removed
+
+❌ Type `TeamsPageFilter` was removed
+
+❌ Type `TeamsPaginationQuery` was removed
+
+✔️ Type `Character` was added
+
+✔️ Field `initialSeedNum` was added to object type `Entrant`
+
+⚠️ Enum value `XBOX` was added to `SocialConnectionType` enum
+
+✔️ Field `competitionTier` was added to object type `Event`
+
+✔️ Input Field `leagueEntrantId: ID` was added to input type `LeagueEventsFilter`
+
+❌ Type for argument `query` on field `Tournament.teams` changed from `TeamsPaginationQuery!` to `TeamPaginationQuery!`
+
+✔️ Field `characters` was added to object type `Videogame`
+
+✔️ Input Field `eventIds: [ID]` was added to input type `TeamPaginationFilter`
+
+✔️ Input Field `rosterComplete: Boolean` was added to input type `TeamPaginationFilter`
+
+✔️ Input Field `eventId: ID` was added to input type `TeamPaginationFilter`
+
+✔️ Input Field `rosterIncomplete: Boolean` was added to input type `TeamPaginationFilter`
+
+❌ `TeamPaginationFilter.memberStatus` type changed from `TeamMemberStatus` to `[TeamMemberStatus]`
+
+⚠️ Enum value `XBOX` was added to `AuthorizationType` enum
+
+✔️ Field `entrant` was added to object type `Query`
+
+✔️ Argument `slug: String` added to `Query.videogame`
+
+# Thursday, September 9, 2021
+✔️ Type `EventTeamConnection` was added
+
+✔️ Type `TeamMember` was added
+
+✔️ Type `TeamMemberType` was added
+
+✔️ Type `TeamPaginationFilter` was added
+
+✔️ Type `TeamPaginationQuery` was added
+
+⚠️ Field `members` of type `[TeamMember]` was added to interface `Team`
+
+✔️ Field `members` was added to object type `EventTeam`
+
+✔️ Field `globalTeam` was added to object type `EventTeam`
+
+✔️ Field `team` was added to object type `Entrant`
+
+✔️ Field `members` was added to object type `GlobalTeam`
+
+✔️ Field `eventTeams` was added to object type `GlobalTeam`
+
+✔️ Field `leagueTeams` was added to object type `GlobalTeam`
+
+# Wednesday, September 8, 2021
+✔️ Type `ActionSet` was added
+
+✔️ Type `EventTeam` was added
+
+✔️ Type `GlobalTeam` was added
+
+✔️ Type `TeamActionSet` was added
+
+✔️ Type `TeamMemberStatus` was added
+
+✔️ Type `TeamRosterSize` was added
+
+✔️ Type `TeamType` was added
+
+✔️ Field `teamRosterSize` was added to object type `Event`
+
+✔️ Deprecation reason on field `Event.entrantSizeMax` changed from `None` to `Migrate to teamRosterSize`
+
+✔️ Deprecation reason on field `Event.entrantSizeMin` changed from `None` to `Migrate to teamRosterSize`
+
+✔️ Description for type `Team` changed from `A team, usually within the context of an event` to `A team, either at the global level or within the context of an event`
+
+❌ `Team` kind changed from `OBJECT` to `INTERFACE`
+
+✔️ Input Field `playerId: ID` was added to input type `TeamsPageFilter`
+
+✔️ Input Field `videogameId: ID` was added to input type `TeamsPageFilter`
+
+✔️ Input Field `type: TeamType` was added to input type `TeamsPageFilter`
+
+✔️ Input Field `memberStatus: TeamMemberStatus` was added to input type `TeamsPageFilter`
+
+# Monday, April 19, 2021
+✔️ Field `totalPoints` was added to object type `Standing`
+
+# Wednesday, March 31, 2021
+✔️ Field `requiredConnections` was added to object type `Participant`
+
+# Wednesday, December 9, 2020
+✔️ Field `setRecordWithoutByes` was added to object type `Seed`
+
 # Friday, July 17, 2020
 ✔️ Field `isFinal` was added to object type `Standing`
 

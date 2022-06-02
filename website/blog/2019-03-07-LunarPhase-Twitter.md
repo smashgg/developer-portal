@@ -11,7 +11,7 @@ sidebar_label: Lunar Phase Event Results Tweets
 Lunar Phase, a tournament-organizing and broadcast team based out of New York City, have
 automated their workflow for creating post-event results tweets with an
 <a href="https://github.com/lunar-phase/smashgg-results" target="_blank">open-source solution</a>
-powered by the smash.gg public API.
+powered by the start.gg public API.
 
 <!--truncate-->
 
@@ -40,12 +40,12 @@ There are improvements that can be made, but for now it gets the job done and sa
 
 **<a href="https://github.com/lunar-phase/smashgg-results" target="_blank">(view the source code on GitHub)</a>**
 
-## How was your experience working with the smash.gg public API?
+## How was your experience working with the start.gg public API?
 
-_Working with the new smash.gg API has been fantastic!
+_Working with the new start.gg API has been fantastic!
 This was my first experience using GraphQL, but their API explorer made it really easy to find my way around
 the API and try things out even before I had settled on a library to use for my implementation.
-The API is still under development, but smash.gg staff have been impressively quick at responding to and implementing requests._
+The API is still under development, but start.gg staff have been impressively quick at responding to and implementing requests._
 
 ---
 

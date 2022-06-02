@@ -3,7 +3,7 @@ id: resolve-conflicts
 title: Resolve Schedule Conflicts
 ---
 
-In this example, we will invoke smash.gg's algorithm for resolving schedule conflicts
+In this example, we will invoke start.gg's algorithm for resolving schedule conflicts
 (and other user-defined constraints) using an API request.
 
 **NOTE: You will need an API [auth token](/docs/authentication)
@@ -24,9 +24,9 @@ In this scenario, it is likely that I will have both schedule conflicts
 and custom contraints to solve for.
 We'll start by defining the custom contraints.
 
-## Step 1: Creating custom constraints in smash.gg
+## Step 1: Creating custom constraints in start.gg
 
-I recommend reading this [help center article](https://help.smash.gg/seeding/conflicts)
+I recommend reading this [help center article](https://help.start.gg/seeding/conflicts)
 for a more thorough explanation of creating constraints for your tournament.
 In short, these are custom-defined constraints to:
 
@@ -49,12 +49,12 @@ My list of constraints looks like this:
 
 ![list of constraints](https://imgur.com/pQLJAUE.png)
 
-## Step 2: Executing smash.gg's Algorithm to Resolve Constraints & Conflicts
+## Step 2: Executing start.gg's Algorithm to Resolve Constraints & Conflicts
 
 Our algorithm will attempt to solve as many of the schedule conflicts, schedule constraints,
 and player constraints as possible.
 Our example is very simple, but for a tournament like
-[Genesis 6](https://blog.smash.gg/b3a75c936dcb) this saves
+[Genesis 6](https://blog.start.gg/b3a75c936dcb) this saves
 countless hours of time!
 
 **NOTE: You will need an API auth token belonging to a user who has admin permissions for your tournament.**
@@ -86,7 +86,7 @@ apiVersion = 'alpha'
 
 print("Resolve conflicts in tournament " + str(tournamentId) + "...")
 
-client = GraphQLClient('https://api.smash.gg/gql/' + apiVersion)
+client = GraphQLClient('https://api.start.gg/gql/' + apiVersion)
 client.inject_token('Bearer ' + authToken)
 
 result = client.execute('''
@@ -111,7 +111,7 @@ else:
 
 ```
 
-After executing this, you can check the results of the conflicts on smash.gg!
+After executing this, you can check the results of the conflicts on start.gg!
 
 In my example, I checked that:
 
