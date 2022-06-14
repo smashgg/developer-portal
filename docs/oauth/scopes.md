@@ -15,6 +15,6 @@ Please keep in mind that we are still actively developing new scopes to be avail
 
 | Scope | Description |
 |---|---|
-| user.identity | Allows use of `currentUser` query |
-| user.email | Allows use of `email` field in `currentUser` query |
-| tournament.manager | Allows access to tournament seeding and bracket setup |
+| user.identity | Allows use of `currentUser` query and all public fields for the user. Any private fields require additional scopes. |
+| user.email | Allows use of `email` field in `currentUser` query. `user.identity` scope is also required for this to work. |
+| tournament.manager | Allows access to tournament seeding and bracket setup for tournaments the current user has access to. |
