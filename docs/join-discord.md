@@ -9,7 +9,7 @@ find collaborators, and promote your projects using the API!
 ## How to Join our Community on Discord
 
 1. If you do not already have a Discord account, then <a href="https://discordapp.com/register" target="_blank">make one</a>!
-2. Go to <a href="https://discord.gg/smashgg" target="_blank">discord.gg/smashgg</a> to join our server
+2. Go to <a href="https://discord.gg/startgg" target="_blank">discord.gg/startgg</a> to join our server
 3. Once you have joined our server, go to the #flairing
    channel, type `/roleme 3rd-party-devs`, and hit Enter
    (this will give you the 3rd-party-devs role in our server)
