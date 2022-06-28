@@ -2,7 +2,7 @@
 	"name": "smashgg-graphdoc",
 	"graphdoc": {
 	  "graphiql": "https://developer.start.gg/explorer",
-	  "logo": "<a href=\"https://developer.start.gg\" style=\"background-color: #252e37;display:block;padding:1rem 25%\"><img src=\"https://images.start.gg/home-page/smashgg-white.svg\" /></a>",
+	  "logo": "<a href=\"https://developer.start.gg\" style=\"background-color: #252e37;display:block;padding:1rem 25%\"><img src=\"https://developer.start.gg/img/new_logo-white.svg\" /></a>",
 	  "endpoint": "https://api.start.gg/gql/alpha",
 	  "output": "./schema/reference",
 	  "baseUrl": "./"
