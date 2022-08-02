@@ -1,3 +1,6 @@
+# Thursday, July 28, 2022
+✔️ Field `recentPlacements` was added to object type `Player`
+
 # Wednesday, February 2, 2022
 ❌ Type `TeamType` was removed
 

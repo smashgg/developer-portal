@@ -92,11 +92,11 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/smashgg',
+              href: 'https://discord.gg/startgg',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/smashgg',
+              href: 'https://twitter.com/startgg',
             },
             {
               label: 'GitHub',
