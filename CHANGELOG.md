@@ -1,3 +1,6 @@
+# Wednesday, August 3, 2022
+✔️ Sorting by `RECENT` on PaginatedSets will now sort first by `completedAt` instead of `startedAt`
+
 # Thursday, July 28, 2022
 ✔️ Field `recentPlacements` was added to object type `Player`
 
