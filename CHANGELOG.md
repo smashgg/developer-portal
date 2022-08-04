@@ -1,3 +1,6 @@
+# Thursday, August 4, 2022
+* As of June 23, 2022, fixed bug where Tournament API Queries would return "Unknown error" if the complexity limit had been reached. Now, the error will inform users of the complexity limit and the exact complexity of the object they are querying.
+
 # Thursday, July 28, 2022
 ✔️ Field `recentPlacements` was added to object type `Player`
 
