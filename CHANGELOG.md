@@ -1,5 +1,5 @@
 # Wednesday, August 3, 2022
-✔️ Sorting by `RECENT` on PaginatedSets will now sort first by `completedAt` instead of `startedAt`
+✔️ Sorting by `RECENT` on PaginatedSets will now sort first by `completedAt` instead of `startedAt`. This resolves an issue where sets with DQs would unexpectedly sort behind later sets since startedAt never gets set.
 
 # Thursday, July 28, 2022
 ✔️ Field `recentPlacements` was added to object type `Player`
