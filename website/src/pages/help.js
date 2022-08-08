@@ -28,7 +28,7 @@ function Help() {
     {
       content: (
         <>
-          Learn more about using the start.gg public API in our{' '}
+          Learn more about using the start.gg public API in our 
           <Link to="docs/intro">official documentation</Link>
         </>
       ),
@@ -46,10 +46,10 @@ function Help() {
       content: (
         <>
           <p>
-            Found an issue while using the API? <Link to="javascript:void(0);" id="report-bugs">Report it here.</Link>
+            Found an issue while using the API? <Link to="https://github.com/smashgg/developer-portal" id="report-bugs">Report it here.</Link>
           </p>
           <p>
-            Want to suggest new queries, mutations, or provide other feedback? <Link to="javascript:void(0);" id="submit-feedback">Let us know here!</Link>
+            Want to suggest new queries, mutations, or provide other feedback? <Link to="https://github.com/smashgg/developer-portal" id="submit-feedback">Let us know here!</Link>
           </p>
         </>
       ),
