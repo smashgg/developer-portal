@@ -1,7 +1,16 @@
 ---
 id: oauth-overview
-title: OAuth Overview
+title: OAuth Overview (Closed Alpha)
 ---
+
+## Notice
+
+OAuth is currently in a closed alpha state for testing purposes. You must be in the closed beta for this to work.
+
+OAuth Public release is coming soon and will have an announcement when it is available. 
+
+However, if you see something missing from these docs or have suggestions regarding scopes, please file an issue to
+contribute to the discussion!
 
 ## What is OAuth?
 
