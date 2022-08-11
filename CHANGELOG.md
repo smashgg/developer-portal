@@ -1,4 +1,4 @@
-# Tuesday, August 11, 2022
+# Thursday, August 11, 2022
 * Field `userEntrant` added to object type `Event`
 
 # Thursday, August 4, 2022
