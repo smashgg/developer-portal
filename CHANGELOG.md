@@ -8,7 +8,7 @@
 ✔️ Sorting by `RECENT` on PaginatedSets will now sort first by `completedAt` instead of `startedAt`. This resolves an issue where sets with DQs would unexpectedly sort behind later sets since startedAt never gets set.
 
 # Thursday, July 28, 2022
-✔️ Field `recentPlacements` was added to object type `Player`
+✔️ Field `recentStandings` was added to object type `Player`
 
 # Wednesday, February 2, 2022
 ❌ Type `TeamType` was removed
