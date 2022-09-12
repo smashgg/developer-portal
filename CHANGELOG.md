@@ -1,3 +1,6 @@
+# Thursday, August 11, 2022
+* Field `userEntrant` added to object type `Event`
+
 # Thursday, August 4, 2022
 * As of June 23, 2022, fixed bug where Tournament API Queries would return "Unknown error" if the complexity limit had been reached. Now, the error will inform users of the complexity limit and the exact complexity of the object they are querying.
 
@@ -5,7 +8,7 @@
 ✔️ Sorting by `RECENT` on PaginatedSets will now sort first by `completedAt` instead of `startedAt`. This resolves an issue where sets with DQs would unexpectedly sort behind later sets since startedAt never gets set.
 
 # Thursday, July 28, 2022
-✔️ Field `recentPlacements` was added to object type `Player`
+✔️ Field `recentStandings` was added to object type `Player`
 
 # Wednesday, February 2, 2022
 ❌ Type `TeamType` was removed
