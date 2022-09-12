@@ -8,7 +8,7 @@ In others words, "Give me the next _x_ upcoming tournaments for _Videogame(s)_."
 The first example will be for a single videogame,
 and the second example will be for an array of videogames.
 
-You can find the ID for a given game via the instructions in the [get game id by name example query](/videogame-id-by-name).
+You can find the ID for a given game via the instructions in the [get game id by name example query](/docs/examples/videogame-id-by-name).
 
 ## Example #1 (Single Videogame)
 
