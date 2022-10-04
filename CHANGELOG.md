@@ -1,6 +1,6 @@
 # Tuesday, October 4, 2022
 * Parameter `limit` added to field `recentStandings` on type `Player`
-* 
+
 # Thursday, August 11, 2022
 * Field `userEntrant` added to object type `Event`
 
