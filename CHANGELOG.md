@@ -1,3 +1,7 @@
+# Friday, November 4, 2022
+* Updated some documentation for Participant to be more accurate
+* Added "Prefix" column to attendee export CSV. While not directly tied to API use, often used for developer experience.
+
 # Tuesday, October 4, 2022
 * Parameter `limit` added to field `recentStandings` on type `Player`
 
