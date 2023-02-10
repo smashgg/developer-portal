@@ -45,7 +45,7 @@ The authorization code grant flow is a quick 5 step process:
 Example authorization url:
 
 ```
-http://start.gg/oauth/authorize?response_type=code&client_id=0&scope=user.identity%20user.email&redirect_uri=http%3A%2F%2Fexampleurl.com%2Foauth
+https://start.gg/oauth/authorize?response_type=code&client_id=0&scope=user.identity%20user.email&redirect_uri=http%3A%2F%2Fexampleurl.com%2Foauth
 ```
 
 There is a tool in your application's settings that will generate this url for you. The required
