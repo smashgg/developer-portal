@@ -34,4 +34,4 @@ Authorization: Bearer [token]
 
 You will also need a token for making requests in the [API Explorer](/explorer)
 
-![image4](https://imgur.com/WZjuFCE.png)
+![image4](https://i.imgur.com/W8T7MoL.png)
