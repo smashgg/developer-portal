@@ -4,7 +4,7 @@ title: Report Set
 ---
 
 In this example, we will report a set. We will show an example of just updating the winner of a set,
-and also an example of reporting full character, stage and score info.
+and also an example of reporting full character, stage and score data.
 For smash and other platform fighting games, score is equivalent to stocks remaining.
 
 ## Example #1: W/L reporting
