@@ -73,9 +73,6 @@ mutation reportSet($setId: ID!, $winnerId: ID!) {
 
 ## Example #2: Full game data reporting
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs
 defaultValue="graphql"
 values={[
