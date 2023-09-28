@@ -45,7 +45,7 @@
 			"e2e/resolve-conflicts",
 			"e2e/randomize-phase-seeding"
 		],
-		"OAuth (Closed Alpha)": [
+		"OAuth": [
 			"oauth/oauth-overview",
 			"oauth/scopes",
 			"oauth/example-oauth-flow"
