@@ -5,7 +5,7 @@ title: Example OAuth Flow
 
 ## What is OAuth?
 
-For more info on the OAuth flow, please visit [the OAuth overview page](/oauth-overview).
+For more info on the OAuth flow, please visit [the OAuth overview page](/docs/oauth/oauth-overview).
 
 ## How do I implement the OAuth flow?
 
