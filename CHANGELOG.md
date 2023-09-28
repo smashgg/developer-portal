@@ -1,3 +1,15 @@
+# Thursday, September 28, 2023
+✔️ Type BracketSetGameDataInput was added
+✔️ Type BracketSetGameSelectionInput was added
+✔️ Field character was added to object type GameSelection
+✔️ Field resetSet was added to object type Mutation
+✔️ Field markSetCalled was added to object type Mutation
+✔️ Field reportBracketSet was added to object type Mutation
+✔️ Field markSetInProgress was added to object type Mutation
+✔️ Field entrant2Score was added to object type Game
+✔️ Field entrant1Score was added to object type Game
+✔️ Field stages was added to object type Videogame
+
 # Friday, November 4, 2022
 * Updated some documentation for Participant to be more accurate
 * Added "Prefix" column to attendee export CSV. While not directly tied to API use, often used for developer experience.
