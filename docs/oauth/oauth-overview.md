@@ -1,16 +1,7 @@
 ---
 id: oauth-overview
-title: OAuth Overview (Closed Alpha)
+title: OAuth Overview
 ---
-
-## Notice
-
-OAuth is currently in a closed alpha state for testing purposes. You must be in the closed beta for this to work.
-
-OAuth Public release is coming soon and will have an announcement when it is available. 
-
-However, if you see something missing from these docs or have suggestions regarding scopes, please file an issue to
-contribute to the discussion!
 
 ## What is OAuth?
 
@@ -45,7 +36,7 @@ The authorization code grant flow is a quick 5 step process:
 Example authorization url:
 
 ```
-http://start.gg/oauth/authorize?response_type=code&client_id=0&scope=user.identity%20user.email&redirect_uri=http%3A%2F%2Fexampleurl.com%2Foauth
+https://start.gg/oauth/authorize?response_type=code&client_id=0&scope=user.identity%20user.email&redirect_uri=http%3A%2F%2Fexampleurl.com%2Foauth
 ```
 
 There is a tool in your application's settings that will generate this url for you. The required
@@ -55,7 +46,7 @@ query params for this url are:
 
 `client_id`: The ID of your application, can be found in the application settings page.
 
-`scope`: A list of [scopes](/oauth/scopes) separated by URL encoded space characters (%20)
+`scope`: A list of [scopes](/docs/oauth/scopes) separated by URL encoded space characters (%20)
 
 `redirect_uri`: This is where the resource owner gets redirected to during step 4 above.
 The authorization code is included as the query parameter `code`
