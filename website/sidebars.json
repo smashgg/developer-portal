@@ -32,6 +32,7 @@
 			"examples/queries/tournaments-by-videogame",
 			"examples/queries/tournaments-by-owner",
 			"examples/queries/attendees-by-sponsor",
+			"examples/queries/videogame-id-by-name",
 			"examples/queries/shop"
 		],
 		"Mutation Examples": [
