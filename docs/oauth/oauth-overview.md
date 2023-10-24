@@ -46,7 +46,7 @@ query params for this url are:
 
 `client_id`: The ID of your application, can be found in the application settings page.
 
-`scope`: A list of [scopes](/oauth/scopes) separated by URL encoded space characters (%20)
+`scope`: A list of [scopes](/docs/oauth/scopes) separated by URL encoded space characters (%20)
 
 `redirect_uri`: This is where the resource owner gets redirected to during step 4 above.
 The authorization code is included as the query parameter `code`
