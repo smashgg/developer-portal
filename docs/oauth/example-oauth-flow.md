@@ -13,7 +13,7 @@ There are many ways to implement the OAuth flow into your application, but here 
 
 ```
   const scopes = 'user.identity';
-  const redirect_uri = 'https://myexampleapp.com/oauth'
+  const REDIRECT_URI = 'https://myexampleapp.com/oauth'
   const CLIENT_SECRET;
   const CLIENT_ID;
 
