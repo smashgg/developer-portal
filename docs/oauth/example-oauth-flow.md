@@ -18,7 +18,7 @@ There are many ways to implement the OAuth flow into your application, but here 
   const CLIENT_ID;
 
   express.get('/oauth_redirect', function (req, res) {
-    res.redirect(`http://api.start.gg/oauth/authorize?response_type=code&client_id=${CLIENT_ID}&scope=${scopes}&redirect_uri=&client_secret=${CLIENT_SECRET}`)
+    res.redirect(`http://api.start.gg/oauth/authorize?response_type=code&client_id=${CLIENT_ID}&scope=${scopes}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}`)
   });
 ```
 
@@ -49,13 +49,15 @@ express.get('/oauth', function (req, res) {
 		'Content-Type': 'application/json',
 	};
 
-	post('https://api.start.gg/oauth/access_token', data, {
-		headers,
-	}).then(body => {
+	fetch('https://api.start.gg/oauth/access_token', { 
+		method: 'POST',
+		body: JSON.stringify(data),
+		headers: headers
+	}).then(res => res.json()).then(json => {
 
-		console.log(body.data.access_token);
-		console.log(body.data.refresh_token);
-		console.log(body.data.expires_in);
+		console.log(json.access_token);
+		console.log(json.refresh_token);
+		console.log(json.expires_in);
 
 		res.send(`
 			<script>
