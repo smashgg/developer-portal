@@ -3,6 +3,17 @@
 * Updated documentation to add example of how to get pronouns for participants
 * Updated documentation to break down details of information sources for gamer tag, prefixes, etc to allow developers to make informed choices on what fields to consider valid to show.
 
+# Friday, Feb 2, 2024
+✔️ Field updateBracketSet was added to object type Mutation
+
+✔️ Field generateRegistrationToken was added to object type Mutation
+
+✔️ Field registerForTournament was added to object type Mutation
+
+✔️ Type TournamentRegistrationInput was added
+
+✔️ Argument isDQ was added to mutation reportBracketSet
+
 # Thursday, September 28, 2023
 ✔️ Type BracketSetGameDataInput was added
 
