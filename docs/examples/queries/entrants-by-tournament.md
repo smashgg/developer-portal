@@ -39,7 +39,7 @@ values={[
 <TabItem value="graphql">
 
 ```graphql
-query PlayersByGameInTournament($tourneySlug: String, $videogameId: [ID]!) {
+query EntrantsByVideogameInTournament($tourneySlug: String, $videogameId: [ID]!) {
   tournament(slug: $tourneySlug) {
     id
     name
