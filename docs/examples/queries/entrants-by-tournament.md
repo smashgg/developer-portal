@@ -7,7 +7,7 @@ title: Entrants within a Tournament
 
 It can be very easy to conflate the entities of User, Player, Participant, Entrant, and Team when querying data. A useful clarification is that a User, Player, and GlobalTeam exist in the **global context** of start.gg -- these are entities that are up-to-date on what settings a user currently has applied to their profile.
 
-A Participant, Entrant, or Team are **point-in-time** references to a User/Player/GlobalTeam. These entities are created when a User registers for a Tournament or for an Event. This means that if a player updates their `gamerTag` after a tournament has completed, the tournament's `Entrant` and `Participant` will still show the prior gamerTag at the **time of the event (or the time of event registration)**. 
+A Participant, Entrant, or Team are **point-in-time** entities created when a User registers for Tournament or Event. This means that if a player updates their `gamerTag` after a tournament has completed, the tournament's `Entrant` and `Participant` will still show the prior gamerTag at the **time of the event (or the time of event registration)**. 
 
 However, if you look at the `Player` entity, it will show the **currently set** gamerTag of a User. `User`, you may note, does not have a field for `gamerTag` or for `prefix`, as those only exist in the context of a *Player*, not a generic user of Start.GG. 
 
