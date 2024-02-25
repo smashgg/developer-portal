@@ -7,17 +7,19 @@ title: Entrants within a Tournament
 
 It can be very easy to conflate the entities of User, Player, Participant, Entrant, and Team when querying data. A useful clarification is that a User, Player, and GlobalTeam exist in the **global context** of start.gg -- these are entities that are up-to-date on what settings a user currently has applied to their profile.
 
-A Participant, Entrant, or Team are **point-in-time** entities created when a User registers for Tournament or Event. This means that if a player updates their `gamerTag` after a tournament has completed, the tournament's `Entrant` and `Participant` will still show the prior gamerTag at the **time of the event (or the time of event registration)**. 
+A Participant, Entrant, or Team are **point-in-time** entities created when a User registers for Tournament or Event. This means that if a player updates their `gamerTag` after a tournament has completed, the tournament's `Entrant` and `Participant` will still show the prior gamerTag **and** prefix at the **time of the event (or the time of event registration)**. 
 
 However, if you look at the `Player` entity, it will show the **currently set** gamerTag of a User. `User`, you may note, does not have a field for `gamerTag` or for `prefix`, as those only exist in the context of a *Player*, not a generic user of Start.GG. 
 
-When querying data about a person, such as gender pronouns, it is best to dig from the Tournament's Participants to each User entity at the time of the tournament to ensure that the data is as up-to-date as possible.
+When querying data about a person, such as gender pronouns, use the Tournament's `Participant` object to grab a given `User` entity to retrieve a person's set gender pronouns.
 
 ### Prefix 
 
-Participants in a Tournament can edit their Prefix for a given Tournament without necessarily updating their global prefix. In this case, since the user explicitly has set what prefix they want to go with for that tournament, it may be preferable to look at the Participant entity rather than the Player entity. 
+Participants in a Tournament can edit their Prefix for a given Tournament without necessarily updating their global prefix. However, they also can update their global prefix without updating it for past or upcoming tournaments. They are set as a **point in time** reference, for the exact tournament context the participant has registered. 
 
-This can definitely be confusing and requires some operator considerations on what data they want for a given field about a person. It can be helpful to look at some examples of user registration to see places where this data could conflict. 
+In this case, since the user explicitly has set what prefix they want to go with for that tournament, it may be preferable to look at the Participant entity rather than the Player entity. 
+
+This can be confusing and requires some operator considerations on what data they want for a given field about a person. It can be helpful to look at some examples of user registration to see places where this data could conflict. 
 
 ## Example 1: Get Tournament Entrants by Game (with Seed)
 
@@ -197,7 +199,7 @@ query EntrantsByVideogameInTournament($tourneySlug: String, $videogameId: [ID]!)
 
 ## Example 2: Gender Pronouns for Users in a Tournament
 
-Let's say you want to show gender pronouns for users who have registered for a tournament. The most up-to-date setting of pronouns by a user of start.gg are set on their User entity. 
+Let's say you want to show gender pronouns for users who have registered for a tournament. Pronouns are set on the User entity, not the Player or Participant layer; they are restricted to the concept of User and considered a universal data point rather than time-contextual.
 
 Not all users choose to share their pronouns on start.gg and sometimes players forget to update that field. Before showing the field on something like a stream, it is a good practice to ask players to confirm that the field is correct.
 
