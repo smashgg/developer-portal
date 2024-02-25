@@ -174,6 +174,7 @@ query TournamentEvents($tourneySlug:String!) {
   "actionRecords": []
 }
 ```
+
 </TabItem>
 </Tabs>
 
@@ -207,9 +208,11 @@ query TournamentEvents($tourneySlug:String, $videogameId:[ID]!) {
   "videogameId":[1]
 }
 ```
+
 </TabItem>
 
 <TabItem value="json">
+
 ```json
 {
   "data": {
@@ -232,7 +235,8 @@ query TournamentEvents($tourneySlug:String, $videogameId:[ID]!) {
     "queryComplexity": 3
   },
   "actionRecords": []
-}}
+}
 ```
+
 </TabItem>
 </Tabs>
