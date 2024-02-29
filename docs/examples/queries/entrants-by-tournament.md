@@ -317,6 +317,14 @@ Here's an example of that, with an extemely verbose way of showing a user's deta
 
 Don't use this query in production. It's more than you need and not optimized. It's here to show you how conflicting data can occur and different sources of truth to consider!
 
+<Tabs
+defaultValue="graphql"
+values={[
+{ label: 'Request', value: 'graphql', },
+{ label: 'Response', value: 'json', },
+]
+}>
+
 <TabItem value="graphql">
 
 ```graphql
@@ -495,7 +503,8 @@ query PlayersWithConflictingStuff($tourneySlug: String, $perPage: Int, $page: In
   "extensions": {
     "queryComplexity": 24
   }
-}```
+}
+```
 
 </TabItem>
 </Tabs>
