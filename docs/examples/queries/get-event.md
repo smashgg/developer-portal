@@ -12,7 +12,7 @@ Go to the tournament page and select the event:
 
 ![image](https://imgur.com/11pYReL.png)
 
-Now that you selected it, you can find the slug inside of the URL of the page:
+Now that you selected it, you can find the slug inside  the URL of the page:
 
 ![image2](https://imgur.com/O58anju.png)
 
