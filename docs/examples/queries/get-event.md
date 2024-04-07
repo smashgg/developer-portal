@@ -16,7 +16,7 @@ Now that you selected it, you can find the slug inside of the URL of the page:
 
 ![image](https://imgur.com/a/pzHl9OK)
 
-A slug is made of two parts: the tournament name and the event name.
+A slug is made of two parts, the tournament name and the event name.
 The format is this: `tournament/<tournament_name>/event/<event_name>`.
 In this case, the slug we're going to use is `tournament/genesis-9-1/event/ultimate-singles`.
 
