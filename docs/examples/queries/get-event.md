@@ -6,7 +6,7 @@ title: Get Event
 In this example, we will query the Smash Ultimate Singles event at Genesis 9.
 An **Event ID** is necessary if you want to get information specific to a tournament event.
 To do so, we make use of a string of characters called **slug**, easily obtainable from
-the URL of the tournament event page in [start.gg](https://www.start.gg/).
+the URL of the tournament event page in <a href="https://www.start.gg/" target="_blank">start.gg</a>.
 
 Go to the tournament page and select the event:
 
