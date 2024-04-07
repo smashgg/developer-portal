@@ -10,11 +10,11 @@ the URL of the tournament event page in [start.gg](https://www.start.gg/).
 
 Go to the tournament page and select the event:
 
-![image](https://imgur.com/a/8jhfgxs)
+![image](https://imgur.com/a/8jhfgxs.png)
 
 Now that you selected it, you can find the slug inside of the URL of the page:
 
-![image](https://imgur.com/a/pzHl9OK)
+![image](https://imgur.com/a/pzHl9OK.png)
 
 A slug is made of two parts, the tournament name and the event name.
 The format is this: `tournament/<tournament_name>/event/<event_name>`.
