@@ -82,7 +82,7 @@ query getEventId($slug: String) {
 </TabItem>
 </Tabs>
 
-If you go in the Response tab, you will find two useful pieces of information under event:
+If you go in the *Response* tab, you will find two useful pieces of information under event:
 
 - _id_ is the Event ID of the tournament event
 - _name_ is the name of the tournament event
