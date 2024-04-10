@@ -59,23 +59,7 @@ query getEventId($slug: String) {
       "id": 769488,
       "name": "Ultimate Singles"
     }
-  },
-  "extensions": {
-    "cacheControl": {
-      "version": 1,
-      "hints": [
-        {
-          "path": [
-            "event"
-          ],
-          "maxAge": 60,
-          "scope": "PRIVATE"
-        }
-      ]
-    },
-    "queryComplexity": 1
-  },
-  "actionRecords": []
+  }
 }
 ```
 
