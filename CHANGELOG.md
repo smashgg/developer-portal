@@ -1,3 +1,8 @@
+# Feb 7, 2024
+* Updated documentation to add example of getting all events within a tournament.
+* Updated documentation to add example of how to get pronouns for participants
+* Updated documentation to break down details of information sources for gamer tag, prefixes, etc to allow developers to make informed choices on what fields to consider valid to show.
+
 # Friday, Feb 2, 2024
 ✔️ Field updateBracketSet was added to object type Mutation
 
