@@ -75,6 +75,14 @@ const users = [
     openSource: false,
     pinned: true,
   },
+  {
+    caption: 'Versus Esports',
+    image:
+      'https://play-lh.googleusercontent.com/IIJwC73VJCFemjpdbuLra0qpm1pWFuvlArHIaUib50Q3RINnN0ChgD252RAnUJ0TPmbQ=w240-h480-rw',
+    infoLink: 'https://play.google.com/store/apps/details?id=com.cheezeburger92.VersusEsports',
+    openSource: false,
+    pinned: true,
+  },
   // Please add your logo in alphabetical order of caption.
 ];
 
