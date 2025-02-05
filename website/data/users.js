@@ -30,6 +30,14 @@ const users = [
     pinned: true,
   },
   {
+    caption: 'Smash Match Auto Reporter Thing (S.M.A.R.T.) ',
+    image: 'https://skpeter.github.io/smart-user-guide/img/icon.png',
+    infoLink:
+      'https://skpeter.github.io/smart-user-guide',
+    openSource: false,
+    pinned: true,
+  },
+  {
     caption: 'Smash Pros',
     image: 'https://imgur.com/YEv88eD.png',
     infoLink:
