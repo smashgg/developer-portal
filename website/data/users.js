@@ -77,6 +77,13 @@ const users = [
     pinned: true,
   },
   {
+    caption: 'Startmaps',
+    image: 'https://play-lh.googleusercontent.com/pU5GCE1f0NJq_oT2QTRstBCzt4L2qSAdxod6-EJJrbWBsKaEQxQpIHusCT_8tALiNRY=w240-h480-rw',
+    infoLink: 'https://startmaps.xyz',
+    openSource: false,
+    pinned: true,
+  },
+  {
     caption: 'TournaBot',
     image: 'https://i.imgur.com/UN1gKXO.png',
     infoLink: 'https://top.gg/bot/719283403698077708',
