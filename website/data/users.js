@@ -84,14 +84,6 @@ const users = [
     pinned: true,
   },
   {
-    caption: 'Twitch Rivals',
-    image:
-      'https://smashgg.imgix.net/images/tournament/121788/image-5b5213207f45a30e8e1c938187f8de3e.jpg?auto=compress,format&w=280&h=280&fit=crop',
-    infoLink: 'https://rivals.twitch.tv',
-    openSource: false,
-    pinned: true,
-  },
-  {
     caption: 'Versus Esports',
     image:
       'https://play-lh.googleusercontent.com/IIJwC73VJCFemjpdbuLra0qpm1pWFuvlArHIaUib50Q3RINnN0ChgD252RAnUJ0TPmbQ=w240-h480-rw',
