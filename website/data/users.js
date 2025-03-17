@@ -29,6 +29,14 @@ const users = [
     openSource: true,
     pinned: true,
   },
+   {
+    caption: 'Smash Map',
+    image: 'https://i.imgur.com/ZQ76PKh.png',
+    infoLink:
+      'https://smash-map.com',
+    openSource: true,
+    pinned: true,
+  },
   {
     caption: 'Smash Match Auto Reporter Thing (S.M.A.R.T.) ',
     image: 'https://skpeter.github.io/smart-user-guide/img/icon.png',

@@ -28,8 +28,7 @@ function Help() {
     {
       content: (
         <>
-          Learn more about using the start.gg public API in our 
-          <Link to="docs/intro">official documentation</Link>
+          Learn more about using the start.gg public API in our <Link to="docs/intro">official documentation</Link>
         </>
       ),
       title: 'Browse Docs',
