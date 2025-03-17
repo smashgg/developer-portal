@@ -29,6 +29,22 @@ const users = [
     openSource: true,
     pinned: true,
   },
+   {
+    caption: 'Smash Map',
+    image: 'https://i.imgur.com/ZQ76PKh.png',
+    infoLink:
+      'https://smash-map.com',
+    openSource: true,
+    pinned: true,
+  },
+  {
+    caption: 'Smash Match Auto Reporter Thing (S.M.A.R.T.) ',
+    image: 'https://skpeter.github.io/smart-user-guide/img/icon.png',
+    infoLink:
+      'https://skpeter.github.io/smart-user-guide',
+    openSource: false,
+    pinned: true,
+  },
   {
     caption: 'Smash Pros',
     image: 'https://imgur.com/YEv88eD.png',
@@ -68,10 +84,10 @@ const users = [
     pinned: true,
   },
   {
-    caption: 'Twitch Rivals',
+    caption: 'Versus Esports',
     image:
-      'https://smashgg.imgix.net/images/tournament/121788/image-5b5213207f45a30e8e1c938187f8de3e.jpg?auto=compress,format&w=280&h=280&fit=crop',
-    infoLink: 'https://rivals.twitch.tv',
+      'https://play-lh.googleusercontent.com/IIJwC73VJCFemjpdbuLra0qpm1pWFuvlArHIaUib50Q3RINnN0ChgD252RAnUJ0TPmbQ=w240-h480-rw',
+    infoLink: 'https://play.google.com/store/apps/details?id=com.cheezeburger92.VersusEsports',
     openSource: false,
     pinned: true,
   },

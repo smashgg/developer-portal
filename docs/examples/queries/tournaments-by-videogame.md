@@ -29,7 +29,7 @@ query TournamentsByVideogame($perPage: Int!, $videogameId: ID!) {
   tournaments(query: {
     perPage: $perPage
     page: 1
-    sortBy: "tournament.startAt asc"
+    sortBy: "startAt asc"
     filter: {
       past: false
       videogameIds: [
@@ -100,7 +100,7 @@ query TournamentsByVideogames($perPage: Int, $videogameIds: [ID]) {
   tournaments(query: {
     perPage: $perPage
     page: 1
-    sortBy: "tournament.startAt asc"
+    sortBy: "startAt asc"
     filter: {
       upcoming: true
       videogameIds: $videogameIds
