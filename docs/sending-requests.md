@@ -7,7 +7,7 @@ sidebar_label: Sending Requests
 Unlike our old REST API, our GraphQL API has a single endpoint:
 
 ```html
-https://api.smash.gg/gql/alpha
+https://api.start.gg/gql/alpha
 ```
 
 You can use cURL or any other method of making HTTP requests.
@@ -28,5 +28,5 @@ The POST body can have the type `application/json` and should be in the followin
 and `operationName` is only used when multiple queries are present.
 
 The `query` parameter should be filled with a GraphQL query as shown in the examples.
-For more information on HTTP requests, please refer to the <a href="https://graphql.github.io/learn/serving-over-http/" target="_blank">official GraphQL documentation
+For more information on HTTP requests, please refer to the <a href="https://graphql.org/learn/serving-over-http/" target="_blank">official GraphQL documentation
 on requests over HTTP</a>.

@@ -1,3 +1,161 @@
+# Feb 7, 2024
+* Updated documentation to add example of getting all events within a tournament.
+* Updated documentation to add example of how to get pronouns for participants
+* Updated documentation to break down details of information sources for gamer tag, prefixes, etc to allow developers to make informed choices on what fields to consider valid to show.
+
+# Friday, Feb 2, 2024
+✔️ Field updateBracketSet was added to object type Mutation
+
+✔️ Field generateRegistrationToken was added to object type Mutation
+
+✔️ Field registerForTournament was added to object type Mutation
+
+✔️ Type TournamentRegistrationInput was added
+
+✔️ Argument isDQ was added to mutation reportBracketSet
+
+# Thursday, September 28, 2023
+✔️ Type BracketSetGameDataInput was added
+
+✔️ Type BracketSetGameSelectionInput was added
+
+✔️ Field character was added to object type GameSelection
+
+✔️ Field resetSet was added to object type Mutation
+
+✔️ Field markSetCalled was added to object type Mutation
+
+✔️ Field reportBracketSet was added to object type Mutation
+
+✔️ Field markSetInProgress was added to object type Mutation
+
+✔️ Field entrant2Score was added to object type Game
+
+✔️ Field entrant1Score was added to object type Game
+
+✔️ Field stages was added to object type Videogame
+
+
+# Friday, November 4, 2022
+* Updated some documentation for Participant to be more accurate
+* Added "Prefix" column to attendee export CSV. While not directly tied to API use, often used for developer experience.
+
+# Tuesday, October 4, 2022
+* Parameter `limit` added to field `recentStandings` on type `Player`
+
+# Thursday, August 11, 2022
+* Field `userEntrant` added to object type `Event`
+
+# Thursday, August 4, 2022
+* As of June 23, 2022, fixed bug where Tournament API Queries would return "Unknown error" if the complexity limit had been reached. Now, the error will inform users of the complexity limit and the exact complexity of the object they are querying.
+
+# Wednesday, August 3, 2022
+✔️ Sorting by `RECENT` on PaginatedSets will now sort first by `completedAt` instead of `startedAt`. This resolves an issue where sets with DQs would unexpectedly sort behind later sets since startedAt never gets set.
+
+# Thursday, July 28, 2022
+✔️ Field `recentStandings` was added to object type `Player`
+
+# Wednesday, February 2, 2022
+❌ Type `TeamType` was removed
+
+❌ Type `TeamsPageFilter` was removed
+
+❌ Type `TeamsPaginationQuery` was removed
+
+✔️ Type `Character` was added
+
+✔️ Field `initialSeedNum` was added to object type `Entrant`
+
+⚠️ Enum value `XBOX` was added to `SocialConnectionType` enum
+
+✔️ Field `competitionTier` was added to object type `Event`
+
+✔️ Input Field `leagueEntrantId: ID` was added to input type `LeagueEventsFilter`
+
+❌ Type for argument `query` on field `Tournament.teams` changed from `TeamsPaginationQuery!` to `TeamPaginationQuery!`
+
+✔️ Field `characters` was added to object type `Videogame`
+
+✔️ Input Field `eventIds: [ID]` was added to input type `TeamPaginationFilter`
+
+✔️ Input Field `rosterComplete: Boolean` was added to input type `TeamPaginationFilter`
+
+✔️ Input Field `eventId: ID` was added to input type `TeamPaginationFilter`
+
+✔️ Input Field `rosterIncomplete: Boolean` was added to input type `TeamPaginationFilter`
+
+❌ `TeamPaginationFilter.memberStatus` type changed from `TeamMemberStatus` to `[TeamMemberStatus]`
+
+⚠️ Enum value `XBOX` was added to `AuthorizationType` enum
+
+✔️ Field `entrant` was added to object type `Query`
+
+✔️ Argument `slug: String` added to `Query.videogame`
+
+# Thursday, September 9, 2021
+✔️ Type `EventTeamConnection` was added
+
+✔️ Type `TeamMember` was added
+
+✔️ Type `TeamMemberType` was added
+
+✔️ Type `TeamPaginationFilter` was added
+
+✔️ Type `TeamPaginationQuery` was added
+
+⚠️ Field `members` of type `[TeamMember]` was added to interface `Team`
+
+✔️ Field `members` was added to object type `EventTeam`
+
+✔️ Field `globalTeam` was added to object type `EventTeam`
+
+✔️ Field `team` was added to object type `Entrant`
+
+✔️ Field `members` was added to object type `GlobalTeam`
+
+✔️ Field `eventTeams` was added to object type `GlobalTeam`
+
+✔️ Field `leagueTeams` was added to object type `GlobalTeam`
+
+# Wednesday, September 8, 2021
+✔️ Type `ActionSet` was added
+
+✔️ Type `EventTeam` was added
+
+✔️ Type `GlobalTeam` was added
+
+✔️ Type `TeamActionSet` was added
+
+✔️ Type `TeamMemberStatus` was added
+
+✔️ Type `TeamRosterSize` was added
+
+✔️ Type `TeamType` was added
+
+✔️ Field `teamRosterSize` was added to object type `Event`
+
+✔️ Deprecation reason on field `Event.entrantSizeMax` changed from `None` to `Migrate to teamRosterSize`
+
+✔️ Deprecation reason on field `Event.entrantSizeMin` changed from `None` to `Migrate to teamRosterSize`
+
+✔️ Description for type `Team` changed from `A team, usually within the context of an event` to `A team, either at the global level or within the context of an event`
+
+❌ `Team` kind changed from `OBJECT` to `INTERFACE`
+
+✔️ Input Field `playerId: ID` was added to input type `TeamsPageFilter`
+
+✔️ Input Field `videogameId: ID` was added to input type `TeamsPageFilter`
+
+✔️ Input Field `type: TeamType` was added to input type `TeamsPageFilter`
+
+✔️ Input Field `memberStatus: TeamMemberStatus` was added to input type `TeamsPageFilter`
+
+# Monday, April 19, 2021
+✔️ Field `totalPoints` was added to object type `Standing`
+
+# Wednesday, March 31, 2021
+✔️ Field `requiredConnections` was added to object type `Participant`
+
 # Wednesday, December 9, 2020
 ✔️ Field `setRecordWithoutByes` was added to object type `Seed`
 

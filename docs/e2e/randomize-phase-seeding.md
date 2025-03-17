@@ -27,7 +27,7 @@ phaseId = YOUR_PHASE_ID
 authToken = 'YOUR_AUTH_TOKEN'
 apiVersion = 'alpha'
 
-client = GraphQLClient('https://api.smash.gg/gql/' + apiVersion)
+client = GraphQLClient('https://api.start.gg/gql/' + apiVersion)
 client.inject_token('Bearer ' + authToken)
 
 ## Obtain Current Seeding
@@ -111,7 +111,7 @@ else:
 		print('Success!')
 ```
 
-## Checking the seeding on smash.gg
+## Checking the seeding on start.gg
 
 Here was my seeding before running my script:
 

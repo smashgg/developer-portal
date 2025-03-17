@@ -63,7 +63,7 @@ a:visited {
 }
 
 html[data-theme='dark'] .navbar__logo {
-  background: url(/img/logo-white.svg) no-repeat;
+  background: url(/img/new_logo-white.svg) no-repeat;
   background-size: contain;
   padding-left: 92px;
 }

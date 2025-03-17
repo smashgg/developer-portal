@@ -7,7 +7,7 @@ function IFrameExplorer() {
       <iframe
         style={{ height: '90vh', width: '100%' }}
         frameBorder="0"
-        src="https://smash.gg/developer/explorer/embed"></iframe>
+        src="https://start.gg/developer/explorer/embed"></iframe>
     </Layout>
   );
 }

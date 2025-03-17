@@ -14,7 +14,7 @@ The copy+paste from registration settings will look like this:
 ```html
 <div style="width: 500px">
   <iframe
-    src="https://smash.gg/tournament/${tournamentSlug}/register/embed"
+    src="https://start.gg/tournament/${tournamentSlug}/register/embed"
     frameborder="1"
     height="600"
     width="100%"
@@ -27,7 +27,7 @@ When you add it to your webpage, it will look like this
 (Below is using an iframe width of 750 and a height of 1000):
 
 <div style={{width: 750}}>
-      <iframe src="https://smash.gg/tournament/mitchell-s-unlisted-tournament/register/embed"
+      <iframe src="https://start.gg/tournament/mitchell-s-unlisted-tournament/register/embed"
       	frameBorder="1" height="1000" width="100%" >
       </iframe>
 </div>

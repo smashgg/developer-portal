@@ -21,13 +21,13 @@ to learn more about what went into building this handy resource for his regional
 _I’ve been part of the SoCal smash community for over four years now, and I must say it has been one of the most impactful
 changes to my life, in a very positive way.
 I always try to find little ways to contribute back to it, and as a front-end developer with a background on graphic
-design along with smash.gg’s data, improving my community’s digital presence just makes sense.
+design along with start.gg’s data, improving my community’s digital presence just makes sense.
 The life and energy of the community is my inspiration, and I want its future to keep flourishing._
 
 **How was your experience working with our new public API?**
 
 _Working with the new API has been a very enjoyable learning experience.
-It was pretty simple to setup and understand; both smash.gg and GraphQL are well-documented and the smash.gg team has
+It was pretty simple to setup and understand; both start.gg and GraphQL are well-documented and the start.gg team has
 been very supportive and helpful via their [Discord channel](/docs/join-discord)._
 
 **What are you planning to do next with the project?**
@@ -49,6 +49,6 @@ If you're interested in helping, you can contact me at `maiko.ssb@gmail.com`!_
 
 Congrats on the launch, Maiko!
 
-Maiko's project incorporates smash.gg data in an excellent, custom-tailored experience for his community.
+Maiko's project incorporates start.gg data in an excellent, custom-tailored experience for his community.
 If you, too, are interested in building an application around local tournaments, then I recommend checking out our examples like
 [Tournaments by Location](/docs/examples/tournaments-by-location).

@@ -10,9 +10,9 @@ function Users() {
     <Layout>
       <section className="container margin-vert--xl text--center">
         <div>
-          <h1>Who is using the smash.gg public API?</h1>
+          <h1>Who is using the start.gg public API?</h1>
           <p>
-            Data from smash.gg powers some of the esports world's awesome
+            Data from start.gg powers some of the esports world's awesome
             projects!
           </p>
         </div>

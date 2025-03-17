@@ -164,7 +164,7 @@ For more information about blog posts, click [here](https://docusaurus.io/docs/e
     /* you can add custom pages */
     { page: 'help', label: 'Help' },
     /* you can add external links */
-    { href: 'https://github.com/smash.gg/Docusaurus', label: 'GitHub' },
+    { href: 'https://github.com/start.gg/Docusaurus', label: 'GitHub' },
     ...
   ],
   ...

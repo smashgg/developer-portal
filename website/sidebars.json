@@ -1,49 +1,58 @@
 {
   "docs": {
     "Getting Started": [
-			"intro",
-			"join-discord",
-			"glossary",
-			"intro-to-gql",
-			"authentication",
-			"testing-your-requests",
-			"sending-requests",
-			"rate-limits",
-			"benefits-of-gql"			
-		],
+      "intro",
+      "join-discord",
+      "glossary",
+      "intro-to-gql",
+      "authentication",
+      "testing-your-requests",
+      "sending-requests",
+      "rate-limits",
+      "benefits-of-gql"
+    ],
     "Query Examples": [
-			"examples/queries/event-standings",
-			"examples/queries/event-entrants",
-			"examples/queries/league-schedule",
-			"examples/queries/league-standings",
-			"examples/queries/sets-in-event",
-			"examples/queries/sets-in-phase",
-			"examples/queries/sets-in-phase-group",
-			"examples/queries/sets-by-station",
-			"examples/queries/set-score",
-			"examples/queries/sets-by-player",
-			"examples/queries/stream-queue",
-			"examples/queries/set-entrants",
-			"examples/queries/phase-groups-in-phase",
-			"examples/queries/get-phase-seeding",
-			"examples/queries/pool-seeds",
-			"examples/queries/attendee-counts",
-			"examples/queries/tournaments-by-location",
-			"examples/queries/tournaments-by-videogame",
-			"examples/queries/tournaments-by-owner",
-			"examples/queries/attendees-by-sponsor",
-			"examples/queries/shop"
-		],
-		"Mutation Examples": [
-			
-		],
-		"Widgets & Embeds": [
-			"widgets/registration"
-		],
-		"Full Examples": [
-			"e2e/update-phase-seeding",
-			"e2e/resolve-conflicts",
-			"e2e/randomize-phase-seeding"
-		]
+      "examples/queries/get-event",
+      "examples/queries/event-standings",
+      "examples/queries/event-entrants",
+			"examples/queries/events-by-tournament",
+			"examples/queries/entrants-by-tournament",
+      "examples/queries/league-schedule",
+      "examples/queries/league-standings",
+      "examples/queries/sets-in-event",
+      "examples/queries/sets-in-phase",
+      "examples/queries/sets-in-phase-group",
+      "examples/queries/sets-by-station",
+      "examples/queries/set-score",
+      "examples/queries/sets-by-player",
+      "examples/queries/stream-queue",
+      "examples/queries/set-entrants",
+      "examples/queries/phase-groups-in-phase",
+      "examples/queries/get-phase-seeding",
+      "examples/queries/pool-seeds",
+      "examples/queries/attendee-counts",
+      "examples/queries/tournaments-by-location",
+      "examples/queries/tournaments-by-videogame",
+      "examples/queries/tournaments-by-owner",
+      "examples/queries/attendees-by-sponsor",
+      "examples/queries/videogame-id-by-name",
+      "examples/queries/shop"
+    ],
+    "Mutation Examples": [
+      "examples/mutations/report-set"
+    ],
+    "Widgets & Embeds": [
+      "widgets/registration"
+    ],
+    "Full Examples": [
+      "e2e/update-phase-seeding",
+      "e2e/resolve-conflicts",
+      "e2e/randomize-phase-seeding"
+    ],
+    "OAuth": [
+      "oauth/oauth-overview",
+      "oauth/scopes",
+      "oauth/example-oauth-flow"
+    ]
   }
 }

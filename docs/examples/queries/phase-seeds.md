@@ -5,7 +5,7 @@ title: Phase Seeds
 
 In this example, we will get the seeding for a given phase.
 To adjust phase seeding, please see
-[phase seeding mutation](/docs/examples/update-phase-seeding).
+[phase seeding mutation](/docs/e2e/update-phase-seeding).
 
 ## Example #1 (1v1)
 

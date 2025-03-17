@@ -4,14 +4,14 @@ const repoUrl = 'https://github.com/smashgg/developer-portal';
 module.exports = {
   title: 'Developer Portal',
   tagline: 'Turning passions into careers',
-  url: 'https://developer.smash.gg',
+  url: 'https://developer.start.gg',
   baseUrl: '/',
   projectName: 'smashgg-developer',
   organizationName: 'smashgg',
   favicon: 'img/favicon/favicon.ico',
   customFields: {
     repoUrl,
-    apiUrl: 'https://api.smash.gg/gql/alpha/schema',
+    apiUrl: 'https://api.start.gg/gql/alpha/schema',
   },
   scripts: [
       'https://buttons.github.io/buttons.js',
@@ -30,12 +30,12 @@ module.exports = {
       title: 'Developer Portal',
       logo: {
         alt: 'Developer Portal Logo',
-        src: 'img/logo-dark.svg',
+        src: 'img/new_logo-dark.svg',
       },
       links: [
         { to: 'docs/intro', label: 'Docs', position: 'right' },
         {
-          href: 'https://developer.smash.gg/reference/query.doc.html',
+          href: 'https://developer.start.gg/reference/query.doc.html',
           label: 'Schema',
           position: 'right',
         },
@@ -47,10 +47,10 @@ module.exports = {
     },
     footer: {
       logo: {
-        alt: 'smash.gg',
-        src: 'img/favicon/white-favicon.ico',
+        alt: 'start.gg',
+        src: 'img/favicon/favicon.ico',
       },
-      copyright: `Copyright © ${new Date().getFullYear()} smash.gg`,
+      copyright: `Copyright © ${new Date().getFullYear()} start.gg`,
       style: 'dark',
       links: [
         {
@@ -75,7 +75,7 @@ module.exports = {
           ],
         },
         {
-          title: 'smash.gg',
+          title: 'start.gg',
           items: [
             {
               label: 'Home',
@@ -83,7 +83,7 @@ module.exports = {
             },
             {
               label: 'Developer Settings',
-              href: 'https://smash.gg/admin/profile/developer',
+              href: 'https://start.gg/admin/profile/developer',
             },
           ],
         },
@@ -92,11 +92,11 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/smashgg',
+              href: 'https://discord.gg/startgg',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/smashgg',
+              href: 'https://twitter.com/startgg',
             },
             {
               label: 'GitHub',

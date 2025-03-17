@@ -8,7 +8,7 @@ sidebar_label: SmashTicker
 
 <a href="https://chrome.google.com/webstore/detail/smashticker-watch-people/nhjklhalmbccpfhpnedcleiabpkocggi" target="_blank">SmashTicker</a>
 is an <a href="https://github.com/AQuackenbos/SmashTicker" target="_blank">open source</a>
-Chrome extension to quickly find Twitch streams and smash.gg tournament pages for all of your favorite
+Chrome extension to quickly find Twitch streams and start.gg tournament pages for all of your favorite
 Super Smash Bros. games!
 
 <!--truncate-->
