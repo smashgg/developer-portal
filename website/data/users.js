@@ -29,6 +29,14 @@ const users = [
     openSource: true,
     pinned: true,
   },
+   {
+    caption: 'Smash Map',
+    image: 'https://i.imgur.com/ZQ76PKh.png',
+    infoLink:
+      'https://smash-map.com',
+    openSource: true,
+    pinned: true,
+  },
   {
     caption: 'Smash Pros',
     image: 'https://imgur.com/YEv88eD.png',
