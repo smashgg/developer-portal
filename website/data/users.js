@@ -61,6 +61,13 @@ const users = [
     pinned: true,
   },
   {
+  caption: 'Start Predict',
+  image: 'https://i.imgur.com/3t3xGNC.png',  
+  infoLink: 'https://startpredict.com',  
+  openSource: false,  
+  pinned: true, 
+},
+  {
     caption: 'SmashTicker',
     image:
       'https://lh3.googleusercontent.com/HJzDy4IhHwwpmb_LZtYs4tmth-Z4N8BYltaxBlgMjkIaB97HIer3HJY3V6Ebh39dKn2s0qGRGuo=w128-h128-e365',
