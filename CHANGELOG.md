@@ -1,3 +1,11 @@
+# Friday, June 6, 2025
+✔️ Field assignStation was added to object type Mutation
+
+✔️ Field assignStream was added to object type Mutation
+
+# Monday, June 2, 2025
+✔️ Field updateVodUrl was added to object type Mutation
+
 # Feb 7, 2024
 * Updated documentation to add example of getting all events within a tournament.
 * Updated documentation to add example of how to get pronouns for participants
