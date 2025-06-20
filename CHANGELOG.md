@@ -1,13 +1,22 @@
 # Friday, June 20, 2025
 ✔️ Type `ProgressionData` was added
+
 ✔️ Type `SetEntrantSource` was added
+
 ✔️ Field `placeholderName` was added to object type `Progression`
+
 ✔️ Field `progressions` was added to object type `Phase`
+
 ✔️ Field `progressingInData` was added to object type `Phase`
+
 ✔️ Field `loserProgressionSeed` was added to object type `Set`
+
 ✔️ Field `updatedAt` was added to object type `Set`
+
 ✔️ Field `winnerProgressionSeed` was added to object type `Set`
+
 ✔️ Field `entrant2Source` was added to object type `Set`
+
 ✔️ Field `entrant1Source` was added to object type `Set`
 
 # Friday, June 6, 2025
