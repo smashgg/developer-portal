@@ -29,7 +29,14 @@ const users = [
     openSource: true,
     pinned: true,
   },
-   {
+  {
+    caption: 'SetsOnStream.tv',
+    image: 'https://imgur.com/6mp6L7Q.png',
+    infoLink: 'https://setsonstream.tv',
+    openSource: false,
+    pinned: true,
+  },
+  {
     caption: 'Smash Map',
     image: 'https://i.imgur.com/ZQ76PKh.png',
     infoLink:
