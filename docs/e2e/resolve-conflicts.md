@@ -21,8 +21,8 @@ In this example, I will be using a test tournament where:
 - Many people have registered for the tournament, and several are in both events
 
 In this scenario, it is likely that I will have both schedule conflicts
-and custom contraints to solve for.
-We'll start by defining the custom contraints.
+and custom constraints to solve for.
+We'll start by defining the custom constraints.
 
 ## Step 1: Creating custom constraints in start.gg
 
@@ -122,6 +122,6 @@ In my example, I checked that:
 
 These were all true, and all schedule conflicts were solved!
 For smaller sets of constraints like this example, this is ideally what you will see:
-every constraint is solved, and every schedule conflicted is avoided.
-For larger events, there many not be a possible way to avoid 100% of them,
+every constraint is solved, and every schedule conflict is avoided.
+For larger events, there may not be a possible way to avoid 100% of them,
 so make sure you look on your Conflicts page in tournament admin to check.
