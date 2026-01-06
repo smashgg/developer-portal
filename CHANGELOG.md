@@ -1,4 +1,7 @@
-# Wednesday, August 6. 2025
+# Tuesday, January 6, 2026
+✔️ Field `setRecordWithoutByes` was added to object type `Standing`
+
+# Wednesday, August 6, 2025
 ✔️ Field `stream` was added to object type `Stations`
 
 # Monday, August 4, 2025
