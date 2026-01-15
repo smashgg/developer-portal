@@ -11,7 +11,7 @@ const users = [
   {
   caption: 'Brackify',
   image: 'https://res.cloudinary.com/dfeedwjpf/image/upload/v1766971621/logo_b6puil.png',
-  infoLink: 'https://brackify.gg',
+  infoLink: 'https://brackify.gg/app',
   openSource: false,
   pinned: true,
 },
