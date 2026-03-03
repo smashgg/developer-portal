@@ -9,6 +9,13 @@ const users = [
     pinned: true,
   },
   {
+  caption: 'Brackify',
+  image: 'https://res.cloudinary.com/dfeedwjpf/image/upload/v1766971621/logo_b6puil.png',
+  infoLink: 'https://brackify.gg/app',
+  openSource: false,
+  pinned: true,
+},
+  {
     caption: 'Brawlhalla Matchups',
     image: 'https://imgur.com/rO1rrqv.png',
     infoLink: 'https://github.com/henryaguerra/brawlhalla-matchups-bot',
