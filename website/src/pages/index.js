@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import Carousel from '../components/Carousel';
 import styles from './styles.module.css';
 
 const HomeSplash = () => {
@@ -22,6 +23,9 @@ const HomeSplash = () => {
           <Link className="button" to={useBaseUrl('docs/intro')}>
             Get Started
           </Link>
+          <a className="button" href="https://discord.com/invite/startgg" target="_blank" rel="noopener noreferrer">
+            Join Discord
+          </a>
         </div>
       </div>
     </header>
@@ -38,6 +42,7 @@ function Home() {
       title={siteConfig.title}
       description={siteConfig.tagline}>
       <HomeSplash />
+      <Carousel />
     </Layout>
   );
 }
