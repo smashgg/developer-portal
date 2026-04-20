@@ -54,7 +54,7 @@ or store/manipulate it in some other application of your choosing.
 To obtain the current phase seeding via phase export, go to the Bracket Setup page in tournament admin.
 Then, for the phase you want to update seeding for, click the export button to download a .csv of its current seeding.
 
-![export button](https://imgur.com/plcr1y4.png)
+![export button](https://i.postimg.cc/1tm8dgsP/plcr1y4.png)
 
 ## Step 2: Manipulating the Seeding
 
@@ -62,7 +62,7 @@ Once you have the current seeding in a format to your liking, you can get starte
 In this example, we'll be editing it in Google Sheets using the data from the .csv Phase Seeding Export download.
 I've highlighted the columns which we'll need later when we post the updated seeding using a GQL mutation.
 
-![google sheet](https://imgur.com/p9IlAMb.png)
+![google sheet](https://i.postimg.cc/B6Sjz844/p9Il-AMb.png)
 
 Here, you would move seeds around to your liking.
 Your workflow is up to you!
@@ -76,11 +76,11 @@ In my case, I decided to make my workflow:
 
 Here's what my sheet looked like after my 'step 3':
 
-![sheet after step 3](https://imgur.com/cE4271y.png)
+![sheet after step 3](https://i.postimg.cc/63M8x9p4/c-E4271y.png)
 
 Here's what my second sheet looked like after my 'step 5':
 
-![sheet after step 5](https://imgur.com/YUZEkKC.png)
+![sheet after step 5](https://i.postimg.cc/nz3XfHhY/YUZEk-KC.png)
 
 ## Step 3: Updating the Seeding via API
 
@@ -88,7 +88,7 @@ Now that we have our phase seeds finalized in a sheet, we'll update them via API
 We can see what the current phase seeding looks like in the tournament admin UI
 (I just entered/seeded these entrants in alphabetical order initially):
 
-![current seeding](https://imgur.com/Pz2E5Sa.png)
+![current seeding](https://i.postimg.cc/mkhtb0Pn/Pz2E5Sa.png)
 
 For our example, we've written a Python script to:
 
@@ -155,12 +155,12 @@ else:
 
 The output of this script will look something like this:
 
-![script terminal](https://imgur.com/Yk3zW4r.png)
+![script terminal](https://i.postimg.cc/90zrWvDb/Yk3z-W4r.png)
 
 After running the script successfully, we can check again in the admin UI to see
 the updated phase seeding:
 
-![updated seeding](https://imgur.com/RApajkN.png)
+![updated seeding](https://i.postimg.cc/Zng00V3t/RApajk-N.png)
 
 And we're done!
 

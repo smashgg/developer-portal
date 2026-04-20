@@ -41,8 +41,7 @@ module.exports = {
         },
         { to: 'explorer', label: 'API Explorer', position: 'right' },
         { to: 'help', label: 'Help', position: 'right' },
-        { to: 'blog', label: 'Blog', position: 'right' },
-        { to: 'users', label: 'Users', position: 'right' },
+        { to: 'projects', label: 'Projects', position: 'right' },
       ],
     },
     footer: {
@@ -67,10 +66,6 @@ module.exports = {
             {
               label: 'API Explorer',
               to: '/explorer',
-            },
-            {
-              label: 'Projects',
-              to: 'blog',
             },
           ],
         },

@@ -16,3 +16,35 @@ html[data-theme='dark'] .heroProjectTitle {
   line-height: 1em;
   margin: 0.7em 0 1.3em;
 }
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.heroButtons a {
+  border-radius: 2rem;
+  padding: 0.65rem 1.575rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  border: none;
+}
+
+.heroButtons a:first-child {
+  background-color: #3f80ff;
+  color: #ffffff;
+}
+
+.heroButtons a:last-child {
+  background-color: #3f80ff;
+  color: #ffffff;
+}
+
+.heroButtons a:hover {
+  opacity: 0.85;
+  text-decoration: none;
+  color: #ffffff;
+}

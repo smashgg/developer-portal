@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "fetch-projects": "node fetch-projects.js",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",

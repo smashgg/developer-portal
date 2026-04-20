@@ -1,7 +1,7 @@
 ---
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
-authorImageURL: https://imgur.com/HgkWbZt.png
+authorImageURL: https://i.postimg.cc/4yFHVJCX/Hgk-Wb-Zt.png
 title: 'Seeding Mutation: Our First Write Method'
 sidebar_label: Seeding Mutation
 ---

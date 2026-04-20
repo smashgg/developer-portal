@@ -28,15 +28,7 @@ function Help() {
     {
       content: (
         <>
-          Learn more about using the start.gg public API in our <Link to="docs/intro">official documentation</Link>
-        </>
-      ),
-      title: 'Browse Docs',
-    },
-    {
-      content: (
-        <>
-          Discuss the API and its documentation in our <Link to="docs/join-discord">Discord server</Link>
+          Discuss the API and its documentation in our <Link to="docs/join-discord">Discord server</Link>.
         </>
       ),
       title: 'Join the Community',
@@ -44,23 +36,18 @@ function Help() {
     {
       content: (
         <>
-          <p>
-            Found an issue while using the API? <Link to="https://github.com/smashgg/developer-portal" id="report-bugs">Report it here.</Link>
-          </p>
-          <p>
-            Want to suggest new queries, mutations, or provide other feedback? <Link to="https://github.com/smashgg/developer-portal" id="submit-feedback">Let us know here!</Link>
-          </p>
+          You can contact us directly using <Link href="mailto:support@start.gg">support@start.gg</Link>.
         </>
       ),
-      title: 'Submit Bugs or Feedback',
+      title: `Email Us`,
     },
     {
       content: (
         <>
-          You can contact us directly using <Link href="mailto:devrelations@start.gg">devrelations@start.gg</Link>
+          Learn more about using the start.gg public API in our <Link to="docs/intro">official documentation</Link>.
         </>
       ),
-      title: `Email Us`,
+      title: 'Browse Docs',
     },
   ];
 
@@ -75,7 +62,7 @@ function Help() {
 
         <div className="row text--center">
           {supportLinks.map(({ title, content }, idx) => (
-            <div key={idx} className="col col--6 margin-vert--md">
+            <div key={idx} className={`col col--6 margin-vert--md${idx === supportLinks.length - 1 && supportLinks.length % 2 !== 0 ? ' col--offset-3' : ''}`}>
               <h2>{title}</h2>
               <p>{content}</p>
             </div>

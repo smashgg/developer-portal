@@ -1,7 +1,7 @@
 ---
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
-authorImageURL: https://imgur.com/HgkWbZt.png
+authorImageURL: https://i.postimg.cc/4yFHVJCX/Hgk-Wb-Zt.png
 title: SmashTicker (v2.1.2)
 sidebar_label: SmashTicker
 ---
@@ -17,13 +17,13 @@ Super Smash Bros. games!
 
 View the top Twitch streams across all Smash Bros. games, or specify a particular title to view streams for.
 
-![.gif of streams](https://imgur.com/wgM3z84.gif)
+![.gif of streams](https://i.postimg.cc/tCwVgCts/wg-M3z84.gif)
 
 ## Browse Tournaments
 
 View featured upcoming tournaments for Super Smash Bros. games.
 
-![.gif of tournaments](https://imgur.com/YUeTV2l.gif)
+![.gif of tournaments](https://i.postimg.cc/8zvffQZ1/YUe-TV2l.gif)
 
 ## The Creator
 

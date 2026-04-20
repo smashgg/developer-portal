@@ -1,0 +1,272 @@
+/* Theme variables */
+:global(:root) {
+  --carousel-bg: #f0f0f0;
+  --carousel-text: #1a1a1a;
+  --carousel-text-secondary: #555555;
+  --carousel-card-bg: #e8e8e8;
+  --carousel-card-border: #d0d0d0;
+  --carousel-card-bg-hover: #dedede;
+  --carousel-thumb-bg: #d8d8d8;
+  --carousel-arrow-bg: #d8d8d8;
+  --carousel-arrow-border: #c0c0c0;
+  --carousel-arrow-color: #333333;
+  --carousel-dot-bg: #aaaaaa;
+  --carousel-viewmore: #333333;
+}
+
+:global(html[data-theme='dark']) {
+  --carousel-bg: #121212;
+  --carousel-text: #ffffff;
+  --carousel-text-secondary: #ffffffaa;
+  --carousel-card-bg: #ffffff0f;
+  --carousel-card-border: #ffffff18;
+  --carousel-card-bg-hover: #ffffff18;
+  --carousel-thumb-bg: #ffffff12;
+  --carousel-arrow-bg: #ffffff12;
+  --carousel-arrow-border: #ffffff20;
+  --carousel-arrow-color: #ffffff;
+  --carousel-dot-bg: #ffffff30;
+  --carousel-viewmore: #ffffff;
+}
+
+.carouselSection {
+  background-color: var(--carousel-bg);
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.heading {
+  color: var(--carousel-text);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 820px;
+}
+
+.cardWrapper {
+  position: relative;
+  flex: 1;
+  height: 188px;
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+
+.card {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  background: var(--carousel-card-bg);
+  border: 1px solid var(--carousel-card-border);
+  border-radius: 1.25rem;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:visited {
+  color: inherit;
+}
+
+.card:hover {
+  text-decoration: none;
+  color: inherit;
+  background: var(--carousel-card-bg-hover);
+}
+
+a.card {
+  cursor: pointer;
+}
+
+.thumbnail {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: var(--carousel-thumb-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.cardTitle {
+  color: var(--carousel-text);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cardText {
+  color: var(--carousel-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Animations */
+
+@keyframes slideInFromRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+
+@keyframes slideOutToLeft {
+  from { transform: translateX(0);     opacity: 1; }
+  to   { transform: translateX(-100%); opacity: 0; }
+}
+
+@keyframes slideOutToRight {
+  from { transform: translateX(0);    opacity: 1; }
+  to   { transform: translateX(100%); opacity: 0; }
+}
+
+.enterRight {
+  animation: slideInFromRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.enterLeft {
+  animation: slideInFromLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.exitLeft {
+  animation: slideOutToLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.exitRight {
+  animation: slideOutToRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Controls */
+
+.arrow {
+  background: var(--carousel-arrow-bg);
+  border: 1px solid var(--carousel-arrow-border);
+  color: var(--carousel-arrow-color);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+  line-height: 1;
+  padding: 0;
+}
+
+.arrow:hover {
+  background: #3f80ff;
+  border-color: #3f80ff;
+  color: #ffffff;
+}
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--carousel-dot-bg);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.dotActive {
+  background: #3f80ff;
+  transform: scale(1.3);
+}
+
+.viewMore {
+  color: var(--carousel-viewmore);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.viewMore:visited {
+  color: var(--carousel-viewmore);
+}
+
+.viewMore:hover {
+  color: var(--carousel-viewmore);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .carouselSection {
+    padding: 1.25rem 0.5rem;
+  }
+
+  .wrapper {
+    gap: 0.5rem;
+  }
+
+  .cardWrapper {
+    height: 200px;
+  }
+
+  .card {
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .thumbnail {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardText {
+    font-size: 0.95rem;
+  }
+
+  .arrow {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+}

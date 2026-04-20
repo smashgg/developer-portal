@@ -7,7 +7,7 @@ sidebar_label: Embedded Registration
 You may embed registration for a tournament on your own site!
 The embed code is available from the Registration Settings page in tournament admin:
 
-![image](https://imgur.com/oibRO0w.png)
+![image](https://i.postimg.cc/BZwjhQzd/oib-RO0w.png)
 
 The copy+paste from registration settings will look like this:
 

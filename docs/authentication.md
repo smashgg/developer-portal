@@ -11,17 +11,17 @@ Developer Settings</a> page in your account settings.
 
 First, click "Create new token"
 
-![image](https://imgur.com/Xx4LNIN.png)
+![image](https://i.postimg.cc/kGMWW1BB/Xx4LNIN.png)
 
 Next, enter a description for your token. Please be _descriptive_ with this!
 
-![image2](https://imgur.com/b2russ6.png)
+![image2](https://i.postimg.cc/d0m7nRM5/b2russ6.png)
 
 Click 'Save' to finish creating the token.
 
-![image3](https://imgur.com/nEycaZA.png)
+![image3](https://i.postimg.cc/76H5RCDR/n-Eyca-ZA.png)
 
-⚠ **Copy it down immediately- you will not be able to view it again!** ⚠
+⚠ **Copy it down immediately- you will not be able to view it again! All tokens expire expire after 1 year.** ⚠
 
 ## Using the Token
 
@@ -33,4 +33,4 @@ Authorization: Bearer [token]
 
 You will also need a token for making requests in the [API Explorer](/explorer)
 
-![image4](https://i.imgur.com/W8T7MoL.png)
+![image4](https://i.postimg.cc/Qt8FzBsm/W8T7Mo-L.png)

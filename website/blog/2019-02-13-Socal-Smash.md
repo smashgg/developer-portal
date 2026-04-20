@@ -1,7 +1,7 @@
 ---
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
-authorImageURL: https://imgur.com/HgkWbZt.png
+authorImageURL: https://i.postimg.cc/4yFHVJCX/Hgk-Wb-Zt.png
 title: socalsmash.net (Release)
 sidebar_label: socalsmash.net
 ---
@@ -9,7 +9,7 @@ sidebar_label: socalsmash.net
 <a href="https://socalsmash.net" target="_blank">socalsmash.net</a> is a website to keep up with the _Super Smash Bros. Ultimate_ competitive esports scene in Southern California (SoCal).
 Currently, you will find a scoreboard area with recent tournament results, and a list of upcoming events in the SoCal region.
 
-![blog image](https://imgur.com/L4Ksqh2.png)
+![blog image](https://i.postimg.cc/R0z6csYr/L4Ksqh2.png)
 
 <!--truncate-->
 

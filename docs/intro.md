@@ -1,18 +1,17 @@
 ---
 id: intro
-title: Welcome to our New API!
+title: Welcome to the Start.gg API!
 sidebar_label: Welcome
 ---
 
-We're excited for you to use our new API with your applications.
+We're excited for you to use our API with your applications.
 Here on our developer portal, you will find documentation for
 getting started, examples to reference,
 news about projects using our API, and more!
 
-## Featuring Projects
+## Projects
 
-We post about awesome projects using our API over on [our Blog](/blog).
-If you have a project using our data that you'd like to share, please [contact us](/help).
+You can find projects made by our community on our [Projects](/projects) page. If you have a project that you'd like to share, you can [contact us](/help) or post them in our [Discord](https://discord.com/invite/startgg).
 
 ## Contributing to our Documentation
 
