@@ -1,12 +1,12 @@
 ---
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
-authorImageURL: https://imgur.com/HgkWbZt.png
+authorImageURL: https://i.postimg.cc/4yFHVJCX/Hgk-Wb-Zt.png
 title: Lunar Phase Event Results Tweets
 sidebar_label: Lunar Phase Event Results Tweets
 ---
 
-![tweet example](https://imgur.com/VXJMb0a.png)
+![tweet example](https://i.postimg.cc/kXBb9tSZ/VXJMb0a.png)
 
 Lunar Phase, a tournament-organizing and broadcast team based out of New York City, have
 automated their workflow for creating post-event results tweets with an

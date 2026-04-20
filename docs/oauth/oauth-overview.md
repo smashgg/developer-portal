@@ -19,7 +19,7 @@ There are many resources available on the web for learning these, and <a href="h
 
 ## How do I use OAuth?
 
-The first step is to create an OAuth application via the <a href="https://start.gg/admin/profile/developer/applications" target="_blank">start.gg developer portal</a>
+The first step is to create an OAuth application via the <a href="https://start.gg/admin/profile/developer/applications" target="_blank">start.gg developer portal</a>.
 
 ### Authorization code flow
 

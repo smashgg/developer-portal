@@ -47,7 +47,7 @@ Once you've defined your schedule constraints and your player constraints,
 you're ready to execute our algorithm for solving them.
 My list of constraints looks like this:
 
-![list of constraints](https://imgur.com/pQLJAUE.png)
+![list of constraints](https://i.postimg.cc/yx5WWv9C/p-QLJAUE.png)
 
 ## Step 2: Executing start.gg's Algorithm to Resolve Constraints & Conflicts
 

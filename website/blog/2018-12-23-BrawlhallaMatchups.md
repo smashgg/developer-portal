@@ -1,7 +1,7 @@
 ---
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
-authorImageURL: https://imgur.com/HgkWbZt.png
+authorImageURL: https://i.postimg.cc/4yFHVJCX/Hgk-Wb-Zt.png
 title: Brawlhalla Matchups (Initial Release)
 sidebar_label: Brawlhalla Matchups
 ---
@@ -37,7 +37,7 @@ I learned that they have crossed paths three times, and in one of those Boomie a
 It seems too early to draw any conclusions about their head-to-head matchup,
 so we'll have to see what happens the next few times they square off!
 
-![the gif example](https://imgur.com/LqEg3Vh.gif)
+![the gif example](https://i.postimg.cc/fbhtx2PQ/Lq-Eg3Vh.gif)
 
 ## To Contribute
 

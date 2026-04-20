@@ -1,7 +1,7 @@
 ---
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
-authorImageURL: https://imgur.com/HgkWbZt.png
+authorImageURL: https://i.postimg.cc/4yFHVJCX/Hgk-Wb-Zt.png
 title: smashgg.js - (Unofficial) NodeJS SDK
 sidebar_label: smashgg.js
 ---
@@ -30,7 +30,7 @@ his background and why he built this!
 
 ## Tell me a bit about yourself
 
-![cookiE image](https://imgur.com/LRNxjOB.jpg)
+![cookiE image](https://i.postimg.cc/gkQ60kq3/LRNxj-OB.jpg)
 
 _I am the co-founder, lead producer, and CTO of <a href="http://recursion.gg/" target="_blank">Recursion</a>, a professional Smash Bros
 streaming company out of Atlanta, Georgia.
@@ -85,7 +85,7 @@ smashgg.initialize('<your api key>');
 })();
 ```
 
-![response](https://imgur.com/2UrfKCH.png)
+![response](https://i.postimg.cc/rw4RRXQZ/2Urf-KCH.png)
 
 _Why Node?
 Other than Node being a very hot language in today's day-and-age, NodeJS handles JSON responses from the API seamlessly -- since at the end of the day it's

@@ -1,12 +1,12 @@
 ---
 author: Mitchell "furtive" Morley
 authorURL: https://twitter.com/furtive_raccoon
-authorImageURL: https://imgur.com/HgkWbZt.png
+authorImageURL: https://i.postimg.cc/4yFHVJCX/Hgk-Wb-Zt.png
 title: 'Smash Alert: Alerts for new French Smash Tournaments'
 sidebar_label: Smash Alert
 ---
 
-![ss of Twitter account](https://imgur.com/U6htypD.png)
+![ss of Twitter account](https://i.postimg.cc/xdSJKxZd/U6htyp-D.png)
 
 <a href="https://twitter.com/alert_smash" target="_blank">Smash Alert</a> is a Twitter account that automatically
 tweets out new tournaments in France for Super Smash Bros. Melee and Super Smash Bros. Ultimate.

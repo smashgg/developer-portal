@@ -115,8 +115,8 @@ else:
 
 Here was my seeding before running my script:
 
-![beforeSeeding](https://imgur.com/gesQAmG.png)
+![beforeSeeding](https://i.postimg.cc/J0gttPJz/ges-QAm-G.png)
 
 As expected, my seeding afterwards is completely different!
 
-![afterSeeding](https://imgur.com/msSmwmE.png)
+![afterSeeding](https://i.postimg.cc/wMP330Js/ms-Smwm-E.png)

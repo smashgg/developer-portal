@@ -2,7 +2,7 @@ const users = [
   // Please add your logo in alphabetical order of caption.
   {
     caption: 'Boost Legacy',
-    image: 'https://imgur.com/jBYfQ7o.jpg',
+    image: 'https://i.postimg.cc/1RY8W5T5/j-BYf-Q7o.png',
     infoLink:
       'https://github.com/pfeiferj/smash-gg-rocket-league-seeder/blob/master/README.md',
     openSource: true,
@@ -17,35 +17,35 @@ const users = [
 },
   {
     caption: 'Brawlhalla Matchups',
-    image: 'https://imgur.com/rO1rrqv.png',
+    image: 'https://i.postimg.cc/SN2JHbFR/r-O1rrqv.png',
     infoLink: 'https://github.com/henryaguerra/brawlhalla-matchups-bot',
     openSource: true,
     pinned: true,
   },
   {
     caption: 'FGCombo',
-    image: 'https://imgur.com/qTLUcur.png',
+    image: 'https://i.postimg.cc/tCKYjvpx/q-TLUcur.png',
     infoLink: 'https://stats.fgcombo.com',
     openSource: false,
     pinned: true,
   },
   {
     caption: 'Lunar Phase',
-    image: 'https://imgur.com/jtJPRso.png',
+    image: 'https://i.postimg.cc/vHJcs2bc/jt-JPRso.jpg',
     infoLink: 'https://github.com/lunar-phase/smashgg-results',
     openSource: true,
     pinned: true,
   },
   {
     caption: 'SetsOnStream.tv',
-    image: 'https://imgur.com/6mp6L7Q.png',
+    image: 'https://i.postimg.cc/528jN52G/6mp6L7Q.png',
     infoLink: 'https://setsonstream.tv',
     openSource: false,
     pinned: true,
   },
   {
     caption: 'Smash Map',
-    image: 'https://i.imgur.com/ZQ76PKh.png',
+    image: 'https://i.postimg.cc/7YFfktwm/ZQ76PKh.png',
     infoLink:
       'https://smash-map.com',
     openSource: true,
@@ -61,7 +61,7 @@ const users = [
   },
   {
     caption: 'Smash Pros',
-    image: 'https://imgur.com/YEv88eD.png',
+    image: 'https://i.postimg.cc/DzF0WWWn/YEv88e-D.png',
     infoLink:
       'https://play.google.com/store/apps/details?id=com.smashpros.mobile',
     openSource: false,
@@ -85,7 +85,7 @@ const users = [
   },
   {
     caption: 'SoCalSmash.Net',
-    image: 'https://imgur.com/KA5zHXl.png',
+    image: 'https://i.postimg.cc/fRYkT7bT/KA5z-HXl.png',
     infoLink: 'https://socalsmash.net',
     openSource: false,
     pinned: true,
@@ -99,7 +99,7 @@ const users = [
   },
   {
     caption: 'TournaBot',
-    image: 'https://i.imgur.com/UN1gKXO.png',
+    image: 'https://i.postimg.cc/sg51DP2j/UN1g-KXO.png',
     infoLink: 'https://top.gg/bot/719283403698077708',
     openSource: false,
     pinned: true,

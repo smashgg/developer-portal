@@ -46,11 +46,19 @@ a:link {
 }
 
 a:visited {
-  color: purple;
+  color: #008ce0;
 }
 
 .navbar__brand {
   max-height: 20px;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.navbar__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .navbar__logo {
