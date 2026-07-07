@@ -68,7 +68,7 @@ module.exports = [
       },
       {
         "name": "Start.gg Seeding Uploader",
-        "url": null,
+        "url": "https://github.com/tinyterry97/startseeder",
         "dev": null,
         "devUrl": null,
         "description": "Script to import seeding from a Google Sheets CSV into a specific phase using start.gg's API",
@@ -81,14 +81,6 @@ module.exports = [
         "devUrl": null,
         "description": "Hub for global rankings and tournament seedings of top fighting games",
         "active": "No"
-      },
-      {
-        "name": "Start.gg Manager",
-        "url": "https://github.com/eRebernisek/startgg-manager",
-        "dev": null,
-        "devUrl": null,
-        "description": "App to manage start.gg tournaments on the go",
-        "active": "Yes"
       },
       {
         "name": "Report Scores",
@@ -107,7 +99,7 @@ module.exports = [
         "active": "Unknown"
       },
       {
-        "name": "Terminus Dasbhoard for Start.gg Events",
+        "name": "Terminus Dashboard for Start.gg Events",
         "url": "https://github.com/Enkabob/Terminus-Dashboard-for-Start.gg-Events",
         "dev": "Enkabob",
         "devUrl": "https://start.gg/user/75cea571",
@@ -177,6 +169,14 @@ module.exports = [
         "devUrl": null,
         "description": "Uses the Start.gg API and the Slippi API to seed players for an upcoming online event using their Slippi Ranking",
         "active": "Unknown"
+      },
+      {
+        "name": "Start.gg Manager",
+        "url": "https://github.com/eRebernisek/startgg-manager",
+        "dev": null,
+        "devUrl": null,
+        "description": "App to manage start.gg tournaments on the go",
+        "active": "Yes"
       },
       {
         "name": "Melee Seeding Tool",
@@ -276,7 +276,7 @@ module.exports = [
         "url": "http://upsets.gg/",
         "dev": null,
         "devUrl": null,
-        "description": null,
+        "description": "Fantasy ",
         "active": "Yes"
       },
       {
@@ -312,19 +312,11 @@ module.exports = [
         "active": "Yes"
       },
       {
-        "name": "Start.gg Aggregator",
-        "url": "https://github.com/erik-larson01/startgg-aggregator",
-        "dev": null,
-        "devUrl": null,
-        "description": null,
-        "active": "Yes"
-      },
-      {
-        "name": "Start.gg Tournament Tracker",
+        "name": "Start.gg CLI",
         "url": "https://github.com/erik-larson01/startgg_tracker",
-        "dev": null,
+        "dev": "Triple",
         "devUrl": null,
-        "description": null,
+        "description": "A specialized CLI tool that pulls H2H records and tournament data from Start.gg to give PR panels everything they need to rank players.",
         "active": "Yes"
       },
       {
@@ -605,6 +597,14 @@ module.exports = [
         "active": "Yes"
       },
       {
+        "name": "YMSB",
+        "url": "https://oreshufu.com/ymsb",
+        "dev": null,
+        "devUrl": null,
+        "description": "Japan-focused scoreboard software for fighting games",
+        "active": "Yes"
+      },
+      {
         "name": "BracketFlow",
         "url": "https://bracketflow.fr/",
         "dev": "Dizio",
@@ -691,6 +691,14 @@ module.exports = [
         "devUrl": null,
         "description": null,
         "active": "Yes"
+      },
+      {
+        "name": "start.gg Bracket Chroma Key for OBS",
+        "url": "https://github.com/Savestate2A03/obs-startgg-bracket-key",
+        "dev": null,
+        "devUrl": null,
+        "description": "simple browser source CSS snippet for chroma-keying start.gg brackets",
+        "active": "Unknown"
       },
       {
         "name": "Tournament Vod Clipper",
@@ -1109,7 +1117,7 @@ module.exports = [
       },
       {
         "name": "Startgg Reporter",
-        "url": null,
+        "url": "https://play.google.com/store/apps/details?id=com.jmanrique.smashbrosreporter",
         "dev": "Xose",
         "devUrl": "https://x.com/_JManrique_",
         "description": "Find and manage fighting game tournaments in one place.",
