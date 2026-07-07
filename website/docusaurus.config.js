@@ -3,7 +3,7 @@ const repoUrl = 'https://github.com/smashgg/developer-portal';
 
 module.exports = {
   title: 'Developer Portal',
-  tagline: 'Turning passions into careers',
+  tagline: 'Community through competition',
   url: 'https://developer.start.gg',
   baseUrl: '/',
   projectName: 'smashgg-developer',
@@ -31,8 +31,9 @@ module.exports = {
       logo: {
         alt: 'Developer Portal Logo',
         src: 'img/new_logo-dark.svg',
+        srcDark: 'img/new_logo-white.svg',
       },
-      links: [
+      items: [
         { to: 'docs/intro', label: 'Docs', position: 'right' },
         {
           href: 'https://developer.start.gg/reference/query.doc.html',
@@ -61,7 +62,7 @@ module.exports = {
             },
             {
               label: 'Example Usage',
-              to: '/docs/examples/set-entrants',
+              to: '/docs/examples/queries/set-entrants',
             },
             {
               label: 'API Explorer',
@@ -101,9 +102,6 @@ module.exports = {
         },
       ],
     },
-    googleAnalytics: {
-      trackingID: 'UA-58622313-9',
-    },
   },
   presets: [
     [
@@ -114,8 +112,12 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.json'),
           editUrl: `${repoUrl}/blob/master/docs/`,
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./static/css/custom.css'),
+        },
+        googleAnalytics: {
+          trackingID: 'UA-58622313-9',
         },
       },
     ],

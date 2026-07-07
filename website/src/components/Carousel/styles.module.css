@@ -146,28 +146,34 @@ a.card {
 
 @keyframes slideOutToLeft {
   from { transform: translateX(0);     opacity: 1; }
+  40%  { transform: translateX(-40%);  opacity: 0; }
   to   { transform: translateX(-100%); opacity: 0; }
 }
 
 @keyframes slideOutToRight {
   from { transform: translateX(0);    opacity: 1; }
+  40%  { transform: translateX(40%);  opacity: 0; }
   to   { transform: translateX(100%); opacity: 0; }
 }
 
 .enterRight {
   animation: slideInFromRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  z-index: 2;
 }
 
 .enterLeft {
   animation: slideInFromLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  z-index: 2;
 }
 
 .exitLeft {
   animation: slideOutToLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  z-index: 1;
 }
 
 .exitRight {
   animation: slideOutToRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  z-index: 1;
 }
 
 /* Controls */
@@ -188,6 +194,19 @@ a.card {
   transition: background 0.2s ease;
   line-height: 1;
   padding: 0;
+}
+
+.arrowIcon {
+  position: relative;
+  top: -1px;
+}
+
+.arrowIconLeft {
+  left: -1px;
+}
+
+.arrowIconRight {
+  left: 1px;
 }
 
 .arrow:hover {

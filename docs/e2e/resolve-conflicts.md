@@ -10,7 +10,7 @@ In this example, we will invoke start.gg's algorithm for resolving schedule conf
 belonging to a user who has admin permissions for your tournament.**
 
 This is a separate step from updating phase seeds, which is explained in the
-[Update Phase Seeding doc](/docs/examples/update-phase-seeding).
+[Update Phase Seeding doc](/docs/e2e/update-phase-seeding).
 
 In this example, I will be using a test tournament where:
 

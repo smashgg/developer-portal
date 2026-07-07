@@ -170,4 +170,4 @@ If you're running a tournament with several events, you may want to resolve cust
 constraints (players requesting certain pools, or avoiding early matchups between
 certain players).
 In this case, you will want to follow the steps to
-[Resolve Schedule Conflicts](/docs/examples/resolve-conflicts).
+[Resolve Schedule Conflicts](/docs/e2e/resolve-conflicts).

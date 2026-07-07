@@ -42,11 +42,21 @@ html[data-theme='dark'] {
 }
 
 a:link {
-  color: #008ce0;
+  color: #000000;
 }
 
 a:visited {
-  color: #008ce0;
+  color: #000000;
+}
+
+html[data-theme='dark'] a:link,
+html[data-theme='dark'] a:visited {
+  color: #ffffff;
+}
+
+.footer a:link,
+.footer a:visited {
+  color: #ffffff;
 }
 
 .navbar__brand {
@@ -70,11 +80,6 @@ a:visited {
   height: 58px;
 }
 
-html[data-theme='dark'] .navbar__logo {
-  background: url(/img/new_logo-white.svg) no-repeat;
-  background-size: contain;
-  padding-left: 92px;
-}
 
 .homeSplashFade {
   padding-top: 50px;

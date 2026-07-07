@@ -3,6 +3,14 @@ module.exports = [
     "name": "Organizer Tools",
     "projects": [
       {
+        "name": "Offline Mode for start.gg",
+        "url": "https://github.com/jmlee337/local-cache-for-startgg",
+        "dev": "Nicolet",
+        "devUrl": "https://start.gg/user/e0fcac59",
+        "description": "Offline-first desktop client for start.gg brackets",
+        "active": "Yes"
+      },
+      {
         "name": "StartKit",
         "url": "https://startkit.gg/",
         "dev": null,
@@ -13,8 +21,8 @@ module.exports = [
       {
         "name": "TO Helper",
         "url": "https://clashavoid.startpredict.com/",
-        "dev": null,
-        "devUrl": null,
+        "dev": "Jotan",
+        "devUrl": "https://x.com/jotan_33",
         "description": "Tools for Tournament Organizers running events on start.gg",
         "active": "Yes"
       },
@@ -112,14 +120,6 @@ module.exports = [
         "dev": null,
         "devUrl": null,
         "description": "Lightweight terminal-based tournament display for Raspberry Pi showing live match data",
-        "active": "Yes"
-      },
-      {
-        "name": "Offline Mode for start.gg",
-        "url": "https://github.com/jmlee337/local-cache-for-startgg",
-        "dev": "Nicolet",
-        "devUrl": "https://start.gg/user/e0fcac59",
-        "description": "Offline-first desktop client for start.gg brackets",
         "active": "Yes"
       },
       {
@@ -222,16 +222,16 @@ module.exports = [
         "name": "MSV Hub",
         "url": null,
         "dev": "danbugs",
-        "devUrl": null,
+        "devUrl": "https://start.gg/user/566b1fb5/",
         "description": "Utilities to run the Microspacing Vancouver tournament series",
         "active": "Yes"
       },
       {
         "name": "Daness",
-        "url": null,
+        "url": "https://github.com/danbugs/daness",
         "dev": "danbugs",
-        "devUrl": null,
-        "description": null,
+        "devUrl": "https://start.gg/user/566b1fb5/",
+        "description": "Provides a proper way of running Swiss brackets, which are broken on vanilla StartGG",
         "active": "Yes"
       }
     ]
@@ -260,7 +260,7 @@ module.exports = [
         "url": "https://www.supermajor.gg/",
         "dev": null,
         "devUrl": null,
-        "description": "Statistics and power rankings for various Smash and FGC titles",
+        "description": "Statistics for various Smash and FGC titles",
         "active": "Yes"
       },
       {
@@ -509,6 +509,14 @@ module.exports = [
         "dev": null,
         "devUrl": null,
         "description": "Esports portfolio platform that lets you import your start.gg results",
+        "active": "Yes"
+      },
+      {
+        "name": "Local Meta",
+        "url": "https://local-meta.vercel.app/",
+        "dev": "Kipper",
+        "devUrl": "https://www.start.gg/user/d2a74ff9",
+        "description": "Aggregates Smash Ultimate data by region into a dashboard including player stats, events, and matchup analysis",
         "active": "Yes"
       }
     ]
@@ -770,10 +778,18 @@ module.exports = [
         "active": "Yes"
       },
       {
+        "name": "Smash Cals ",
+        "url": "https://smashcals.com/",
+        "dev": "nooch",
+        "devUrl": "https://www.start.gg/user/63722921",
+        "description": "Map-based search for local tournaments, with the ability to subscribe to your local events in your calendar",
+        "active": "Yes"
+      },
+      {
         "name": "Start Maps",
         "url": "https://startmaps.xyz/",
         "dev": "KingShamus",
-        "devUrl": null,
+        "devUrl": "https://start.gg/user/d5f30726",
         "description": null,
         "active": "Yes"
       },
@@ -783,14 +799,6 @@ module.exports = [
         "dev": "MadeInShineA",
         "devUrl": "https://start.gg/user/c2a287f9",
         "description": null,
-        "active": "Yes"
-      },
-      {
-        "name": "Smash Cals ",
-        "url": "https://smashcals.com/",
-        "dev": "nooch",
-        "devUrl": "https://www.start.gg/user/63722921",
-        "description": "Map-based search for local tournaments, with the ability to subscribe to your local events in your calendar",
         "active": "Yes"
       },
       {
@@ -848,12 +856,28 @@ module.exports = [
         "devUrl": "https://www.start.gg/user/d81d4132",
         "description": "German Smash Melee website with a Google Sheets driven event (tournament) list that's enhanced using Start.gg API data during build-time (e.g. banner, max attendees, number of current attendees)",
         "active": "Yes"
+      },
+      {
+        "name": "Smash Radar",
+        "url": "https://smashradar.com/",
+        "dev": "math",
+        "devUrl": "https://www.start.gg/user/9f9b38df",
+        "description": null,
+        "active": "Yes"
       }
     ]
   },
   {
     "name": "Discord Bots",
     "projects": [
+      {
+        "name": "Netplay Event Starter Tools (NEST)",
+        "url": "https://enpicie.github.io/nest/",
+        "dev": "enpicie",
+        "devUrl": "https://start.gg/user/aa9fcdcf",
+        "description": "Set of tools to get started running netplay events with Adomin Discord bot, OBS stream scenes, and a Discord server template",
+        "active": "Yes"
+      },
       {
         "name": "Start.gg Event Adder Discord Bot",
         "url": "https://github.com/kequach/start.gg-event-adder",
@@ -888,7 +912,7 @@ module.exports = [
       },
       {
         "name": "SetBot",
-        "url": "https://smashevents.gg/setbot",
+        "url": "https://smashradar.com/setbot",
         "dev": "math",
         "devUrl": "https://www.start.gg/user/9f9b38df",
         "description": "Notifications of on-stream sets for specified players at the moment they start, mainly intended for fan servers of popular players",
@@ -1082,6 +1106,14 @@ module.exports = [
         "devUrl": null,
         "description": null,
         "active": "No"
+      },
+      {
+        "name": "Startgg Reporter",
+        "url": null,
+        "dev": "Xose",
+        "devUrl": "https://x.com/_JManrique_",
+        "description": "Find and manage fighting game tournaments in one place.",
+        "active": "Yes"
       }
     ]
   },
@@ -1093,7 +1125,7 @@ module.exports = [
         "url": "https://github.com/TwilCynder/startgg-helper",
         "dev": null,
         "devUrl": null,
-        "description": null,
+        "description": "Helper functions and classes for use with the start.gg API",
         "active": "Yes"
       },
       {
@@ -1101,7 +1133,7 @@ module.exports = [
         "url": "https://github.com/BGluth/bracket-tools",
         "dev": null,
         "devUrl": null,
-        "description": null,
+        "description": "Collection of tooling to query, maintain, and massage data from start.gg",
         "active": "Yes"
       },
       {
@@ -1133,7 +1165,7 @@ module.exports = [
         "url": "https://github.com/gerald-lbn/ally-startgg?tab=readme-ov-file",
         "dev": null,
         "devUrl": null,
-        "description": null,
+        "description": "An AdonisJS ally driver for start.gg",
         "active": "Yes"
       },
       {
@@ -1141,7 +1173,7 @@ module.exports = [
         "url": "https://github.com/GabrielSPMed/prbr25-startgg-queries",
         "dev": null,
         "devUrl": null,
-        "description": null,
+        "description": "Python project for extracting, transforming, and loading tournament and event data from the start.gg API into a PostgreSQL database",
         "active": "Yes"
       },
       {
@@ -1149,7 +1181,7 @@ module.exports = [
         "url": "https://github.com/BIGGPIU/rust-startgg-oauth-url",
         "dev": null,
         "devUrl": null,
-        "description": null,
+        "description": "OAuth2 link Implementation for Start.gg but in Rust",
         "active": "Yes"
       },
       {

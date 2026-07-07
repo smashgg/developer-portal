@@ -3,31 +3,31 @@ import styles from './styles.module.css';
 
 const CARDS = [
   {
-    img: '/img/card1.jpg',
+    img: '/img/card1.png',
+    title: 'Offline Mode for Start.gg',
+    text: 'Offline-first client lets you see and report start.gg matches offline, then syncs online once your internet is back',
+    link: 'https://github.com/jmlee337/local-cache-for-startgg/',
+  },
+  {
+    img: '/img/card2.png',
     title: 'Lucky Stats',
     text: 'A Melee analytics platform featuring statistics, Elo rankings, and tournaments powered by Start.gg',
     link: 'https://luckystats.gg/',
   },
   {
-    img: '/img/card5.png',
+    img: '/img/card3.png',
     title: 'Netplay Event Starter Tools',
     text: 'A set of tools for running online Start.gg events with Adomin Discord bot, Discord server template, and OBS stream scenes',
     link: 'https://enpicie.github.io/nest/',
   },
   {
-    img: '/img/card2.png',
+    img: '/img/card4.png',
     title: 'S.M.A.R.T.',
     text: 'Computer vision app that integrates with Start.gg to automatically report fighting game match results',
     link: 'https://skpeter.github.io/smart-user-guide/',
   },
   {
-    img: '/img/card4.png',
-    title: 'BracketFlow',
-    text: 'Broadcast overlay connecting Start.gg to your stream with real-time scores, dynamic animations, and viewer engagement.',
-    link: 'https://bracketflow.fr/',
-  },
-  {
-    img: '/img/card3.png',
+    img: '/img/card5.png',
     title: 'FindMyFGC',
     text: 'Live map tool to find fighting game events in your area using the Start.gg API',
     link: 'https://www.findmyfgc.cc/',
@@ -106,14 +106,14 @@ export default function Carousel() {
     <section className={styles.carouselSection}>
       <h2 className={styles.heading}>Featured Projects</h2>
       <div className={styles.wrapper}>
-        <button className={styles.arrow} onClick={() => navigate('left', current, true)} aria-label="Previous">&#8249;</button>
+        <button className={styles.arrow} onClick={() => navigate('left', current, true)} aria-label="Previous"><span className={`${styles.arrowIcon} ${styles.arrowIconLeft}`}>&#8249;</span></button>
         <div className={styles.cardWrapper}>
           {transitioning && (
             <Card card={CARDS[current]} className={[styles.card, exitClass].join(' ')} />
           )}
           <Card card={CARDS[activeIndex]} className={[styles.card, transitioning ? enterClass : ''].join(' ')} />
         </div>
-        <button className={styles.arrow} onClick={() => navigate('right', current, true)} aria-label="Next">&#8250;</button>
+        <button className={styles.arrow} onClick={() => navigate('right', current, true)} aria-label="Next"><span className={`${styles.arrowIcon} ${styles.arrowIconRight}`}>&#8250;</span></button>
       </div>
       <div className={styles.dots}>
         {CARDS.map((_, i) => (
