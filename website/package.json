@@ -26,8 +26,13 @@
     "graphql": "0.13.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "unfetch": "3.0.0",
-    "webpackbar": "^6.0.1"
+    "unfetch": "3.0.0"
+  },
+  "resolutions": {
+    "webpack": "5.97.1"
+  },
+  "overrides": {
+    "webpack": "5.97.1"
   },
   "browserslist": {
     "production": [

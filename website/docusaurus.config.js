@@ -62,7 +62,7 @@ module.exports = {
             },
             {
               label: 'Example Usage',
-              to: '/docs/examples/set-entrants',
+              to: '/docs/examples/queries/set-entrants',
             },
             {
               label: 'API Explorer',
