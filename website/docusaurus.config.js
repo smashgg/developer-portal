@@ -26,6 +26,10 @@ module.exports = {
   ],
   themeConfig: {
     image: 'img/devgg.png',
+    colorMode: {
+      defaultMode: 'dark',
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       title: 'Developer Portal',
       logo: {
