@@ -1,0 +1,28 @@
+name: Refresh projects list
+
+# Triggers a Netlify rebuild so the /projects page picks up the latest
+# Community Projects Google Sheet (fetched at build time by the "prebuild"
+# step in website/package.json).
+#
+# Setup: add the Netlify Build Hook URL as a repo secret named
+# NETLIFY_BUILD_HOOK (GitHub repo → Settings → Secrets and variables →
+# Actions → New repository secret).
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # 08:00 UTC daily
+  workflow_dispatch: {}    # allow manual runs from the Actions tab
+
+jobs:
+  trigger-rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Netlify build hook
+        run: |
+          if [ -z "${NETLIFY_BUILD_HOOK}" ]; then
+            echo "NETLIFY_BUILD_HOOK secret is not set; skipping." >&2
+            exit 0
+          fi
+          curl -fsS -X POST -d '{}' "${NETLIFY_BUILD_HOOK}"
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}

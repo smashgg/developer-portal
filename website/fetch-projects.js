@@ -23,10 +23,13 @@ if (fs.existsSync(envPath)) {
 const SHEET_ID = '1OYizwbD1A2Ndcs0TnoMNrNO8hlDtngSgQnfwwc5mfiU';
 const API_KEY = process.env.SHEETS_API_KEY;
 
+// Non-fatal by design: this runs as a build step (see the "prebuild" script).
+// If the key is missing or the fetch fails, we warn and exit 0 so the build
+// falls back to the committed data/projects.js instead of failing the deploy.
 if (!API_KEY) {
-  console.error('Error: SHEETS_API_KEY environment variable is not set.');
-  console.error('Usage: SHEETS_API_KEY=your_key node fetch-projects.js');
-  process.exit(1);
+  console.warn('[fetch-projects] SHEETS_API_KEY not set — skipping refresh, using committed data/projects.js.');
+  console.warn('[fetch-projects] To refresh locally: SHEETS_API_KEY=your_key node fetch-projects.js');
+  process.exit(0);
 }
 
 function get(url) {
@@ -60,8 +63,8 @@ async function main() {
   const spreadsheet = await get(url);
 
   if (spreadsheet.error) {
-    console.error('API error:', spreadsheet.error.message);
-    process.exit(1);
+    console.warn('[fetch-projects] Sheets API error — keeping committed data/projects.js:', spreadsheet.error.message);
+    process.exit(0);
   }
 
   const categories = [];
@@ -107,12 +110,18 @@ async function main() {
   const total = categories.reduce((sum, c) => sum + c.projects.length, 0);
   console.log(`Fetched ${total} projects across ${categories.length} categories.`);
 
+  // Safety: never clobber good committed data with an empty/degenerate result.
+  if (total === 0) {
+    console.warn('[fetch-projects] Fetched 0 projects — keeping committed data/projects.js.');
+    process.exit(0);
+  }
+
   const outputPath = path.join(__dirname, 'data', 'projects.js');
   fs.writeFileSync(outputPath, 'module.exports = ' + JSON.stringify(categories, null, 2) + ';\n');
   console.log(`Written to ${outputPath}`);
 }
 
 main().catch(err => {
-  console.error(err.message);
-  process.exit(1);
+  console.warn('[fetch-projects] Refresh failed — keeping committed data/projects.js:', err.message);
+  process.exit(0);
 });
