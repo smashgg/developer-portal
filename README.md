@@ -26,3 +26,39 @@ For those of you using Visual Studio Code, there are two recommended extensions:
   This extension allows for easy preview and editing.
 - <a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint" target="_blank">Markdownlint:</a>
   For good quality Markdown files and warnings when breaking style rules.
+
+## Updating the Community Projects list (/projects)
+
+The `/projects` page is generated from the **Community API Projects Google Sheet**.
+You do **not** need a pull request to update it — just edit the sheet and trigger a rebuild.
+
+**How it works:** `website/fetch-projects.js` reads the sheet and writes
+`website/data/projects.js`. It runs automatically as the `prebuild` step, so
+**every production build refreshes the list from the sheet.** If the fetch fails
+(missing key, API error, empty result) the build keeps the last committed
+`data/projects.js`, so a bad build never takes the site down.
+
+**To publish sheet edits:**
+1. Edit the Google Sheet.
+2. Trigger a Netlify rebuild (see below). The next build pulls the latest data.
+
+### One-time Netlify setup
+1. **Add the API key** (Site configuration → Environment variables):
+   `SHEETS_API_KEY` = a Google Cloud API key with the Google Sheets API enabled
+   and read access to the sheet. (Restrict the key by API + optionally by
+   referrer.)
+2. **Create a Build Hook** (Site configuration → Build & deploy → Build hooks).
+   POST to that URL — or bookmark and open it — to rebuild on demand after
+   editing the sheet.
+3. **(Optional) Auto-refresh on a schedule:** ping the Build Hook from any cron
+   (e.g. a GitHub Actions scheduled workflow) so sheet edits go live
+   automatically, e.g. nightly.
+
+### Refreshing locally
+```
+cd website
+SHEETS_API_KEY=your_key yarn build      # prebuild fetches fresh data, then builds
+# or just regenerate data/projects.js without building:
+SHEETS_API_KEY=your_key yarn fetch-projects
+```
+Without `SHEETS_API_KEY`, builds still work and simply use the committed data.
