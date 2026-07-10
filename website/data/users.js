@@ -30,6 +30,13 @@ const users = [
     pinned: true,
   },
   {
+    caption: 'Local Meta',
+    image: 'https://imgur.com/muRNb0V',
+    infoLink: 'https://local-meta.vercel.app/',
+    openSource: true,
+    pinned: true,
+  },
+  {
     caption: 'Lunar Phase',
     image: 'https://i.postimg.cc/vHJcs2bc/jt-JPRso.jpg',
     infoLink: 'https://github.com/lunar-phase/smashgg-results',
