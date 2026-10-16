@@ -1,3 +1,8 @@
+# Wednesday, October 14, 2026
+✔️ Argument `opponentId` was added to field `sets` on object type `Player`. It returns paginated head-to-head set history: only Sets where the player and the given opponent were on opposing entrants, most recently completed first. Only completed Sets are returned unless the `state` filter is set, and only the `eventIds`, `tournamentIds`, `phaseGroupIds` and `state` filters can be combined with it.
+
+✔️ Fixed the `entrantSize` filter on `SetFilters`, which previously returned no Sets. It now filters by the event's minimum players per entrant.
+
 # Tuesday, January 6, 2026
 ✔️ Field `setRecordWithoutByes` was added to object type `Standing`
 
