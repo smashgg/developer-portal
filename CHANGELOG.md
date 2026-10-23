@@ -1,3 +1,6 @@
+# Friday, October 23, 2026
+✔️ Field `bestOf` was added to object type `Set`. When `setGamesType` is best of (`1`), it is the number of games one must win a majority out of to win the set; when `setGamesType` is total games (`2`), use `totalGames` instead. It may be null on sets with no game settings, in which case the set defaults to best of 3.
+
 # Wednesday, October 14, 2026
 ✔️ Argument `opponentId` was added to field `sets` on object type `Player`. It returns paginated head-to-head set history: only Sets where the player and the given opponent were on opposing entrants, most recently completed first. Only completed Sets are returned unless the `state` filter is set, and only the `eventIds`, `tournamentIds`, `phaseGroupIds` and `state` filters can be combined with it.
 
